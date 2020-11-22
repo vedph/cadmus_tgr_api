@@ -1462,23 +1462,23 @@
         },
         {
           "id": "a.vrb.coniugatio.2",
-          "value": "de verbo: coniugationes II"
+          "value": "de verbo: coniugationes: II"
         },
         {
           "id": "a.vrb.coniugatio.3",
-          "value": "de verbo: coniugationes III"
+          "value": "de verbo: coniugationes: III"
         },
         {
           "id": "a.vrb.coniugatio.4",
-          "value": "de verbo: coniugationes IV"
+          "value": "de verbo: coniugationes: IV"
         },
         {
           "id": "a.vrb.coniugatio.5",
-          "value": "de verbo: coniugationes V"
+          "value": "de verbo: coniugationes: V"
         },
         {
           "id": "a.vrb.coniugatio.6",
-          "value": "de verbo: coniugationes VI"
+          "value": "de verbo: coniugationes: VI"
         },
         {
           "id": "a.vrb.fig",
@@ -3387,15 +3387,15 @@
         },
         {
           "id": "m.morph.infl.vrb.pres.e2",
-          "value": "morphology: inflectional type: verbal: present stems: "
+          "value": "morphology: inflectional type: verbal: present stems: ē"
         },
         {
           "id": "m.morph.infl.vrb.pres.i1",
-          "value": "morphology: inflectional type: verbal: present stems: "
+          "value": "morphology: inflectional type: verbal: present stems: ĭ"
         },
         {
           "id": "m.morph.infl.vrb.pres.i2",
-          "value": "morphology: inflectional type: verbal: present stems: "
+          "value": "morphology: inflectional type: verbal: present stems: ī"
         },
         {
           "id": "m.morph.infl.vrb.pres.i2.turi",
