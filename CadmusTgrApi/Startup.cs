@@ -151,7 +151,7 @@ namespace CadmusTgrApi
                 {
                     Version = "v1",
                     Title = "API",
-                    Description = "Cadmus Itinera Services"
+                    Description = "Cadmus TGR Services"
                 });
                 c.DescribeAllParametersInCamelCase();
 

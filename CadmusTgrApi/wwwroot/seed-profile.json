@@ -1,4 +1,4 @@
-{
+﻿{
   "facets": [
     {
       "id": "default",
@@ -76,28 +76,10 @@
         },
         {
           "typeId": "it.vedph.token-text-layer",
-          "roleId": "fr.it.vedph.chronology",
-          "name": "chronology",
-          "description": "Chronological indication.",
-          "colorKey": "DDA0DD",
-          "groupKey": "text",
-          "sortKey": "text-chronology"
-        },
-        {
-          "typeId": "it.vedph.token-text-layer",
           "roleId": "fr.it.vedph.apparatus",
           "name": "apparatus",
           "description": "Critical apparatus.",
           "colorKey": "D4E0A4",
-          "groupKey": "text",
-          "sortKey": "text-apparatus"
-        },
-        {
-          "typeId": "it.vedph.token-text-layer",
-          "roleId": "fr.it.vedph.orthography",
-          "name": "orthography",
-          "description": "Standard orthography.",
-          "colorKey": "E0D4A4",
           "groupKey": "text",
           "sortKey": "text-apparatus"
         },
@@ -112,133 +94,12 @@
         },
         {
           "typeId": "it.vedph.token-text-layer",
-          "roleId": "fr.it.vedph.witnesses",
-          "name": "witnesses",
-          "description": "Witnesses list.",
-          "colorKey": "A4E0D4",
+          "roleId": "fr.it.vedph.tgr.ling-tags",
+          "name": "ling-tags",
+          "description": "Linguistic tags.",
+          "colorKey": "62AEEE",
           "groupKey": "text",
-          "sortKey": "text-witnesses"
-        }
-      ]
-    },
-    {
-      "id": "tiled",
-      "label": "tiled text",
-      "description": "The tiled text facet",
-      "colorKey": "EBD586",
-      "partDefinitions": [
-        {
-          "typeId": "it.vedph.categories",
-          "name": "categories",
-          "description": "Item's categories.",
-          "required": true,
-          "colorKey": "98F8F8",
-          "groupKey": "general",
-          "sortKey": "categories"
-        },
-        {
-          "typeId": "it.vedph.historical-date",
-          "name": "date",
-          "description": "Historical date.",
-          "required": false,
-          "colorKey": "F898F8",
-          "groupKey": "general",
-          "sortKey": "date"
-        },
-        {
-          "typeId": "it.vedph.keywords",
-          "name": "keywords",
-          "description": "Item's keywords.",
-          "colorKey": "99CCFF",
-          "groupKey": "general",
-          "sortKey": "keywords"
-        },
-        {
-          "typeId": "it.vedph.index-keywords",
-          "name": "index keywords",
-          "description": "Item's index keywords.",
-          "colorKey": "588BBF",
-          "groupKey": "general",
-          "sortKey": "keywords-x"
-        },
-        {
-          "typeId": "it.vedph.note",
-          "name": "note",
-          "description": "A free text note.",
-          "colorKey": "B0A0F8",
-          "groupKey": "general",
-          "sortKey": "note"
-        },
-        {
-          "typeId": "it.vedph.bibliography",
-          "name": "bibliography",
-          "description": "Bibliography.",
-          "colorKey": "20B2AA",
-          "groupKey": "general",
-          "sortKey": "bibliography"
-        },
-        {
-          "typeId": "it.vedph.tiled-text",
-          "roleId": "base-text",
-          "name": "text",
-          "description": "Item's tiles-based text.",
-          "colorKey": "31AB54",
-          "groupKey": "text",
-          "sortKey": "text"
-        },
-        {
-          "typeId": "it.vedph.tiled-text-layer",
-          "roleId": "fr.it.vedph.comment",
-          "name": "comments",
-          "description": "Comments on text.",
-          "colorKey": "F8D040",
-          "groupKey": "text",
-          "sortKey": "text-comments"
-        },
-        {
-          "typeId": "it.vedph.tiled-text-layer",
-          "roleId": "fr.it.vedph.chronology",
-          "name": "chronology",
-          "description": "Chronological indication.",
-          "colorKey": "DDA0DD",
-          "groupKey": "text",
-          "sortKey": "text-chronology"
-        },
-        {
-          "typeId": "it.vedph.tiled-text-layer",
-          "roleId": "fr.it.vedph.apparatus",
-          "name": "apparatus",
-          "description": "Critical apparatus.",
-          "colorKey": "D4E0A4",
-          "groupKey": "text",
-          "sortKey": "text-apparatus"
-        },
-        {
-          "typeId": "it.vedph.tiled-text-layer",
-          "roleId": "fr.it.vedph.orthography",
-          "name": "orthography",
-          "description": "Standard orthography.",
-          "colorKey": "E0D4A4",
-          "groupKey": "text",
-          "sortKey": "text-apparatus"
-        },
-        {
-          "typeId": "it.vedph.tiled-text-layer",
-          "roleId": "fr.it.vedph.quotations",
-          "name": "quotations",
-          "description": "Literary quotations.",
-          "colorKey": "DAA520",
-          "groupKey": "text",
-          "sortKey": "text-quotations"
-        },
-        {
-          "typeId": "it.vedph.tiled-text-layer",
-          "roleId": "fr.it.vedph.witnesses",
-          "name": "witnesses",
-          "description": "Witnesses list.",
-          "colorKey": "A4E0D4",
-          "groupKey": "text",
-          "sortKey": "text-witnesses"
+          "sortKey": "text-tags"
         }
       ]
     }
@@ -246,9 +107,15 @@
   "flags": [
     {
       "id": 1,
-      "label": "to revise",
-      "description": "The item must be revised.",
-      "colorKey": "F08080"
+      "label": "complete",
+      "description": "The item is complete.",
+      "colorKey": "F0B880"
+    },
+    {
+      "id": 2,
+      "label": "revised",
+      "description": "The item has been revised.",
+      "colorKey": "80F080"
     }
   ],
   "index": {
@@ -259,11 +126,6 @@
       "id": "item-index-reader.mysql"
     }
   },
-  "browsers": [
-    {
-      "id": "it.vedph.item-browser.mongo.hierarchy"
-    }
-  ],
   "thesauri": [
     {
       "id": "model-types@en",
@@ -293,10 +155,6 @@
           "value": "bibliography"
         },
         {
-          "id": "it.vedph.tiled-text",
-          "value": "tiled text"
-        },
-        {
           "id": "it.vedph.token-text",
           "value": "text"
         },
@@ -305,32 +163,20 @@
           "value": "text layer"
         },
         {
-          "id": "it.vedph.tiled-text-layer",
-          "value": "tiled text layer"
-        },
-        {
           "id": "fr.it.vedph.apparatus",
           "value": "apparatus fr."
-        },
-        {
-          "id": "fr.it.vedph.chronology",
-          "value": "chronology fr."
         },
         {
           "id": "fr.it.vedph.comment",
           "value": "comment fr."
         },
         {
-          "id": "fr.it.vedph.orthography",
-          "value": "orthography fr."
-        },
-        {
           "id": "fr.it.vedph.quotations",
           "value": "quotations fr."
         },
         {
-          "id": "fr.it.vedph.witnesses",
-          "value": "witnesses fr."
+          "id": "fr.it.vedph.tgr.ling-tags",
+          "value": "ling.tags fr."
         }
       ]
     },
@@ -507,23 +353,6 @@
       ]
     },
     {
-      "id": "chronology-tags@en",
-      "entries": [
-        {
-          "id": "bat",
-          "value": "battle"
-        },
-        {
-          "id": "prst",
-          "value": "priesthood"
-        },
-        {
-          "id": "cos",
-          "value": "consulship"
-        }
-      ]
-    },
-    {
       "id": "apparatus-tags@en",
       "entries": [
         {
@@ -533,6 +362,4328 @@
         {
           "id": "inter",
           "value": "interlinear"
+        }
+      ]
+    },
+    {
+      "id": "ling-tags@en",
+      "entries": [
+        {
+          "id": "a",
+          "value": "ancient"
+        },
+        {
+          "id": "a.lit",
+          "value": "littera"
+        },
+        {
+          "id": "a.lit.adiectio",
+          "value": "littera: adiectio"
+        },
+        {
+          "id": "a.lit.apex",
+          "value": "littera: apex"
+        },
+        {
+          "id": "a.lit.apocopa",
+          "value": "littera: apocopa"
+        },
+        {
+          "id": "a.lit.aspiratio",
+          "value": "littera: aspiratio"
+        },
+        {
+          "id": "a.lit.concisio",
+          "value": "littera: concisio/syncopa/συγκοπή"
+        },
+        {
+          "id": "a.lit.c",
+          "value": "littera: consonans"
+        },
+        {
+          "id": "a.lit.c.anceps",
+          "value": "littera: consonans: anceps/liquida"
+        },
+        {
+          "id": "a.lit.c.duplex",
+          "value": "littera: consonans: duplex"
+        },
+        {
+          "id": "a.lit.c.geminata",
+          "value": "littera: consonans: geminata"
+        },
+        {
+          "id": "a.lit.c.liquens",
+          "value": "littera: consonans: liquens"
+        },
+        {
+          "id": "a.lit.c.longa",
+          "value": "littera: consonans: longa"
+        },
+        {
+          "id": "a.lit.c.muta",
+          "value": "littera: consonans: muta"
+        },
+        {
+          "id": "a.lit.c.semivocalis",
+          "value": "littera: consonans: semivocalis"
+        },
+        {
+          "id": "a.lit.c.simplex",
+          "value": "littera: consonans: simplex"
+        },
+        {
+          "id": "a.lit.detractio",
+          "value": "detractio"
+        },
+        {
+          "id": "a.lit.dieresis",
+          "value": "dieresis"
+        },
+        {
+          "id": "a.lit.diphthongus",
+          "value": "diphthongus"
+        },
+        {
+          "id": "a.lit.elisio",
+          "value": "elisio"
+        },
+        {
+          "id": "a.lit.geminatio",
+          "value": "geminatio"
+        },
+        {
+          "id": "a.lit.hiatus",
+          "value": "hiatus"
+        },
+        {
+          "id": "a.lit.immutatio",
+          "value": "immutatio"
+        },
+        {
+          "id": "a.lit.interpositio",
+          "value": "interponitur consonans"
+        },
+        {
+          "id": "a.lit.l-sonus",
+          "value": "L-sonus"
+        },
+        {
+          "id": "a.lit.l-sonus.exilis",
+          "value": "l habet sonum exilem"
+        },
+        {
+          "id": "a.lit.l-sonus.medius",
+          "value": "l habet sonum medium"
+        },
+        {
+          "id": "a.lit.l-sonus.plenus",
+          "value": "l habet sonum plenum"
+        },
+        {
+          "id": "a.lit.m-sonus",
+          "value": "M sonus"
+        },
+        {
+          "id": "a.lit.m-sonus.apertus",
+          "value": "m sonat apertum"
+        },
+        {
+          "id": "a.lit.m-sonus.mediocris",
+          "value": "m sonat mediocrem"
+        },
+        {
+          "id": "a.lit.m-sonus.obscurus",
+          "value": "m sonat obscurum"
+        },
+        {
+          "id": "a.lit.ordo",
+          "value": "ordo"
+        },
+        {
+          "id": "a.lit.ordo.prae",
+          "value": "ordo: praepositivae"
+        },
+        {
+          "id": "a.lit.ordo.sub",
+          "value": "ordo: subiunctivae"
+        },
+        {
+          "id": "a.lit.sonus-medius",
+          "value": "sonus medius"
+        },
+        {
+          "id": "a.lit.c-subtractio",
+          "value": "subtrahitur consonans"
+        },
+        {
+          "id": "a.lit.c-subtractio.m",
+          "value": "subtrahitur consonans: m"
+        },
+        {
+          "id": "a.lit.c-subtractio.s",
+          "value": "subtrahitur consonans: s"
+        },
+        {
+          "id": "a.lit.transitio",
+          "value": "transitio/mutatio litterarum"
+        },
+        {
+          "id": "a.lit.transmutatio",
+          "value": "transmutatio"
+        },
+        {
+          "id": "a.lit.v",
+          "value": "vocalis"
+        },
+        {
+          "id": "a.lit.v.anceps",
+          "value": "vocalis: anceps/liquida"
+        },
+        {
+          "id": "a.lit.v.brevis",
+          "value": "vocalis: brevis/correpta"
+        },
+        {
+          "id": "a.lit.v.longa",
+          "value": "vocalis: longa/producta"
+        },
+        {
+          "id": "a.lit.v-breviata-m",
+          "value": "vocalis breviatur ante m in finali syllaba"
+        },
+        {
+          "id": "a.lit.v-pro-diph",
+          "value": "vocalis pro diphthongo"
+        },
+        {
+          "id": "a.syl",
+          "value": "syllaba"
+        },
+        {
+          "id": "a.syl.accentus",
+          "value": "syllaba: accentus/tenor"
+        },
+        {
+          "id": "a.syl.accentus.a",
+          "value": "syllaba: accentus/tenor: acutus/ὀξεῖα"
+        },
+        {
+          "id": "a.syl.accentus.c",
+          "value": "syllaba: accentus/tenor: circumflexus/περισπωμένη"
+        },
+        {
+          "id": "a.syl.accentus.g",
+          "value": "syllaba: accentus/tenor: gravis/βαρεῖα"
+        },
+        {
+          "id": "a.syl.accentus.loc.3",
+          "value": "syllaba: accentus/tenor: loca: antepaenultimum"
+        },
+        {
+          "id": "a.syl.accentus.loc.2",
+          "value": "syllaba: accentus/tenor: loca: paenultimum"
+        },
+        {
+          "id": "a.syl.accentus.loc.1",
+          "value": "syllaba: accentus/tenor: loca: ultimum/in fine"
+        },
+        {
+          "id": "a.syl.annexio",
+          "value": "syllaba: annexio"
+        },
+        {
+          "id": "a.syl.brevis",
+          "value": "syllaba: brevis"
+        },
+        {
+          "id": "a.syl.communis",
+          "value": "syllaba: communis"
+        },
+        {
+          "id": "a.syl.coniuncta",
+          "value": "syllaba: coniuncta"
+        },
+        {
+          "id": "a.syl",
+          "value": "syllaba: "
+        },
+        {
+          "id": "a.syl.const.diph",
+          "value": "syllaba: constat ex: diphthongo"
+        },
+        {
+          "id": "a.syl.const.cvc",
+          "value": "syllaba: constat ex: CVC"
+        },
+        {
+          "id": "a.syl.const.cv",
+          "value": "syllaba: constat ex: CV"
+        },
+        {
+          "id": "a.syl.const.vc",
+          "value": "syllaba: constat ex: VC"
+        },
+        {
+          "id": "a.syl.const.v",
+          "value": "syllaba: constat ex: V"
+        },
+        {
+          "id": "a.syl.finalis",
+          "value": "syllaba: finalis/novissima"
+        },
+        {
+          "id": "a.syl.longa.n",
+          "value": "syllaba: longa: natura"
+        },
+        {
+          "id": "a.syl.longa.p",
+          "value": "syllaba: longa: positione"
+        },
+        {
+          "id": "a.syl.media",
+          "value": "syllaba: media"
+        },
+        {
+          "id": "a.syl.principalis",
+          "value": "syllaba: principalis/prima"
+        },
+        {
+          "id": "a.syl.spiritus.asper",
+          "value": "syllaba: spiritus: asper"
+        },
+        {
+          "id": "a.syl.spiritus.lenis",
+          "value": "syllaba: spiritus: lenis"
+        },
+        {
+          "id": "a.syl.tempus.10",
+          "value": "syllaba: tempus: unum"
+        },
+        {
+          "id": "a.syl.tempus.20",
+          "value": "syllaba: tempus: duo"
+        },
+        {
+          "id": "a.syl.tempus.15",
+          "value": "syllaba: tempus: unum semis"
+        },
+        {
+          "id": "a.syl.tempus.25",
+          "value": "syllaba: tempus: duo semis"
+        },
+        {
+          "id": "a.syl.tempus.35",
+          "value": "syllaba: tempus: tria semis"
+        },
+        {
+          "id": "a.syl.transmutatio",
+          "value": "syllaba: transmutatio"
+        },
+        {
+          "id": "a.por.adv",
+          "value": "de partibus or.: adverbium"
+        },
+        {
+          "id": "a.por",
+          "value": "de partibus orationis"
+        },
+        {
+          "id": "a.por.app",
+          "value": "de partibus or.: appellatio"
+        },
+        {
+          "id": "a.por.art",
+          "value": "de partibus or.: articulus"
+        },
+        {
+          "id": "a.por.coi",
+          "value": "de partibus or.: coniunctio"
+        },
+        {
+          "id": "a.por.inf",
+          "value": "de partibus or.: infinitum verbum"
+        },
+        {
+          "id": "a.por.int",
+          "value": "de partibus or.: interiectio"
+        },
+        {
+          "id": "a.por.nom",
+          "value": "de partibus or.: nomen"
+        },
+        {
+          "id": "a.por.prt",
+          "value": "de partibus or.: participium"
+        },
+        {
+          "id": "a.por.pra",
+          "value": "de partibus or.: praepositio"
+        },
+        {
+          "id": "a.por.pro",
+          "value": "de partibus or.: pronomen"
+        },
+        {
+          "id": "a.por.vrb",
+          "value": "de partibus or.: verbum"
+        },
+        {
+          "id": "a.por.voc",
+          "value": "de partibus or.: vocabulum"
+        },
+        {
+          "id": "a.mtr",
+          "value": "de pedibus/metris"
+        },
+        {
+          "id": "a.mtr.arsis",
+          "value": "de pedibus/metris: arsis"
+        },
+        {
+          "id": "a.mtr.basis",
+          "value": "de pedibus/metris: basis"
+        },
+        {
+          "id": "a.mtr.catalexis",
+          "value": "de pedibus/metris: catalexis"
+        },
+        {
+          "id": "a.mtr.catalexis.a",
+          "value": "de pedibus/metris: catalexis: acatalecta"
+        },
+        {
+          "id": "a.mtr.catalexis.c",
+          "value": "de pedibus/metris: catalexis: catalectica"
+        },
+        {
+          "id": "a.mtr.catalexis.b",
+          "value": "de pedibus/metris: catalexis: brachycatalecta/colobos"
+        },
+        {
+          "id": "a.mtr.catalexis.h",
+          "value": "de pedibus/metris: catalexis: hypercatalecta"
+        },
+        {
+          "id": "a.mtr.caesura",
+          "value": "de pedibus/metris: caesurae"
+        },
+        {
+          "id": "a.mtr.caesura.buc",
+          "value": "de pedibus/metris: caesurae: bucolice tome / βουκολική"
+        },
+        {
+          "id": "a.mtr.caesura.4tr",
+          "value": "de pedibus/metris: caesurae: cata tetarton trochaeon / τέταρτος τροχαῖος"
+        },
+        {
+          "id": "a.mtr.caesura.3tr",
+          "value": "de pedibus/metris: caesurae: cata triton trochaeon / τρίτος τροχαῖος"
+        },
+        {
+          "id": "a.mtr.caesura.7m",
+          "value": "de pedibus/metris: caesurae: hepthemimeris/-es"
+        },
+        {
+          "id": "a.mtr.caesura.5m",
+          "value": "de pedibus/metris: caesurae: penthemimeris/-es"
+        },
+        {
+          "id": "a.mtr.dipodia",
+          "value": "de pedibus/metris: dipodia"
+        },
+        {
+          "id": "a.mtr.episynal",
+          "value": "de pedibus/metris: episynalipha"
+        },
+        {
+          "id": "a.mtr.6da-3ia",
+          "value": "de pedibus/metris: ex hexametro dactylico et trimetro iambico orta"
+        },
+        {
+          "id": "a.mtr.proto",
+          "value": "de pedibus/metris: ex metris prototypis orta"
+        },
+        {
+          "id": "a.mtr.genus",
+          "value": "de pedibus/metris: genus"
+        },
+        {
+          "id": "a.mtr.genus.an",
+          "value": "de pedibus/metris: genus: anapaesticum"
+        },
+        {
+          "id": "a.mtr.genus.antisp",
+          "value": "de pedibus/metris: genus: antispasticum"
+        },
+        {
+          "id": "a.mtr.genus.cho",
+          "value": "de pedibus/metris: genus: choriambicum"
+        },
+        {
+          "id": "a.mtr.genus.da",
+          "value": "de pedibus/metris: genus: dactylicum"
+        },
+        {
+          "id": "a.mtr.genus.ia",
+          "value": "de pedibus/metris: genus: iambicum"
+        },
+        {
+          "id": "a.mtr.genus.ion-maj",
+          "value": "de pedibus/metris: genus: ionicum a maiore"
+        },
+        {
+          "id": "a.mtr.genus.ion-min",
+          "value": "de pedibus/metris: genus: ionicum a minore"
+        },
+        {
+          "id": "a.mtr.genus.paeon",
+          "value": "de pedibus/metris: genus: paeonicum"
+        },
+        {
+          "id": "a.mtr.genus.proc",
+          "value": "de pedibus/metris: genus: proceleumaticum"
+        },
+        {
+          "id": "a.mtr.genus.sp",
+          "value": "de pedibus/metris: genus: spondeaum"
+        },
+        {
+          "id": "a.mtr.genus.tr",
+          "value": "de pedibus/metris: genus: trochaicum"
+        },
+        {
+          "id": "a.mtr.hypermetros",
+          "value": "de pedibus/metris: hypermetros"
+        },
+        {
+          "id": "a.mtr.modi",
+          "value": "de pedibus/metris: modi"
+        },
+        {
+          "id": "a.mtr.modi.ks",
+          "value": "de pedibus/metris: modi: κατὰ στίχον/definitivus/principalis"
+        },
+        {
+          "id": "a.mtr.modi.compositus",
+          "value": "de pedibus/metris: modi: συστηματικός/compositus"
+        },
+        {
+          "id": "a.mtr.modi.incompositus",
+          "value": "de pedibus/metris: modi: ἀσυνάρτητος/incompositus/asynartetus"
+        },
+        {
+          "id": "a.mtr.modi.confusus",
+          "value": "de pedibus/metris: modi: συγκεχυμένος/confusus"
+        },
+        {
+          "id": "a.mtr.modi.coniunctus",
+          "value": "de pedibus/metris: modi: συνεζευγμένος/coniunctus"
+        },
+        {
+          "id": "a.mtr.modi.derivativus",
+          "value": "de pedibus/metris: modi: παραγωγός/derivativus"
+        },
+        {
+          "id": "a.mtr.numeri",
+          "value": "de pedibus/metris: numeri oratorum"
+        },
+        {
+          "id": "a.mtr.num",
+          "value": "de pedibus/metris: numerus metrorum/pedum"
+        },
+        {
+          "id": "a.mtr.num.2",
+          "value": "de pedibus/metris: numerus metrorum/pedum: disyllabum"
+        },
+        {
+          "id": "a.mtr.num.3",
+          "value": "de pedibus/metris: numerus metrorum/pedum: trisyllabum"
+        },
+        {
+          "id": "a.mtr.num.4",
+          "value": "de pedibus/metris: numerus metrorum/pedum: tetrasyllabum"
+        },
+        {
+          "id": "a.mtr.num.5",
+          "value": "de pedibus/metris: numerus metrorum/pedum: pentasyllabum"
+        },
+        {
+          "id": "a.mtr.num.6",
+          "value": "de pedibus/metris: numerus metrorum/pedum: hexasyllabum"
+        },
+        {
+          "id": "a.mtr.num.7",
+          "value": "de pedibus/metris: numerus metrorum/pedum: heptasyllabum"
+        },
+        {
+          "id": "a.mtr.num.8",
+          "value": "de pedibus/metris: numerus metrorum/pedum: octosyllabum"
+        },
+        {
+          "id": "a.mtr.num.9",
+          "value": "de pedibus/metris: numerus metrorum/pedum: enneasyllabum"
+        },
+        {
+          "id": "a.mtr.num.10",
+          "value": "de pedibus/metris: numerus metrorum/pedum: decasyllabum"
+        },
+        {
+          "id": "a.mtr.num.11",
+          "value": "de pedibus/metris: numerus metrorum/pedum: hendecasyllabum"
+        },
+        {
+          "id": "a.mtr.pes",
+          "value": "de pedibus/metris"
+        },
+        {
+          "id": "a.mtr.pes.compositus",
+          "value": "de pedibus/metris: pedes: compositi"
+        },
+        {
+          "id": "a.mtr.pes.simplex",
+          "value": "de pedibus/metris: pedes: simplices"
+        },
+        {
+          "id": "a.mtr.pes.amphibrachus",
+          "value": "de pedibus/metris: pedes: amphibrachus"
+        },
+        {
+          "id": "a.mtr.pes.amphimacrus",
+          "value": "de pedibus/metris: pedes: amphimacrus"
+        },
+        {
+          "id": "a.mtr.pes.an",
+          "value": "de pedibus/metris: pedes: anapaestus"
+        },
+        {
+          "id": "a.mtr.pes.antisp",
+          "value": "de pedibus/metris: pedes: antispastus"
+        },
+        {
+          "id": "a.mtr.pes.bacch",
+          "value": "de pedibus/metris: pedes: bacchius"
+        },
+        {
+          "id": "a.mtr.pes.cho",
+          "value": "de pedibus/metris: pedes: choriambus"
+        },
+        {
+          "id": "a.mtr.pes.cr",
+          "value": "de pedibus/metris: pedes: creticus"
+        },
+        {
+          "id": "a.mtr.pes.da",
+          "value": "de pedibus/metris: pedes: dactylus"
+        },
+        {
+          "id": "a.mtr.pes.2ia",
+          "value": "de pedibus/metris: pedes: diiambus"
+        },
+        {
+          "id": "a.mtr.pes.2sp",
+          "value": "de pedibus/metris: pedes: dispondeus"
+        },
+        {
+          "id": "a.mtr.pes.2tr",
+          "value": "de pedibus/metris: pedes: ditrochaeus"
+        },
+        {
+          "id": "a.mtr.pes.epitr",
+          "value": "de pedibus/metris: pedes: epitritus"
+        },
+        {
+          "id": "a.mtr.pes.ia",
+          "value": "de pedibus/metris: pedes: iambus"
+        },
+        {
+          "id": "a.mtr.pes.ion-maj",
+          "value": "de pedibus/metris: pedes: ionicus a maiore"
+        },
+        {
+          "id": "a.mtr.pes.ion-min",
+          "value": "de pedibus/metris: pedes: ionicus a minore"
+        },
+        {
+          "id": "a.mtr.pes.mol",
+          "value": "de pedibus/metris: pedes: molossus"
+        },
+        {
+          "id": "a.mtr.pes.paeon",
+          "value": "de pedibus/metris: pedes: paean/paeon"
+        },
+        {
+          "id": "a.mtr.pes.palimb",
+          "value": "de pedibus/metris: pedes: palimbacchius/antibacchius"
+        },
+        {
+          "id": "a.mtr.pes.proc",
+          "value": "de pedibus/metris: pedes: proceleumaticus"
+        },
+        {
+          "id": "a.mtr.pes.pyrr",
+          "value": "de pedibus/metris: pedes: pyrrichius"
+        },
+        {
+          "id": "a.mtr.pes.sp",
+          "value": "de pedibus/metris: pedes: spondeus"
+        },
+        {
+          "id": "a.mtr.pes.tribr",
+          "value": "de pedibus/metris: pedes: tribrachus"
+        },
+        {
+          "id": "a.mtr.pes.tr-ch",
+          "value": "de pedibus/metris: pedes: trochaeus/chorius"
+        },
+        {
+          "id": "a.mtr.qualitas",
+          "value": "de pedibus/metris: qualitas"
+        },
+        {
+          "id": "a.mtr.qualitas.prototypa",
+          "value": "de pedibus/metris: qualitas: principalia/prototypa/originaria"
+        },
+        {
+          "id": "a.mtr.qualitas.derivata",
+          "value": "de pedibus/metris: qualitas: derivativa"
+        },
+        {
+          "id": "a.mtr.solutio",
+          "value": "de pedibus/metris: solutio"
+        },
+        {
+          "id": "a.mtr.indifferens",
+          "value": "de pedibus/metris: syllaba indifferens"
+        },
+        {
+          "id": "a.mtr.synalipha",
+          "value": "de pedibus/metris: synalipha"
+        },
+        {
+          "id": "a.mtr.syzygia",
+          "value": "de pedibus/metris: syzygia"
+        },
+        {
+          "id": "a.mtr.thesis",
+          "value": "de pedibus/metris: thesis"
+        },
+        {
+          "id": "a.nom",
+          "value": "de nomine"
+        },
+        {
+          "id": "a.nom.casus",
+          "value": "de nomine: casus"
+        },
+        {
+          "id": "a.nom.casus.n",
+          "value": "de nomine: casus: nominativus/rectus"
+        },
+        {
+          "id": "a.nom.casus.g",
+          "value": "de nomine: casus: genitivus/possessivus/paternus"
+        },
+        {
+          "id": "a.nom.casus.d",
+          "value": "de nomine: casus: dativus/commendativus"
+        },
+        {
+          "id": "a.nom.casus.a",
+          "value": "de nomine: casus: accusativus/causativus"
+        },
+        {
+          "id": "a.nom.casus.v",
+          "value": "de nomine: casus: vocativus/salutatorius"
+        },
+        {
+          "id": "a.nom.casus.b",
+          "value": "de nomine: casus: ablativus/comparativus"
+        },
+        {
+          "id": "a.nom.casus.7",
+          "value": "de nomine: casus: septimus"
+        },
+        {
+          "id": "a.nom.casus.8",
+          "value": "de nomine: casus: octavus"
+        },
+        {
+          "id": "a.nom.decl",
+          "value": "de nomine: declinationes"
+        },
+        {
+          "id": "a.nom.decl.1",
+          "value": "de nomine: declinationes: I"
+        },
+        {
+          "id": "a.nom.decl.2",
+          "value": "de nomine: declinationes: II"
+        },
+        {
+          "id": "a.nom.decl.3",
+          "value": "de nomine: declinationes: III"
+        },
+        {
+          "id": "a.nom.decl.4",
+          "value": "de nomine: declinationes: IV"
+        },
+        {
+          "id": "a.nom.decl.5",
+          "value": "de nomine: declinationes: V"
+        },
+        {
+          "id": "a.nom.fig",
+          "value": "de nomine: figurae"
+        },
+        {
+          "id": "a.nom.fig.simplex",
+          "value": "de nomine: figurae: simplex"
+        },
+        {
+          "id": "a.nom.fig.comp",
+          "value": "de nomine: figurae: composita"
+        },
+        {
+          "id": "a.nom.fig.comp.ex2i",
+          "value": "de nomine: figurae: composita: ex duobus integris"
+        },
+        {
+          "id": "a.nom.fig.comp.ex2c",
+          "value": "de nomine: figurae: composita: ex duobus corruptis"
+        },
+        {
+          "id": "a.nom.fig.comp.exic",
+          "value": "de nomine: figurae: composita: ex integro et corrupto"
+        },
+        {
+          "id": "a.nom.fig.comp.exci",
+          "value": "de nomine: figurae: composita: ex corrupto et integro"
+        },
+        {
+          "id": "a.nom.fig.comp.cum",
+          "value": "de nomine: figurae: composita: nomina cum"
+        },
+        {
+          "id": "a.nom.fig.comp.cum.nom",
+          "value": "de nomine: figurae: composita: nomina cum: nominibus"
+        },
+        {
+          "id": "a.nom.fig.comp.cum.ver",
+          "value": "de nomine: figurae: composita: nomina cum: verbis"
+        },
+        {
+          "id": "a.nom.fig.comp.cum.prt",
+          "value": "de nomine: figurae: composita: nomina cum: participiis"
+        },
+        {
+          "id": "a.nom.fig.comp.cum.prn",
+          "value": "de nomine: figurae: composita: nomina cum: pronominibus"
+        },
+        {
+          "id": "a.nom.fig.comp.cum.pra",
+          "value": "de nomine: figurae: composita: nomina cum: praepositionibus"
+        },
+        {
+          "id": "a.nom.fig.comp.cum.adv",
+          "value": "de nomine: figurae: composita: nomina cum: adverbiis"
+        },
+        {
+          "id": "a.nom.fig.comp.cum.coi",
+          "value": "de nomine: figurae: composita: nomina cum: coniunctionibus"
+        },
+        {
+          "id": "a.nom.fig.comp.decl",
+          "value": "de nomine: figurae: composita: declinantur"
+        },
+        {
+          "id": "a.nom.fig.comp.decl.exup",
+          "value": "de nomine: figurae: composita: ex utraque parte"
+        },
+        {
+          "id": "a.nom.fig.comp.decl.extr",
+          "value": "de nomine: figurae: composita: extrinsecus"
+        },
+        {
+          "id": "a.nom.fig.decomp",
+          "value": "de nomine: figurae: decomposita"
+        },
+        {
+          "id": "a.nom.fc",
+          "value": "de nomine: formae casuales"
+        },
+        {
+          "id": "a.nom.fc.1p",
+          "value": "de nomine: formae casuales: monoptota"
+        },
+        {
+          "id": "a.nom.fc.2p",
+          "value": "de nomine: formae casuales: diptota"
+        },
+        {
+          "id": "a.nom.fc.3p",
+          "value": "de nomine: formae casuales: triptota"
+        },
+        {
+          "id": "a.nom.fc.4p",
+          "value": "de nomine: formae casuales: tetraptota"
+        },
+        {
+          "id": "a.nom.fc.5p",
+          "value": "de nomine: formae casuales: pentaptota"
+        },
+        {
+          "id": "a.nom.fc.6p",
+          "value": "de nomine: formae casuales: hexaptota"
+        },
+        {
+          "id": "a.nom.fc.0p",
+          "value": "de nomine: formae casuales: aptota"
+        },
+        {
+          "id": "a.nom.gen",
+          "value": "de nomine: genera"
+        },
+        {
+          "id": "a.nom.gen.com",
+          "value": "de nomine: genera: commune"
+        },
+        {
+          "id": "a.nom.gen.dub",
+          "value": "de nomine: genera: dubium"
+        },
+        {
+          "id": "a.nom.gen.epi",
+          "value": "de nomine: genera: epicoenum/promiscuum"
+        },
+        {
+          "id": "a.nom.gen.fem",
+          "value": "de nomine: genera: femininum"
+        },
+        {
+          "id": "a.nom.gen.mas",
+          "value": "de nomine: genera: masculinum"
+        },
+        {
+          "id": "a.nom.gen.neu",
+          "value": "de nomine: genera: neutrum"
+        },
+        {
+          "id": "a.nom.num",
+          "value": "de nomine: numerus"
+        },
+        {
+          "id": "a.nom.num.sg",
+          "value": "de nomine: singularis"
+        },
+        {
+          "id": "a.nom.num.pl",
+          "value": "de nomine: pluralis"
+        },
+        {
+          "id": "a.nom.num.du",
+          "value": "de nomine: dualis"
+        },
+        {
+          "id": "a.nom.qual",
+          "value": "de nomine: qualitas"
+        },
+        {
+          "id": "a.nom.qual.proprium",
+          "value": "de nomine: proprium"
+        },
+        {
+          "id": "a.nom.qual.appellativum",
+          "value": "de nomine: appellativum"
+        },
+        {
+          "id": "a.nom.spec",
+          "value": "de nomine: species"
+        },
+        {
+          "id": "a.nom.spec.absolutum",
+          "value": "de nomine: species: absolutum"
+        },
+        {
+          "id": "a.nom.spec.adaliquid",
+          "value": "de nomine: species: ad aliquid dictum"
+        },
+        {
+          "id": "a.nom.spec.adiectivum",
+          "value": "de nomine: species: adiectivum"
+        },
+        {
+          "id": "a.nom.spec.adverbiale",
+          "value": "de nomine: species: adverbiale"
+        },
+        {
+          "id": "a.nom.spec.agnomen",
+          "value": "de nomine: species: agnomen "
+        },
+        {
+          "id": "a.nom.spec.cognomen",
+          "value": "de nomine: species: cognomen "
+        },
+        {
+          "id": "a.nom.spec.collectivum",
+          "value": "de nomine: species: collectivum"
+        },
+        {
+          "id": "a.nom.spec.comparativum",
+          "value": "de nomine: species: comparativum"
+        },
+        {
+          "id": "a.nom.spec.comprehensivum",
+          "value": "de nomine: species: comprehensivum"
+        },
+        {
+          "id": "a.nom.spec.corporalia",
+          "value": "de nomine: species: corporalia"
+        },
+        {
+          "id": "a.nom.spec.denominativum",
+          "value": "de nomine: species: denominativum"
+        },
+        {
+          "id": "a.nom.spec.demonstrativum",
+          "value": "de nomine: species: demonstrativum"
+        },
+        {
+          "id": "a.nom.spec.derivativa",
+          "value": "de nomine: species: derivativa "
+        },
+        {
+          "id": "a.nom.spec.diminutivum",
+          "value": "de nomine: species: diminutivum"
+        },
+        {
+          "id": "a.nom.spec.dividuum",
+          "value": "de nomine: species: dividuum"
+        },
+        {
+          "id": "a.nom.spec.facticium",
+          "value": "de nomine: species: facticium"
+        },
+        {
+          "id": "a.nom.spec.generale",
+          "value": "de nomine: species: generale"
+        },
+        {
+          "id": "a.nom.spec.gentile",
+          "value": "de nomine: species: gentile"
+        },
+        {
+          "id": "a.nom.spec.homonyma",
+          "value": "de nomine: species: homonyma"
+        },
+        {
+          "id": "a.nom.spec.incorporalia",
+          "value": "de nomine: species: incorporalia"
+        },
+        {
+          "id": "a.nom.spec.infinitum",
+          "value": "de nomine: species: infinitum patrium"
+        },
+        {
+          "id": "a.nom.spec.interr",
+          "value": "de nomine: species: interrogativum"
+        },
+        {
+          "id": "a.nom.spec.locale",
+          "value": "de nomine: species: locale"
+        },
+        {
+          "id": "a.nom.spec.nomen",
+          "value": "de nomine: species: nomen"
+        },
+        {
+          "id": "a.nom.spec.numerale",
+          "value": "de nomine: species: numerale"
+        },
+        {
+          "id": "a.nom.spec.ordinale",
+          "value": "de nomine: species: ordinale"
+        },
+        {
+          "id": "a.nom.spec.participiale",
+          "value": "de nomine: species: participiale"
+        },
+        {
+          "id": "a.nom.spec.patronymicum",
+          "value": "de nomine: species: patronymicum"
+        },
+        {
+          "id": "a.nom.spec.possessivum",
+          "value": "de nomine: species: possessivum"
+        },
+        {
+          "id": "a.nom.spec.praenomen",
+          "value": "de nomine: species: praenomen"
+        },
+        {
+          "id": "a.nom.spec.principalis",
+          "value": "de nomine: species: principalis / primae positionis"
+        },
+        {
+          "id": "a.nom.spec.quasiadaliquid",
+          "value": "de nomine: species: quasi ad aliquid dictum"
+        },
+        {
+          "id": "a.nom.spec.relativum",
+          "value": "de nomine: species: relativum"
+        },
+        {
+          "id": "a.nom.spec.similitudinis",
+          "value": "de nomine: species: similitudinis"
+        },
+        {
+          "id": "a.nom.spec.speciale",
+          "value": "de nomine: species: speciale"
+        },
+        {
+          "id": "a.nom.spec.superlativum",
+          "value": "de nomine: species: superlativum"
+        },
+        {
+          "id": "a.nom.spec.synonyma",
+          "value": "de nomine: species: synonyma"
+        },
+        {
+          "id": "a.nom.spec.temporale",
+          "value": "de nomine: species: temporale"
+        },
+        {
+          "id": "a.nom.spec.verbale",
+          "value": "de nomine: species: verbale"
+        },
+        {
+          "id": "a.vrb",
+          "value": "de verbo"
+        },
+        {
+          "id": "a.vrb.coniugatio",
+          "value": "de verbo: coniugationes"
+        },
+        {
+          "id": "a.vrb.coniugatio.1",
+          "value": "de verbo: coniugationes: I"
+        },
+        {
+          "id": "a.vrb.coniugatio.2",
+          "value": "de verbo: coniugationes II"
+        },
+        {
+          "id": "a.vrb.coniugatio.3",
+          "value": "de verbo: coniugationes III"
+        },
+        {
+          "id": "a.vrb.coniugatio.4",
+          "value": "de verbo: coniugationes IV"
+        },
+        {
+          "id": "a.vrb.coniugatio.5",
+          "value": "de verbo: coniugationes V"
+        },
+        {
+          "id": "a.vrb.coniugatio.6",
+          "value": "de verbo: coniugationes VI"
+        },
+        {
+          "id": "a.vrb.fig.comp",
+          "value": "de verbo: figurae: composita"
+        },
+        {
+          "id": "a.vrb.fig.comp.ex2i",
+          "value": "de verbo: figurae: composita: ex duobus integris"
+        },
+        {
+          "id": "a.vrb.fig.comp.ex2c",
+          "value": "de verbo: figurae: composita: ex duobus corruptis"
+        },
+        {
+          "id": "a.vrb.fig.comp.exic",
+          "value": "de verbo: figurae: composita: ex integro et corrupto"
+        },
+        {
+          "id": "a.vrb.fig.comp.exci",
+          "value": "de verbo: figurae: composita: ex corrupto et integro"
+        },
+        {
+          "id": "a.vrb.fig.comp.decl",
+          "value": "de verbo: figurae: declinantur"
+        },
+        {
+          "id": "a.vrb.fig.comp.decl.ex",
+          "value": "de verbo: figurae: declinantur: extrinsecus"
+        },
+        {
+          "id": "a.vrb.fig.comp.decl.in",
+          "value": "de verbo: figurae: declinantur: intrinsecus"
+        },
+        {
+          "id": "a.vrb.fig.decomp",
+          "value": "de verbo: figurae: decomposita"
+        },
+        {
+          "id": "a.vrb.mod",
+          "value": "de verbo: modi"
+        },
+        {
+          "id": "a.vrb.mod.sub",
+          "value": "de verbo: modi: coniunctivus/subiunctivus"
+        },
+        {
+          "id": "a.vrb.mod.ger",
+          "value": "de verbo: modi: gerundia"
+        },
+        {
+          "id": "a.vrb.mod.impt",
+          "value": "de verbo: modi: imperativus"
+        },
+        {
+          "id": "a.vrb.mod.impr",
+          "value": "de verbo: modi: impersonale"
+        },
+        {
+          "id": "a.vrb.mod.ind",
+          "value": "de verbo: modi: indicativus"
+        },
+        {
+          "id": "a.vrb.mod.inf",
+          "value": "de verbo: modi: infinitus"
+        },
+        {
+          "id": "a.vrb.mod.opt",
+          "value": "de verbo: modi: optativus"
+        },
+        {
+          "id": "a.vrb.mod.part",
+          "value": "de verbo: modi: participialia"
+        },
+        {
+          "id": "a.vrb.mod.sup",
+          "value": "de verbo: modi: supina"
+        },
+        {
+          "id": "a.vrb.num",
+          "value": "de verbo: numeri"
+        },
+        {
+          "id": "a.vrb.num.sg",
+          "value": "de verbo: numeri: singularis"
+        },
+        {
+          "id": "a.vrb.num.du",
+          "value": "de verbo: numeri: dualis"
+        },
+        {
+          "id": "a.vrb.num.pl",
+          "value": "de verbo: numeri: pluralis"
+        },
+        {
+          "id": "a.vrb.prs",
+          "value": "de verbo: personae"
+        },
+        {
+          "id": "a.vrb.prs.1",
+          "value": "de verbo: personae: I"
+        },
+        {
+          "id": "a.vrb.prs.2",
+          "value": "de verbo: personae: II"
+        },
+        {
+          "id": "a.vrb.prs.3",
+          "value": "de verbo: personae: III"
+        },
+        {
+          "id": "a.vrb.qual",
+          "value": "de verbo: qualitas"
+        },
+        {
+          "id": "a.vrb.qual.finita",
+          "value": "de verbo: qualitas: finita"
+        },
+        {
+          "id": "a.vrb.qual.infinita",
+          "value": "de verbo: qualitas: infinita"
+        },
+        {
+          "id": "a.vrb.sign",
+          "value": "de verbo: significationes/genera"
+        },
+        {
+          "id": "a.vrb.sign.act",
+          "value": "de verbo: significationes: activa/recta"
+        },
+        {
+          "id": "a.vrb.sign.neu",
+          "value": "de verbo: significationes: neutra/neutralis/absoluta"
+        },
+        {
+          "id": "a.vrb.sign.pas",
+          "value": "de verbo: significationes: passiva"
+        },
+        {
+          "id": "a.vrb.sign.com",
+          "value": "de verbo: significationes: communis"
+        },
+        {
+          "id": "a.vrb.sign.dep",
+          "value": "de verbo: significationes: deponens"
+        },
+        {
+          "id": "a.vrb.sign.nps",
+          "value": "de verbo: significationes: neutropassiva"
+        },
+        {
+          "id": "a.vrb.spec",
+          "value": "de verbo: species"
+        },
+        {
+          "id": "a.vrb.spec.primitiva",
+          "value": "de verbo: species: primitiva"
+        },
+        {
+          "id": "a.vrb.spec.der",
+          "value": "de verbo: species: derivativa"
+        },
+        {
+          "id": "a.vrb.spec.der.inchoativa",
+          "value": "de verbo: species: derivativa: inchoativa"
+        },
+        {
+          "id": "a.vrb.spec.der.meditativa",
+          "value": "de verbo: species: derivativa: meditativa"
+        },
+        {
+          "id": "a.vrb.spec.der.frequentativa",
+          "value": "de verbo: species: derivativa: frequentativa/iterativa"
+        },
+        {
+          "id": "a.vrb.spec.der.desiderativa",
+          "value": "de verbo: species: derivativa: desiderativa"
+        },
+        {
+          "id": "a.vrb.spec.der.nasc",
+          "value": "de verbo: species: derivativa: nascentia"
+        },
+        {
+          "id": "a.vrb.spec.der.nasc.nom",
+          "value": "de verbo: species: nascentia: a nominibus"
+        },
+        {
+          "id": "a.vrb.spec.der.nasc.vrb",
+          "value": "de verbo: species: nascentia: a verbis"
+        },
+        {
+          "id": "a.vrb.spec.der.nasc.adv",
+          "value": "de verbo: species: nascentia: ab adverbiis"
+        },
+        {
+          "id": "a.vrb.spec.der.nasc.pra",
+          "value": "de verbo: species: nascentia: a praepositionibus"
+        },
+        {
+          "id": "a.vrb.tempus",
+          "value": "de verbo: tempora"
+        },
+        {
+          "id": "a.vrb.tempus.praes",
+          "value": "de verbo: tempora: praesens"
+        },
+        {
+          "id": "a.vrb.tempus.impf",
+          "value": "de verbo: tempora: praeteritum imperfectum"
+        },
+        {
+          "id": "a.vrb.tempus.pf",
+          "value": "de verbo: tempora: praeteritum perfectum"
+        },
+        {
+          "id": "a.vrb.tempus.ppf",
+          "value": "de verbo: tempora: praeteritum plusquamperfectum"
+        },
+        {
+          "id": "a.vrb.tempus.fut",
+          "value": "de verbo: tempora: futurum/futurum infinitum/paulo post futurum"
+        },
+        {
+          "id": "a.vrb.vox",
+          "value": "de verbo: vox"
+        },
+        {
+          "id": "a.vrb.vox.act",
+          "value": "de verbo: vox: activa"
+        },
+        {
+          "id": "a.vrb.vox.psv",
+          "value": "de verbo: vox: passiva"
+        },
+        {
+          "id": "a.prt",
+          "value": "de participio"
+        },
+        {
+          "id": "a.prt.casus",
+          "value": "de participio: casus"
+        },
+        {
+          "id": "a.prt.casus.n",
+          "value": "de participio: casus: nominativus"
+        },
+        {
+          "id": "a.prt.casus.",
+          "value": "de participio: casus: genitivus"
+        },
+        {
+          "id": "a.prt.casus.",
+          "value": "de participio: casus: dativus"
+        },
+        {
+          "id": "a.prt.casus.",
+          "value": "de participio: casus: accusativus"
+        },
+        {
+          "id": "a.prt.casus.",
+          "value": "de participio: casus: vocativus"
+        },
+        {
+          "id": "a.prt.casus.",
+          "value": "de participio: casus: ablativus"
+        },
+        {
+          "id": "a.prt.fig",
+          "value": "de participio: figurae"
+        },
+        {
+          "id": "a.prt.fig.simplex",
+          "value": "de participio: figurae: simplicia"
+        },
+        {
+          "id": "a.prt.fig.composita",
+          "value": "de participio: figurae: composita"
+        },
+        {
+          "id": "a.prt.fig.decomposita",
+          "value": "de participio: figurae: decomposita"
+        },
+        {
+          "id": "a.prt.gen",
+          "value": "de participio: genera"
+        },
+        {
+          "id": "a.prt.gen.c",
+          "value": "de participio: genera: commune (trium generum)"
+        },
+        {
+          "id": "a.prt.gen.f",
+          "value": "de participio: genera: femininum"
+        },
+        {
+          "id": "a.prt.gen.m",
+          "value": "de participio: genera: masculinum"
+        },
+        {
+          "id": "a.prt.gen.n",
+          "value": "de participio: genera: neutrum"
+        },
+        {
+          "id": "a.prt.num",
+          "value": "de participio: numeri"
+        },
+        {
+          "id": "a.prt.num.sg",
+          "value": "de participio: numeri: singularis"
+        },
+        {
+          "id": "a.prt.num.pl",
+          "value": "de participio: numeri: pluralis"
+        },
+        {
+          "id": "a.prt.sign",
+          "value": "de participio: significationes"
+        },
+        {
+          "id": "a.prt.sign.act",
+          "value": "de participio: significationes: activa"
+        },
+        {
+          "id": "a.prt.sign.neu",
+          "value": "de participio: significationes: neutra"
+        },
+        {
+          "id": "a.prt.sign.psv",
+          "value": "de participio: significationes: passiva"
+        },
+        {
+          "id": "a.prt.sign.com",
+          "value": "de participio: significationes: communis"
+        },
+        {
+          "id": "a.prt.sign.dep",
+          "value": "de participio: significationes: deponens"
+        },
+        {
+          "id": "a.prt.sign.nps",
+          "value": "de participio: significationes: neutropassiva"
+        },
+        {
+          "id": "a.prt.tempus",
+          "value": "de participio: tempora"
+        },
+        {
+          "id": "a.prt.tempus.praes-impf",
+          "value": "de participio: tempora: praesens + praeteritum imperfectum"
+        },
+        {
+          "id": "a.prt.tempus.pf-ppf",
+          "value": "de participio: tempora: praeteritum perfectum + plusquamperfectum"
+        },
+        {
+          "id": "a.prt.tempus.fut",
+          "value": "de participio: tempora: futurum"
+        },
+        {
+          "id": "a.pro",
+          "value": "de pronomine"
+        },
+        {
+          "id": "a.pro.casus",
+          "value": "de pronomine: casus"
+        },
+        {
+          "id": "a.pro.casus.n",
+          "value": "de pronomine: casus: nominativus"
+        },
+        {
+          "id": "a.pro.casus.g",
+          "value": "de pronomine: casus: genitivus"
+        },
+        {
+          "id": "a.pro.casus.d",
+          "value": "de pronomine: casus: dativus"
+        },
+        {
+          "id": "a.pro.casus.a",
+          "value": "de pronomine: casus: accusativus"
+        },
+        {
+          "id": "a.pro.casus.v",
+          "value": "de pronomine: casus: vocativus"
+        },
+        {
+          "id": "a.pro.casus.b",
+          "value": "de pronomine: casus: ablativus"
+        },
+        {
+          "id": "a.pro.fig",
+          "value": "de pronomine: figura"
+        },
+        {
+          "id": "a.pro.fig.simplex",
+          "value": "de pronomine: figura: simplicia"
+        },
+        {
+          "id": "a.pro.fig.composita",
+          "value": "de pronomine: figura: composita"
+        },
+        {
+          "id": "a.pro.gen",
+          "value": "de pronomine: genera"
+        },
+        {
+          "id": "a.pro.gen.m",
+          "value": "de pronomine: genera: masculinum"
+        },
+        {
+          "id": "a.pro.gen.f",
+          "value": "de pronomine: genera: femininum"
+        },
+        {
+          "id": "a.pro.gen.n",
+          "value": "de pronomine: genera: neutrum"
+        },
+        {
+          "id": "a.pro.gen.c",
+          "value": "de pronomine: genera: commune"
+        },
+        {
+          "id": "a.pro.gen.mfn",
+          "value": "de pronomine: genera: trium generum"
+        },
+        {
+          "id": "a.pro.num",
+          "value": "de pronomine: numeri"
+        },
+        {
+          "id": "a.pro.num.sg",
+          "value": "de pronomine: numeri: singularis"
+        },
+        {
+          "id": "a.pro.num.pl",
+          "value": "de pronomine: numeri: pluralis"
+        },
+        {
+          "id": "a.pro.pers",
+          "value": "de pronomine: personae"
+        },
+        {
+          "id": "a.pro.pers.1",
+          "value": "de pronomine: personae: I"
+        },
+        {
+          "id": "a.pro.pers.2",
+          "value": "de pronomine: personae: II"
+        },
+        {
+          "id": "a.pro.pers.3",
+          "value": "de pronomine: personae: III"
+        },
+        {
+          "id": "a.pro.qual",
+          "value": "de pronomine: qualitas"
+        },
+        {
+          "id": "a.pro.qual.finita",
+          "value": "de pronomine: qualitas: finita"
+        },
+        {
+          "id": "a.pro.qual.infinita",
+          "value": "de pronomine: qualitas: infinita"
+        },
+        {
+          "id": "a.pro.spec",
+          "value": "de pronomine: species"
+        },
+        {
+          "id": "a.pro.spec.primitiva",
+          "value": "de pronomine: species: primitiva"
+        },
+        {
+          "id": "a.pro.spec.derivativa",
+          "value": "de pronomine: species: derivativa"
+        },
+        {
+          "id": "a.prp",
+          "value": "de praepositione"
+        },
+        {
+          "id": "a.prp.app-sep",
+          "value": "de praepositione: in appositione/separatione"
+        },
+        {
+          "id": "a.prp.app-sep.a",
+          "value": "de praepositione: in appositione/separatione: cum accusativo"
+        },
+        {
+          "id": "a.prp.app-sep.b",
+          "value": "de praepositione: in appositione/separatione: cum ablativo"
+        },
+        {
+          "id": "a.prp.comp",
+          "value": "de praepositione: in compositione"
+        },
+        {
+          "id": "a.prp.ordo",
+          "value": "de praepositione: ordo"
+        },
+        {
+          "id": "a.prp.ordo.prae",
+          "value": "de praepositione: ordo: praepositae"
+        },
+        {
+          "id": "a.prp.ordo.post",
+          "value": "de praepositione: ordo: postpositae"
+        },
+        {
+          "id": "a.prp.ordo.pot",
+          "value": "de praepositione: potestas"
+        },
+        {
+          "id": "a.prp.ordo.pot.abnegatio",
+          "value": "de praepositione: potestas: abnegatio/(ab)negativa/privatio/privativa"
+        },
+        {
+          "id": "a.prp.ordo.pot.accommodativa",
+          "value": "de praepositione: potestas: accommodativa"
+        },
+        {
+          "id": "a.prp.ordo.pot.affectus",
+          "value": "de praepositione: potestas: affectus"
+        },
+        {
+          "id": "a.prp.ordo.pot.causalis",
+          "value": "de praepositione: potestas: causalis"
+        },
+        {
+          "id": "a.prp.ordo.pot.",
+          "value": "de praepositione: potestas: "
+        },
+        {
+          "id": "a.prp.ordo.pot.contrarietas",
+          "value": "de praepositione: potestas: contrarietas"
+        },
+        {
+          "id": "a.prp.ordo.pot.copulativa",
+          "value": "de praepositione: potestas: copulativa"
+        },
+        {
+          "id": "a.prp.ordo.pot.intentiva",
+          "value": "de praepositione: potestas: intentiva"
+        },
+        {
+          "id": "a.prp.ordo.pot.localis",
+          "value": "de praepositione: potestas: localis"
+        },
+        {
+          "id": "a.prp.ordo.pot.ordinalis",
+          "value": "de praepositione: potestas: ordinalis"
+        },
+        {
+          "id": "a.prp.ordo.pot.perfectiva",
+          "value": "de praepositione: potestas: perfectiva"
+        },
+        {
+          "id": "a.prp.ordo.pot.proximitas",
+          "value": "de praepositione: potestas: proximitas"
+        },
+        {
+          "id": "a.prp.ordo.pot.separatio",
+          "value": "de praepositione: potestas: separatio/separativa"
+        },
+        {
+          "id": "a.prp.ordo.pot.similitudinis",
+          "value": "de praepositione: potestas: similitudinis"
+        },
+        {
+          "id": "a.adv",
+          "value": "de adverbio"
+        },
+        {
+          "id": "a.adv.modus",
+          "value": "de adverbio: cum modis"
+        },
+        {
+          "id": "a.adv.modus.omnes",
+          "value": "de adverbio: cum modis: omnibus"
+        },
+        {
+          "id": "a.adv.modus.ind",
+          "value": "de adverbio: cum modis: indicativo"
+        },
+        {
+          "id": "a.adv.modus.impt",
+          "value": "de adverbio: cum modis: imperativo"
+        },
+        {
+          "id": "a.adv.modus.sub",
+          "value": "de adverbio: cum modis: subiunctivo"
+        },
+        {
+          "id": "a.adv.modus.opt",
+          "value": "de adverbio: cum modis: optativo"
+        },
+        {
+          "id": "a.adv.tempus",
+          "value": "de adverbio: cum temporibus"
+        },
+        {
+          "id": "a.adv.tempus.omnia",
+          "value": "de adverbio: cum temporibus: omnibus"
+        },
+        {
+          "id": "a.adv.tempus.aliqua",
+          "value": "de adverbio: cum temporibus: non omnibus"
+        },
+        {
+          "id": "a.adv.fig",
+          "value": "de adverbio: figura"
+        },
+        {
+          "id": "a.adv.fig.simplex",
+          "value": "de adverbio: figura: simplex"
+        },
+        {
+          "id": "a.adv.fig.composita",
+          "value": "de adverbio: figura: composita"
+        },
+        {
+          "id": "a.adv.fig.decomposita",
+          "value": "de adverbio: figura: decomposita"
+        },
+        {
+          "id": "a.adv.ordo",
+          "value": "de adverbio: ordo"
+        },
+        {
+          "id": "a.adv.ordo.prae",
+          "value": "de adverbio: ordo: praeposita"
+        },
+        {
+          "id": "a.adv.ordo.post",
+          "value": "de adverbio: ordo: postposita/supposita"
+        },
+        {
+          "id": "a.adv.sign",
+          "value": "de adverbio: significatio"
+        },
+        {
+          "id": "a.adv.sign.abnegativa",
+          "value": "de adverbio: significatio: abnegativa"
+        },
+        {
+          "id": "a.adv.sign.admirandi",
+          "value": "de adverbio: significatio: admirandi"
+        },
+        {
+          "id": "a.adv.sign.comparativa",
+          "value": "de adverbio: significatio: comparativa"
+        },
+        {
+          "id": "a.adv.sign.confirmativa",
+          "value": "de adverbio: significatio: confirmativa/affirmatio"
+        },
+        {
+          "id": "a.adv.sign.congregativa",
+          "value": "de adverbio: significatio: congregativa"
+        },
+        {
+          "id": "a.adv.sign.hortativa",
+          "value": "de adverbio: significatio: (de)hortativa"
+        },
+        {
+          "id": "a.adv.sign.demonstrativa",
+          "value": "de adverbio: significatio: demonstrativa"
+        },
+        {
+          "id": "a.adv.sign.diminutiva",
+          "value": "de adverbio: significatio: diminutiva"
+        },
+        {
+          "id": "a.adv.sign.discretiva",
+          "value": "de adverbio: significatio: discretiva"
+        },
+        {
+          "id": "a.adv.sign.dubitativa",
+          "value": "de adverbio: significatio: dubitativa"
+        },
+        {
+          "id": "a.adv.sign.indignandi",
+          "value": "de adverbio: significatio: indignandi"
+        },
+        {
+          "id": "a.adv.sign.infinita",
+          "value": "de adverbio: significatio: infinita"
+        },
+        {
+          "id": "a.adv.sign.intentiva",
+          "value": "de adverbio: significatio: intentiva"
+        },
+        {
+          "id": "a.adv.sign.interrogativa",
+          "value": "de adverbio: significatio: interrogativa"
+        },
+        {
+          "id": "a.adv.sign.iurativa",
+          "value": "de adverbio: significatio: iurativa"
+        },
+        {
+          "id": "a.adv.sign.localia",
+          "value": "de adverbio: significatio: localia"
+        },
+        {
+          "id": "a.adv.sign.localia.ad",
+          "value": "de adverbio: significatio: localia: ad locum"
+        },
+        {
+          "id": "a.adv.sign.localia.de",
+          "value": "de adverbio: significatio: localia: de loco"
+        },
+        {
+          "id": "a.adv.sign.localia.in",
+          "value": "de adverbio: significatio: localia: in loco"
+        },
+        {
+          "id": "a.adv.sign.localia.per",
+          "value": "de adverbio: significatio: localia: per locum"
+        },
+        {
+          "id": "a.adv.spec",
+          "value": "de adverbio: species"
+        },
+        {
+          "id": "a.adv.sign.optandi",
+          "value": "de adverbio: significatio: optandi"
+        },
+        {
+          "id": "a.adv.sign.ordinativa",
+          "value": "de adverbio: significatio: ordinativa"
+        },
+        {
+          "id": "a.adv.sign.qualitatis",
+          "value": "de adverbio: significatio: qualitatis"
+        },
+        {
+          "id": "a.adv.sign.quantitatis",
+          "value": "de adverbio: significatio: quantitatis"
+        },
+        {
+          "id": "a.adv.sign.relativa",
+          "value": "de adverbio: significatio: relativa"
+        },
+        {
+          "id": "a.adv.sign.remissiva",
+          "value": "de adverbio: significatio: remissiva"
+        },
+        {
+          "id": "a.adv.sign.similitudinis",
+          "value": "de adverbio: significatio: similitudinis"
+        },
+        {
+          "id": "a.adv.sign.superlativa",
+          "value": "de adverbio: significatio: superlativa"
+        },
+        {
+          "id": "a.adv.sign.tempus",
+          "value": "de adverbio: significatio: temporalia"
+        },
+        {
+          "id": "a.adv.sign.tempus.praes",
+          "value": "de adverbio: significatio: temporalia: praesens/instans"
+        },
+        {
+          "id": "a.adv.sign.tempus.praet",
+          "value": "de adverbio: significatio: temporalia: praeteritum"
+        },
+        {
+          "id": "a.adv.sign.tempus.fut",
+          "value": "de adverbio: significatio: temporalia: futurum"
+        },
+        {
+          "id": "a.adv.sign.vocandi",
+          "value": "de adverbio: significatio: vocandi"
+        },
+        {
+          "id": "a.adv.spec",
+          "value": "de adverbio: species"
+        },
+        {
+          "id": "a.adv.spec.primitiva",
+          "value": "de adverbio: species: primitiva"
+        },
+        {
+          "id": "a.adv.spec.derivativa",
+          "value": "de adverbio: species: derivativa"
+        },
+        {
+          "id": "a.coi",
+          "value": "de coniunctione"
+        },
+        {
+          "id": "a.coi.fig",
+          "value": "de coniunctione: figura"
+        },
+        {
+          "id": "a.coi.fig.simplex",
+          "value": "de coniunctione: figura: simplex"
+        },
+        {
+          "id": "a.coi.fig.composita",
+          "value": "de coniunctione: figura: composita"
+        },
+        {
+          "id": "a.coi.ordo.prae",
+          "value": "de coniunctione: ordo: praepositae"
+        },
+        {
+          "id": "a.coi.ordo.post",
+          "value": "de coniunctione: ordo: postpositae/suppositae"
+        },
+        {
+          "id": "a.coi.spec.ablativa",
+          "value": "de coniunctione: species: ablativa"
+        },
+        {
+          "id": "a.coi.spec.adiunctiva",
+          "value": "de coniunctione: species: adiunctiva"
+        },
+        {
+          "id": "a.coi.spec.adversativa",
+          "value": "de coniunctione: species: adversativa"
+        },
+        {
+          "id": "a.coi.spec.affirmativa",
+          "value": "de coniunctione: species: affirmativa"
+        },
+        {
+          "id": "a.coi.spec.approbativa",
+          "value": "de coniunctione: species: approbativa"
+        },
+        {
+          "id": "a.coi.spec.causalis",
+          "value": "de coniunctione: species: causalis"
+        },
+        {
+          "id": "a.coi.spec.collectiva",
+          "value": "de coniunctione: species: collectiva/rationalis"
+        },
+        {
+          "id": "a.coi.spec.completiva",
+          "value": "de coniunctione: species: completiva"
+        },
+        {
+          "id": "a.coi.spec.continuativa",
+          "value": "de coniunctione: species: continuativa"
+        },
+        {
+          "id": "a.coi.spec.copulativa",
+          "value": "de coniunctione: species: copulativa"
+        },
+        {
+          "id": "a.coi.spec.disertiva",
+          "value": "de coniunctione: species: disertiva/electiva"
+        },
+        {
+          "id": "a.coi.spec.disiunctiva",
+          "value": "de coniunctione: species: disiunctiva"
+        },
+        {
+          "id": "a.coi.spec.dubitativa",
+          "value": "de coniunctione: species: dubitativa"
+        },
+        {
+          "id": "a.coi.spec.effectiva",
+          "value": "de coniunctione: species: effectiva"
+        },
+        {
+          "id": "a.coi.spec.interrogativa",
+          "value": "de coniunctione: species: interrogativae"
+        },
+        {
+          "id": "a.coi.spec.praesumptiva",
+          "value": "de coniunctione: species: praesumptiva"
+        },
+        {
+          "id": "a.coi.spec.subcontinuativa",
+          "value": "de coniunctione: species: subcontinuativa"
+        },
+        {
+          "id": "a.coi.spec.subdisiunctiva",
+          "value": "de coniunctione: species: subdisiunctiva"
+        },
+        {
+          "id": "a.int",
+          "value": "de interiectione"
+        },
+        {
+          "id": "a.int.sign",
+          "value": "de interiectione: significatio"
+        },
+        {
+          "id": "a.int.sign.admiratio",
+          "value": "de interiectione: significatio: admiratio"
+        },
+        {
+          "id": "a.int.sign.dolor",
+          "value": "de interiectione: significatio: dolor"
+        },
+        {
+          "id": "a.int.sign.gaudium",
+          "value": "de interiectione: significatio: gaudium"
+        },
+        {
+          "id": "a.int.sign.indignatio",
+          "value": "de interiectione: significatio: indignatio"
+        },
+        {
+          "id": "a.cst",
+          "value": "de constructione"
+        },
+        {
+          "id": "a.cst.bisidem",
+          "value": "de constructione: bis idem"
+        },
+        {
+          "id": "a.cst.absoluta",
+          "value": "de constructione: absoluta/absolute/absolutus/per se"
+        },
+        {
+          "id": "a.cst.abundantia",
+          "value": "de constructione: abundantia/pleonasmus/supervacuum"
+        },
+        {
+          "id": "a.cst.adiectiva",
+          "value": "de constructione: adiectivae positiones"
+        },
+        {
+          "id": "a.cst.adiunctio",
+          "value": "de constructione: adiunctio/ζεῦγμα"
+        },
+        {
+          "id": "a.cst.adorativa",
+          "value": "de constructione: adorativa"
+        },
+        {
+          "id": "a.cst.adquisitiva",
+          "value": "de constructione: adquisitivae (constructiones)/περιποιητικαί"
+        },
+        {
+          "id": "a.cst.adquisitivum",
+          "value": "de constructione: adquisitiva (verba)/περιποιητικά"
+        },
+        {
+          "id": "a.cst.adverbia",
+          "value": "de constructione: adverbiorum vel coniunctionum constructiones"
+        },
+        {
+          "id": "a.cst.adverbia.abnegativa",
+          "value": "de constructione: adverbiorum vel coniunctionum c.: abnegativis"
+        },
+        {
+          "id": "a.cst.adverbia.affirmativa",
+          "value": "de constructione: adverbiorum vel coniunctionum c.: affirmativis vel causalibus"
+        },
+        {
+          "id": "a.cst.aequiperantia",
+          "value": "de constructione: aequiperantia/aequiperativa/ἰσοπαλῆ"
+        },
+        {
+          "id": "a.cst.affirmative",
+          "value": "de constructione: affirmative/confirmative"
+        },
+        {
+          "id": "a.cst.dignitas",
+          "value": "de constructione: ἀξιώματα/dignitates"
+        },
+        {
+          "id": "a.cst.appositivum",
+          "value": "de constructione: appositivum/additivum/ἐπιταγματικόν"
+        },
+        {
+          "id": "a.cst.incongruitas",
+          "value": "de constructione: ἀσύμβαμα/incongruitas"
+        },
+        {
+          "id": "a.cst.casum",
+          "value": "de constructione: casuum/ad casus constructiones"
+        },
+        {
+          "id": "a.cst.casum.n",
+          "value": "de constructione: casuum/ad casus c.: nominativo"
+        },
+        {
+          "id": "a.cst.casum.g",
+          "value": "de constructione: casuum/ad casus c.: genetivo"
+        },
+        {
+          "id": "a.cst.casum.g.consequentia",
+          "value": "de constructione: casuum/ad casus c.: genetivo: consequentiae alicuius rerum"
+        },
+        {
+          "id": "a.cst.casum.g.possessio",
+          "value": "de constructione: casuum/ad casus c.: genetivo: possessionis in essentiae demonstratione"
+        },
+        {
+          "id": "a.cst.casum.g.possessoris",
+          "value": "de constructione: casuum/ad casus c.: genetivo: possessoris"
+        },
+        {
+          "id": "a.cst.casum.d",
+          "value": "de constructione: casuum/ad casus c.: dativo"
+        },
+        {
+          "id": "a.cst.casum.d.commodi",
+          "value": "de constructione: casuum/ad casus c.: dativo: commodi vel incommodi/ad gratiam vel utilitatem alicuius vel contra aliquid"
+        },
+        {
+          "id": "a.cst.casum.d.possessoris",
+          "value": "de constructione: casuum/ad casus c.: dativo: possessoris"
+        },
+        {
+          "id": "a.cst.casum.a",
+          "value": "de constructione: casuum/ad casus c.: accusativo"
+        },
+        {
+          "id": "a.cst.casum.a.pars",
+          "value": "de constructione: casuum/ad casus c.: accusativo: quando quod parti accidit, hoc toti redditur"
+        },
+        {
+          "id": "a.cst.casum.v",
+          "value": "de constructione: casuum/ad casus c.: vocativo"
+        },
+        {
+          "id": "a.cst.casum.b",
+          "value": "de constructione: casuum/ad casus c.: ablativo"
+        },
+        {
+          "id": "a.cst.casum.b.eventus",
+          "value": "de constructione: casuum/ad casus c.: ablativo: aliquid evenire demonstratur illi qui per nominativum profertur"
+        },
+        {
+          "id": "a.cst.casum.b.causa",
+          "value": "de constructione: casuum/ad casus c.: ablativo: causae in comparationibus"
+        },
+        {
+          "id": "a.cst.casum.b.consequentia",
+          "value": "de constructione: casuum/ad casus c.: ablativo: consequentiae alicuius rerum/in consequentiae significatione"
+        },
+        {
+          "id": "a.cst.casum.b.possessio",
+          "value": "de constructione: casuum/ad casus c.: ablativo: possessionis in essentiae demonstratione/haberi aliquid vel consequi ostenditur"
+        },
+        {
+          "id": "a.cst.circumlocutio",
+          "value": "de constructione: circumlocutio"
+        },
+        {
+          "id": "a.cst.comparatio",
+          "value": "de constructione: comparatio verbi"
+        },
+        {
+          "id": "a.cst.comprobatio",
+          "value": "de constructione: comprobatio/comprobative/approbatio"
+        },
+        {
+          "id": "a.cst.conceptio",
+          "value": "de constructione: conceptio/σύλληψις"
+        },
+        {
+          "id": "a.cst.concidentia",
+          "value": "de constructione: concidentia/συνέμπτωσις"
+        },
+        {
+          "id": "a.cst.consequentia",
+          "value": "de constructione: consequentia"
+        },
+        {
+          "id": "a.cst.activa",
+          "value": "de constructione: constructio activorum"
+        },
+        {
+          "id": "a.cst.passiva",
+          "value": "de constructione: constructio passivorum"
+        },
+        {
+          "id": "a.cst.perfecta",
+          "value": "de constructione: constructio perfectorum verborum"
+        },
+        {
+          "id": "a.cst.defectio",
+          "value": "de constructione: defectio/ellipsis"
+        },
+        {
+          "id": "a.cst.desiderativa",
+          "value": "de constructione: desiderativa"
+        },
+        {
+          "id": "a.cst.discretio",
+          "value": "de constructione: discretio"
+        },
+        {
+          "id": "a.cst.discretiva",
+          "value": "de constructione: discretiva"
+        },
+        {
+          "id": "a.cst.distributio",
+          "value": "de constructione: distributio"
+        },
+        {
+          "id": "a.cst.induo",
+          "value": "de constructione: dividitur in duo"
+        },
+        {
+          "id": "a.cst.dubitativus",
+          "value": "de constructione: dubitativus/dubitativa/dubitative/dubitatio"
+        },
+        {
+          "id": "a.cst.possessio",
+          "value": "de constructione: duplex possessio"
+        },
+        {
+          "id": "a.cst.effectiva",
+          "value": "de constructione: effectiva"
+        },
+        {
+          "id": "a.cst.elective",
+          "value": "de constructione: elective"
+        },
+        {
+          "id": "a.cst.passio",
+          "value": "de constructione: extrinsecus passionem facientia vel patientia"
+        },
+        {
+          "id": "a.cst.figura",
+          "value": "de constructione: figura/figurate"
+        },
+        {
+          "id": "a.cst.funebris",
+          "value": "de constructione: funebria"
+        },
+        {
+          "id": "a.cst.gerundia",
+          "value": "de constructione: gerundia eisdem terminationibus et genera diversa et casus verbo suo congruos tantum et utrosque numeros sibi coniungunt"
+        },
+        {
+          "id": "a.cst.hortativa",
+          "value": "de constructione: hortativa"
+        },
+        {
+          "id": "a.cst.hyperbata",
+          "value": "de constructione: hyperbata/transitiones"
+        },
+        {
+          "id": "a.cst.inductiva",
+          "value": "de constructione: inductiva/per inductionem/καθ᾽ὑπόθεσιν/ὑποθετικά"
+        },
+        {
+          "id": "a.cst.inquisitiva",
+          "value": "de constructione: inquisitiva"
+        },
+        {
+          "id": "a.cst.interrogativa",
+          "value": "de constructione: interrogativa (verba)"
+        },
+        {
+          "id": "a.cst.interrogativus",
+          "value": "de constructione: interrogativus/interrogative"
+        },
+        {
+          "id": "a.cst.intransitive",
+          "value": "de constructione: intransitive"
+        },
+        {
+          "id": "a.cst.dus",
+          "value": "de constructione: nomina in 'dus' desinentia verbalia genera et casus et numeros nominum quibus coniunguntur servant"
+        },
+        {
+          "id": "a.cst.obtinentia",
+          "value": "de constructione: quae per obtinentiam/κατὰ ἐπικράτειαν"
+        },
+        {
+          "id": "a.cst.opinativa",
+          "value": "de constructione: opinativa"
+        },
+        {
+          "id": "a.cst.optative",
+          "value": "de constructione: optative"
+        },
+        {
+          "id": "a.cst.ordo",
+          "value": "de constructione: ordo"
+        },
+        {
+          "id": "a.cst.ordo.prae",
+          "value": "de constructione: ordo: praepositiva"
+        },
+        {
+          "id": "a.cst.ordo.post",
+          "value": "de constructione: ordo: postpositiva"
+        },
+
+        {
+          "id": "a.cst.parasymb",
+          "value": "de constructione: παρασυμβάματα/minus quam congruitates"
+        },
+        {
+          "id": "a.cst.participia",
+          "value": "de constructione: participia"
+        },
+        {
+          "id": "a.cst.participia.nom",
+          "value": "de constructione: participia: vi nominis"
+        },
+        {
+          "id": "a.cst.participia.part",
+          "value": "de constructione: participia: vi participii"
+        },
+        {
+          "id": "a.cst.persona",
+          "value": "de constructione: personarum constructiones"
+        },
+        {
+          "id": "a.cst.persona.12",
+          "value": "de constructione: personarum c.: prima et secunda"
+        },
+        {
+          "id": "a.cst.persona.2",
+          "value": "de constructione: personarum c.: in secunda persona"
+        },
+        {
+          "id": "a.cst.possessio",
+          "value": "de constructione: possessio"
+        },
+        {
+          "id": "a.cst.possessor",
+          "value": "de constructione: possessor"
+        },
+        {
+          "id": "a.cst.possibilitas",
+          "value": "de constructione: possibilitas"
+        },
+        {
+          "id": "a.cst.praeceptio",
+          "value": "de constructione: praeceptio/πρόληψις"
+        },
+        {
+          "id": "a.cst.praeceptiva",
+          "value": "de constructione: praeceptiva"
+        },
+        {
+          "id": "a.cst.precativa",
+          "value": "de constructione: precativa"
+        },
+        {
+          "id": "a.cst.procidentia",
+          "value": "de constructione: procidentia/ἀντίπτωσις"
+        },
+        {
+          "id": "a.cst.ratio",
+          "value": "de constructione: rationem colligentes"
+        },
+        {
+          "id": "a.cst.reciprocatio",
+          "value": "de constructione: reciprocatio/sui passio/ἰδιοπάθεια/refracticius"
+        },
+        {
+          "id": "a.cst.redditio",
+          "value": "de constructione: redditio"
+        },
+        {
+          "id": "a.cst.retransitio",
+          "value": "de constructione: retransitio"
+        },
+        {
+          "id": "a.cst.adsensum",
+          "value": "de constructione: ad sensum pertinentia"
+        },
+        {
+          "id": "a.cst.separativa",
+          "value": "de constructione: separativa"
+        },
+        {
+          "id": "a.cst.soloecismus",
+          "value": "de constructione: soloecismus"
+        },
+        {
+          "id": "a.cst.subdistinctio",
+          "value": "de constructione: subdistinctio"
+        },
+        {
+          "id": "a.cst.subiecta",
+          "value": "de constructione: subiecta"
+        },
+        {
+          "id": "a.cst.substantiva",
+          "value": "de constructione: substantiva (verba)"
+        },
+        {
+          "id": "a.cst.congruitates",
+          "value": "de constructione: συμβάματα/congruitates"
+        },
+        {
+          "id": "a.cst.superposita",
+          "value": "de constructione: superposita/ἐπαναβεβηκότα/supereminentia"
+        },
+        {
+          "id": "a.cst.suppositive",
+          "value": "de constructione: suppositive/suppositiva"
+        },
+        {
+          "id": "a.cst.suspectiva",
+          "value": "de constructione: suspectiva"
+        },
+        {
+          "id": "a.cst.transitio",
+          "value": "de constructione: transitio/transitus/transitivus/transitive"
+        },
+        {
+          "id": "a.cst.transmutatio",
+          "value": "de constructione: transmutatio"
+        },
+        {
+          "id": "a.cst.transmutatio.dictio",
+          "value": "de constructione: transmutatio: dictio"
+        },
+        {
+          "id": "a.cst.transmutatio.oratio",
+          "value": "de constructione: transmutatio: oratio"
+        },
+        {
+          "id": "a.cst.variatio",
+          "value": "de constructione: variatio"
+        },
+        {
+          "id": "a.cst.variatio.accidentia",
+          "value": "de constructione: variatio: per accidentia"
+        },
+        {
+          "id": "a.cst.variatio.accidentia.casus",
+          "value": "de constructione: variatio: per accidentia: diversi casus/casus pro casibus"
+        },
+        {
+          "id": "a.cst.variatio.accidentia.figurae",
+          "value": "de constructione: variatio: per accidentia: diversae figurae"
+        },
+        {
+          "id": "a.cst.variatio.accidentia.figurae.cs",
+          "value": "de constructione: variatio: per accidentia: diversae figurae: compositum pro simplici"
+        },
+        {
+          "id": "a.cst.variatio.accidentia.figurae.sc",
+          "value": "de constructione: variatio: per accidentia: diversae figurae: simplex pro composito"
+        },
+        {
+          "id": "a.cst.variatio.accidentia.genera",
+          "value": "de constructione: variatio: per accidentia: diversa genera"
+        },
+        {
+          "id": "a.cst.variatio.accidentia.genera.mm",
+          "value": "de constructione: variatio: per accidentia: modi pro modis"
+        },
+        {
+          "id": "a.cst.variatio.accidentia.genera.mm.impt-opt",
+          "value": "de constructione: variatio: per accidentia: modi pro modis: imperativus pro optativo"
+        },
+        {
+          "id": "a.cst.variatio.accidentia.genera.mm.ind-impt",
+          "value": "de constructione: variatio: per accidentia: modi pro modis: indicativus pro imperativo"
+        },
+        {
+          "id": "a.cst.variatio.accidentia.genera.mm.ind-opt",
+          "value": "de constructione: variatio: per accidentia: modi pro modis: indicativus pro optativo"
+        },
+        {
+          "id": "a.cst.variatio.accidentia.genera.mm.ind-sub",
+          "value": "de constructione: variatio: per accidentia: modi pro modis: indicativus pro subiunctivo"
+        },
+        {
+          "id": "a.cst.variatio.accidentia.genera.mm.opt-impt",
+          "value": "de constructione: variatio: per accidentia: modi pro modis: optativus pro imperativo"
+        },
+        {
+          "id": "a.cst.variatio.accidentia.genera.mm.opt-ind",
+          "value": "de constructione: variatio: per accidentia: modi pro modis: optativus pro indicativo"
+        },
+        {
+          "id": "a.cst.variatio.accidentia.genera.mm.sub-impt",
+          "value": "de constructione: variatio: per accidentia: modi pro modis: subiunctivus pro imperativo"
+        },
+        {
+          "id": "a.cst.variatio.accidentia.genera.mm.sub-ind",
+          "value": "de constructione: variatio: per accidentia: modi pro modis: subiunctivus pro indicativo"
+        },
+        {
+          "id": "a.cst.variatio.accidentia.numeri",
+          "value": "de constructione: variatio: per accidentia: diversi numeri"
+        },
+        {
+          "id": "a.cst.variatio.accidentia.personae",
+          "value": "de constructione: variatio: per accidentia: diversae personae"
+        },
+        {
+          "id": "a.cst.variatio.accidentia.species",
+          "value": "de constructione: variatio: per accidentia: diversae species"
+        },
+        {
+          "id": "a.cst.variatio.accidentia.species.cp-ps",
+          "value": "de constructione: variatio: per accidentia: diversae species: comparativum pro positivo"
+        },
+        {
+          "id": "a.cst.variatio.accidentia.species.ps-sp",
+          "value": "de constructione: variatio: per accidentia: diversae species: positivum pro superlativo"
+        },
+        {
+          "id": "a.cst.variatio.accidentia.species.pr-de",
+          "value": "de constructione: variatio: per accidentia: diversae species: primitivum pro derivativo"
+        },
+        {
+          "id": "a.cst.variatio.accidentia.species.pr-po",
+          "value": "de constructione: variatio: per accidentia: diversae species: primitivum pro possessivo"
+        },
+        {
+          "id": "a.cst.variatio.accidentia.tempora",
+          "value": "de constructione: variatio: per accidentia: diversa tempora"
+        },
+        {
+          "id": "a.cst.variatio.partes",
+          "value": "de constructione: variatio: partes pro partibus"
+        },
+        {
+          "id": "a.cst.variatio.partes.adv-nom",
+          "value": "de constructione: variatio: partes pro partibus: adverbium pro nomine"
+        },
+        {
+          "id": "a.cst.variatio.partes.coi-coi",
+          "value": "de constructione: variatio: partes pro partibus: coniunctio pro coniunctione"
+        },
+        {
+          "id": "a.cst.variatio.partes.inf-ger",
+          "value": "de constructione: variatio: partes pro partibus: infinita pro gerundii genetivo"
+        },
+        {
+          "id": "a.cst.variatio.partes.inf-impt",
+          "value": "de constructione: variatio: partes pro partibus: infinitum pro imperativo"
+        },
+        {
+          "id": "a.cst.variatio.partes.inf-pf",
+          "value": "de constructione: variatio: partes pro partibus: infinitum pro praeterito perfecto"
+        },
+        {
+          "id": "a.cst.variatio.partes.nom-adv",
+          "value": "de constructione: variatio: partes pro partibus: nomen pro adverbium"
+        },
+        {
+          "id": "a.cst.variatio.partes.part-nom",
+          "value": "de constructione: variatio: partes pro partibus: participium pro nomine"
+        },
+        {
+          "id": "a.cst.variatio.partes.partb-inf",
+          "value": "de constructione: variatio: partes pro partibus: participiorum ablativi pro infinitis"
+        },
+        {
+          "id": "a.cst.variatio.partes.parta-inf",
+          "value": "de constructione: variatio: partes pro partibus: participiorum accusativi pro infinitis"
+        },
+        {
+          "id": "a.cst.variatio.partes.prae-prae",
+          "value": "de constructione: variatio: partes pro partibus: praepositio pro praepositione"
+        },
+        {
+          "id": "a.cst.variatio.partes.sub-inf",
+          "value": "de constructione: variatio: partes pro partibus: subiunctivus pro infinito"
+        },
+        {
+          "id": "a.cst.verba",
+          "value": "de constructione: verborum constructiones"
+        },
+        {
+          "id": "a.cst.verba.ind",
+          "value": "de constructione: verborum constructiones: c. indicativo"
+        },
+        {
+          "id": "a.cst.verba.inf",
+          "value": "de constructione: verborum constructiones: c. infinito"
+        },
+        {
+          "id": "a.cst.verba.dat-inf",
+          "value": "de constructione: verborum constructiones: c. dat. et infinito"
+        },
+        {
+          "id": "a.cst.verba.acc-inf",
+          "value": "de constructione: verborum constructiones: c. acc. et infinito"
+        },
+        {
+          "id": "a.cst.verba.inf-sub",
+          "value": "de constructione: verborum constructiones: c. infinito passivam vim habenti et subiunctivo"
+        },
+        {
+          "id": "a.cst.verba.opt",
+          "value": "de constructione: verborum constructiones: c. optativo"
+        },
+        {
+          "id": "a.cst.verba.part",
+          "value": "de constructione: verborum constructiones: c. participio"
+        },
+        {
+          "id": "a.cst.verba.sup",
+          "value": "de constructione: verborum constructiones: c. participialibus vel supinis"
+        },
+        {
+          "id": "a.cst.verba.sub",
+          "value": "de constructione: verborum constructiones: c. subiunctivo"
+        },
+        {
+          "id": "a.cst.vocativa",
+          "value": "de constructione: vocativa"
+        },
+        {
+          "id": "a.cst.voluntaria",
+          "value": "de constructione: voluntaria/affectiva/voluntativa/προαιρετικά/voluntatem significantia"
+        },
+        {
+          "id": "m",
+          "value": "modern"
+        },
+        {
+          "id": "m.etym",
+          "value": "etymology"
+        },
+        {
+          "id": "m.mtr",
+          "value": "metrics"
+        },
+        {
+          "id": "m.mtr.caesura",
+          "value": "metrics: caesura"
+        },
+        {
+          "id": "m.mtr.catalexis",
+          "value": "metrics: catalexis"
+        },
+        {
+          "id": "m.mtr.diaeresis",
+          "value": "metrics: diaeresis"
+        },
+        {
+          "id": "m.mtr.elision",
+          "value": "metrics: elision"
+        },
+        {
+          "id": "m.mtr.prodelision",
+          "value": "metrics: prodelision"
+        },
+        {
+          "id": "m.mtr.fus-res",
+          "value": "metrics: syllable fusion/resolution"
+        },
+        {
+          "id": "m.morph",
+          "value": "morphology"
+        },
+        {
+          "id": "m.morph.case",
+          "value": "morphology: case"
+        },
+        {
+          "id": "m.morph.case.n",
+          "value": "morphology: case: nominative"
+        },
+        {
+          "id": "m.morph.case.g",
+          "value": "morphology: case: genitive"
+        },
+        {
+          "id": "m.morph.case.d",
+          "value": "morphology: case: dative"
+        },
+        {
+          "id": "m.morph.a",
+          "value": "morphology: case: accusative"
+        },
+        {
+          "id": "m.morph.v",
+          "value": "morphology: case: vocative"
+        },
+        {
+          "id": "m.morph.b",
+          "value": "morphology: case: ablative"
+        },
+        {
+          "id": "m.morph.l",
+          "value": "morphology: case: locative"
+        },
+        {
+          "id": "m.morph.comp",
+          "value": "morphology: composition"
+        },
+        {
+          "id": "m.morph.comp.infl",
+          "value": "morphology: composition: inflected"
+        },
+        {
+          "id": "m.morph.comp.infl.both",
+          "value": "morphology: composition: inflected: both elements"
+        },
+        {
+          "id": "m.morph.comp.infl.whole",
+          "value": "morphology: composition: inflected: as a whole"
+        },
+        {
+          "id": "m.morph.comp.synthetic",
+          "value": "morphology: composition: synthetic compounds"
+        },
+        {
+          "id": "m.morph.der",
+          "value": "morphology: derivation"
+        },
+        {
+          "id": "m.morph.der.nom",
+          "value": "morphology: derivation: denominative"
+        },
+        {
+          "id": "m.morph.der.vrb",
+          "value": "morphology: derivation: deverbative"
+        },
+        {
+          "id": "m.morph.gen",
+          "value": "morphology: gender"
+        },
+        {
+          "id": "m.morph.gen.m",
+          "value": "morphology: gender: masculine"
+        },
+        {
+          "id": "m.morph.gen.f",
+          "value": "morphology: gender: feminine"
+        },
+        {
+          "id": "m.morph.gen.n",
+          "value": "morphology: gender: neuter"
+        },
+        {
+          "id": "m.morph.grad",
+          "value": "morphology: gradation"
+        },
+        {
+          "id": "m.morph.grad.c",
+          "value": "morphology: gradation: comparative"
+        },
+        {
+          "id": "m.morph.grad.p",
+          "value": "morphology: gradation: positive"
+        },
+        {
+          "id": "m.morph.grad.s",
+          "value": "morphology: gradation: superlative"
+        },
+        {
+          "id": "m.morph.grad.peri",
+          "value": "morphology: gradation: periphrastic"
+        },
+        {
+          "id": "m.morph.infl",
+          "value": "morphology: inflectional type"
+        },
+        {
+          "id": "m.morph.infl.nom",
+          "value": "morphology: inflectional type: nominal"
+        },
+        {
+          "id": "m.morph.infl.nom.a2",
+          "value": "morphology: inflectional type: nominal: ā"
+        },
+        {
+          "id": "m.morph.infl.nom.a2.ea",
+          "value": "morphology: inflectional type: nominal: ā: -ea-"
+        },
+        {
+          "id": "m.morph.infl.nom.a2.ela",
+          "value": "morphology: inflectional type: nominal: ā: -ēla-"
+        },
+        {
+          "id": "m.morph.infl.nom.a2.ia",
+          "value": "morphology: inflectional type: nominal: ā: -ia- (-itia-, -monia-)"
+        },
+        {
+          "id": "m.morph.infl.nom.a2.ura",
+          "value": "morphology: inflectional type: nominal: ā: -ūra- (-sūra-, -tūra-)"
+        },
+        {
+          "id": "m.morph.infl.nom.e2",
+          "value": "morphology: inflectional type: nominal: ē"
+        },
+        {
+          "id": "m.morph.infl.nom.i1",
+          "value": "morphology: inflectional type: nominal: ĭ"
+        },
+        {
+          "id": "m.morph.infl.nom.i1.ensi",
+          "value": "morphology: inflectional type: nominal: ĭ: -ensi-"
+        },
+        {
+          "id": "m.morph.infl.nom.i1.li",
+          "value": "morphology: inflectional type: nominal: ĭ: -li- (-ĭli-, -bĭli-, -āli-, - ēli-, -īli-)"
+        },
+        {
+          "id": "m.morph.infl.nom.i1.ri",
+          "value": "morphology: inflectional type: nominal: ĭ: -ri- (-āri-)"
+        },
+        {
+          "id": "m.morph.infl.nom.i1.ti",
+          "value": "morphology: inflectional type: nominal: ĭ: -ti- (-āti-, - īti-)"
+        },
+        {
+          "id": "m.morph.infl.nom.i2",
+          "value": "morphology: inflectional type: nominal: ī"
+        },
+        {
+          "id": "m.morph.infl.nom.o1",
+          "value": "morphology: inflectional type: nominal: ŏ"
+        },
+        {
+          "id": "m.morph.infl.nom.o1.do",
+          "value": "morphology: inflectional type: nominal: ŏ: -do- (-ndo-, -bundo-)"
+        },
+        {
+          "id": "m.morph.infl.nom.o1.eo",
+          "value": "morphology: inflectional type: nominal: ŏ: -eo-"
+        },
+        {
+          "id": "m.morph.infl.nom.o1.io",
+          "value": "morphology: inflectional type: nominal: ŏ: -io- (-itio-, -monio-, - ārio-, - ĭcio-, - īcio-)"
+        },
+        {
+          "id": "m.morph.infl.nom.o1.ko",
+          "value": "morphology: inflectional type: nominal: ŏ: -ko-"
+        },
+        {
+          "id": "m.morph.infl.nom.o1.lo",
+          "value": "morphology: inflectional type: nominal: ŏ: -lo- (-culo-, -ello-, -illo-, -ullo-, -olo-, -ulo-)"
+        },
+        {
+          "id": "m.morph.infl.nom.o1.mo",
+          "value": "morphology: inflectional type: nominal: ŏ: -mo- (-imo-, -timo-, -tremo-, -issimo-, -simo-)"
+        },
+        {
+          "id": "m.morph.infl.nom.o1.no",
+          "value": "morphology: inflectional type: nominal: ŏ: -no- (-āno-, -iano-, -ĭno-, -īno-)"
+        },
+        {
+          "id": "m.morph.infl.nom.o1.quo",
+          "value": "morphology: inflectional type: nominal: ŏ: -quo-"
+        },
+        {
+          "id": "m.morph.infl.nom.o1.ro",
+          "value": "morphology: inflectional type: nominal: ŏ: -ro- (-tero-, -astro-)"
+        },
+        {
+          "id": "m.morph.infl.nom.o1.to",
+          "value": "morphology: inflectional type: nominal: ŏ: -to-"
+        },
+        {
+          "id": "m.morph.infl.nom.o1.so",
+          "value": "morphology: inflectional type: nominal: ŏ: -so- (-oso-)"
+        },
+        {
+          "id": "m.morph.infl.nom.o1.uo",
+          "value": "morphology: inflectional type: nominal: ŏ: -uo-"
+        },
+        {
+          "id": "m.morph.infl.nom.u1",
+          "value": "morphology: inflectional type: nominal: ŭ"
+        },
+        {
+          "id": "m.morph.infl.nom.u1.tu-su",
+          "value": "morphology: inflectional type: nominal: ŭ: -tu-, -su-"
+        },
+        {
+          "id": "m.morph.infl.nom.u2",
+          "value": "morphology: inflectional type: nominal: ū"
+        },
+        {
+          "id": "m.morph.infl.nom.ou",
+          "value": "morphology: inflectional type: nominal: ou"
+        },
+        {
+          "id": "m.morph.infl.nom.b",
+          "value": "morphology: inflectional type: nominal: b"
+        },
+        {
+          "id": "m.morph.infl.nom.p",
+          "value": "morphology: inflectional type: nominal: p"
+        },
+        {
+          "id": "m.morph.infl.nom.g",
+          "value": "morphology: inflectional type: nominal: g"
+        },
+        {
+          "id": "m.morph.infl.nom.k",
+          "value": "morphology: inflectional type: nominal: k"
+        },
+        {
+          "id": "m.morph.infl.nom.k.ak",
+          "value": "morphology: inflectional type: nominal: k: -āk-"
+        },
+        {
+          "id": "m.morph.infl.nom.k.ek",
+          "value": "morphology: inflectional type: nominal: k: -ēk-"
+        },
+        {
+          "id": "m.morph.infl.nom.k.ik",
+          "value": "morphology: inflectional type: nominal: k: -īk-"
+        },
+        {
+          "id": "m.morph.infl.nom.d",
+          "value": "morphology: inflectional type: nominal: d"
+        },
+        {
+          "id": "m.morph.infl.nom.t",
+          "value": "morphology: inflectional type: nominal: t"
+        },
+        {
+          "id": "m.morph.infl.nom.t.nt",
+          "value": "morphology: inflectional type: nominal: t: -nt-"
+        },
+        {
+          "id": "m.morph.infl.nom.t.tat",
+          "value": "morphology: inflectional type: nominal: t: -tat-"
+        },
+        {
+          "id": "m.morph.infl.nom.t.tut",
+          "value": "morphology: inflectional type: nominal: t: -tut-"
+        },
+        {
+          "id": "m.morph.infl.nom.m",
+          "value": "morphology: inflectional type: nominal: m"
+        },
+        {
+          "id": "m.morph.infl.nom.n",
+          "value": "morphology: inflectional type: nominal: n"
+        },
+        {
+          "id": "m.morph.infl.nom.n.in",
+          "value": "morphology: inflectional type: nominal: n: -ĭn- (-dĭn-, -gĭn-)"
+        },
+        {
+          "id": "m.morph.infl.nom.n.men",
+          "value": "morphology: inflectional type: nominal: n: -men-"
+        },
+        {
+          "id": "m.morph.infl.nom.n.on",
+          "value": "morphology: inflectional type: nominal: n: -ōn- (-iōn-, -tiōn-)"
+        },
+        {
+          "id": "m.morph.infl.nom.l",
+          "value": "morphology: inflectional type: nominal: l"
+        },
+        {
+          "id": "m.morph.infl.nom.r",
+          "value": "morphology: inflectional type: nominal: r"
+        },
+        {
+          "id": "m.morph.infl.nom.r.ior",
+          "value": "morphology: inflectional type: nominal: r: -iōr- (-eriōr-, -teriōr-)"
+        },
+        {
+          "id": "m.morph.infl.nom.r.or-er",
+          "value": "morphology: inflectional type: nominal: r: -ŏr-, -ĕr- (-inŏr-, -inĕr-)"
+        },
+        {
+          "id": "m.morph.infl.nom.r.tor",
+          "value": "morphology: inflectional type: nominal: r: -tōr-"
+        },
+        {
+          "id": "m.morph.infl.nom.s",
+          "value": "morphology: inflectional type: nominal: s"
+        },
+        {
+          "id": "m.morph.infl.vrb",
+          "value": "morphology: inflectional type: verbal"
+        },
+        {
+          "id": "m.morph.infl.vrb.pres",
+          "value": "morphology: inflectional type: verbal: present stems"
+        },
+        {
+          "id": "m.morph.infl.vrb.pres.a2",
+          "value": "morphology: inflectional type: verbal: present stems: ā"
+        },
+        {
+          "id": "m.morph.infl.vrb.pres.a2.ica",
+          "value": "morphology: inflectional type: verbal: present stems: ā: -icā-"
+        },
+        {
+          "id": "m.morph.infl.vrb.pres.a2.sa-ta",
+          "value": "morphology: inflectional type: verbal: present stems: ā: -sā-, -tā- (-xā-, -itā-)"
+        },
+        {
+          "id": "m.morph.infl.vrb.pres.a2.illa-ula",
+          "value": "morphology: inflectional type: verbal: present stems: ā: -illā-, -ulā-"
+        },
+        {
+          "id": "m.morph.infl.vrb.pres.e1",
+          "value": "morphology: inflectional type: verbal: present stems: ĕ"
+        },
+        {
+          "id": "m.morph.infl.vrb.pres.e1.",
+          "value": "morphology: inflectional type: verbal: present stems: ĕ: -scĕ-"
+        },
+        {
+          "id": "m.morph.infl.vrb.pres.e1.",
+          "value": "morphology: inflectional type: verbal: present stems: ĕ: -assĕ-, essĕ-, -issĕ-"
+        },
+        {
+          "id": "m.morph.infl.vrb.pres.e2",
+          "value": "morphology: inflectional type: verbal: present stems: "
+        },
+        {
+          "id": "m.morph.infl.vrb.pres.i1",
+          "value": "morphology: inflectional type: verbal: present stems: "
+        },
+        {
+          "id": "m.morph.infl.vrb.pres.i2",
+          "value": "morphology: inflectional type: verbal: present stems: "
+        },
+        {
+          "id": "m.morph.infl.vrb.pres.i2.turi",
+          "value": "morphology: inflectional type: verbal: present stems: -tŭrī-"
+        },
+        {
+          "id": "m.morph.infl.vrb.pres.athem",
+          "value": "morphology: inflectional type: verbal: present stems: athematic"
+        },
+        {
+          "id": "m.morph.infl.vrb.pf",
+          "value": "morphology: inflectional type: verbal: perfect stems"
+        },
+        {
+          "id": "m.morph.infl.vrb.pf.ablaut",
+          "value": "morphology: inflectional type: verbal: perfect stems: IE Ablaut of the root vowel "
+        },
+        {
+          "id": "m.morph.infl.vrb.pf.redup",
+          "value": "morphology: inflectional type: verbal: perfect stems: reduplication"
+        },
+        {
+          "id": "m.morph.infl.vrb.pf.s",
+          "value": "morphology: inflectional type: verbal: perfect stems: -s-"
+        },
+        {
+          "id": "m.morph.infl.vrb.pf.u-v",
+          "value": "morphology: inflectional type: verbal: perfect stems: -u-, -v-"
+        },
+        {
+          "id": "m.morph.infl.vrb.pf.0",
+          "value": "morphology: inflectional type: verbal: perfect stems: not marked"
+        },
+        {
+          "id": "m.morph.mood",
+          "value": "morphology: mood"
+        },
+        {
+          "id": "m.morph.mood.impt",
+          "value": "morphology: mood: imperative"
+        },
+        {
+          "id": "m.morph.mood.ind",
+          "value": "morphology: mood: indicative"
+        },
+        {
+          "id": "m.morph.mood.sub",
+          "value": "morphology: mood: subjunctive"
+        },
+        {
+          "id": "m.morph.num",
+          "value": "morphology: number"
+        },
+        {
+          "id": "m.morph.num.s",
+          "value": "morphology: number: singular"
+        },
+        {
+          "id": "m.morph.num.d",
+          "value": "morphology: number: dual"
+        },
+        {
+          "id": "m.morph.num.p",
+          "value": "morphology: number: plural"
+        },
+        {
+          "id": "m.morph.pers",
+          "value": "morphology: person"
+        },
+        {
+          "id": "m.morph.pers.1",
+          "value": "morphology: person: 1st"
+        },
+        {
+          "id": "m.morph.pers.2",
+          "value": "morphology: person: 2nd"
+        },
+        {
+          "id": "m.morph.pers.3",
+          "value": "morphology: person: 3rd"
+        },
+        {
+          "id": "m.morph.tense",
+          "value": "morphology: tense"
+        },
+        {
+          "id": "m.morph.tense.pres",
+          "value": "morphology: tense: present"
+        },
+        {
+          "id": "m.morph.tense.impf",
+          "value": "morphology: tense: imperfect"
+        },
+        {
+          "id": "m.morph.tense.fut",
+          "value": "morphology: tense: future"
+        },
+        {
+          "id": "m.morph.tense.pf",
+          "value": "morphology: tense: perfect"
+        },
+        {
+          "id": "m.morph.tense.ppf",
+          "value": "morphology: tense: pluperfect"
+        },
+        {
+          "id": "m.morph.tense.fut2",
+          "value": "morphology: tense: future perfect"
+        },
+        {
+          "id": "m.morph.tense.peri",
+          "value": "morphology: tense: periphrastic conjugation"
+        },
+        {
+          "id": "m.morph.tense.peri.act",
+          "value": "morphology: tense: periphrastic c.: active"
+        },
+        {
+          "id": "m.morph.tense.peri.psv",
+          "value": "morphology: tense: periphrastic c.: passive"
+        },
+        {
+          "id": "m.morph.tense.peri.",
+          "value": "morphology: tense: periphrastic c.: passive forms of the perfectum"
+        },
+        {
+          "id": "m.morph.vrb-an",
+          "value": "morphology: verbal adjectives and nouns"
+        },
+        {
+          "id": "m.morph.vrb-an.ger",
+          "value": "morphology: verbal adj. and nouns: gerund"
+        },
+        {
+          "id": "m.morph.vrb-an.gdv",
+          "value": "morphology: verbal adj. and nouns: gerundive"
+        },
+        {
+          "id": "m.morph.vrb-an.inf",
+          "value": "morphology: verbal adj. and nouns: infinitive"
+        },
+        {
+          "id": "m.morph.vrb-an.part",
+          "value": "morphology: verbal adj. and nouns: participle"
+        },
+        {
+          "id": "m.morph.vrb-an.sup",
+          "value": "morphology: verbal adj. and nouns: supine"
+        },
+        {
+          "id": "m.morph.voice",
+          "value": "morphology: voice"
+        },
+        {
+          "id": "m.morph.voice.act",
+          "value": "morphology: voice: active"
+        },
+        {
+          "id": "m.morph.voice.dep",
+          "value": "morphology: voice: deponent"
+        },
+        {
+          "id": "m.morph.voice.psv",
+          "value": "morphology: voice: passive"
+        },
+        {
+          "id": "m.morph.voice.sdp",
+          "value": "morphology: voice: semi-deponent"
+        },
+        {
+          "id": "m.orth",
+          "value": "orthography"
+        },
+        {
+          "id": "m.orth.abbr",
+          "value": "orthography: abbreviations"
+        },
+        {
+          "id": "m.orth.asp",
+          "value": "orthography: aspiration"
+        },
+        {
+          "id": "m.orth.asp.breath",
+          "value": "orthography: aspiration: breathings"
+        },
+        {
+          "id": "m.orth.asp.breath.rough",
+          "value": "orthography: aspiration: breathings: rough"
+        },
+        {
+          "id": "m.orth.asp.breath.smooth",
+          "value": "orthography: aspiration: breathings: smooth"
+        },
+        {
+          "id": "m.orth.asp.h",
+          "value": "orthography: aspiration: h"
+        },
+        {
+          "id": "m.orth.c-cc",
+          "value": "orthography: -c / -cc"
+        },
+        {
+          "id": "m.orth.exs",
+          "value": "orthography: exs- / ex-"
+        },
+        {
+          "id": "m.orth.gg-gc",
+          "value": "orthography: -gg-, -gc- = /ng/, /nk/"
+        },
+        {
+          "id": "m.orth.waw",
+          "value": "orthography: Greek ϝ"
+        },
+        {
+          "id": "m.orth.psi",
+          "value": "orthography: Greek ψ = /ps/"
+        },
+        {
+          "id": "m.orth.viv",
+          "value": "orthography: intervocalic -i- / -ii-"
+        },
+        {
+          "id": "m.orth.ii",
+          "value": "orthography: -i / -ii"
+        },
+        {
+          "id": "m.orth.iis",
+          "value": "orthography: -is / -iis"
+        },
+        {
+          "id": "m.orth.num",
+          "value": "orthography: numerals"
+        },
+        {
+          "id": "m.orth.x",
+          "value": "orthography: x = /ks/, /gs/"
+        },
+        {
+          "id": "m.orth.xs",
+          "value": "orthography: -xs = /ks/, /gs/"
+        },
+        {
+          "id": "m.orth.k-c",
+          "value": "orthography: k, c = /k/"
+        },
+        {
+          "id": "m.orth.qu",
+          "value": "orthography: q(u) = /kw/"
+        },
+        {
+          "id": "m.orth.long",
+          "value": "orthography: writing of long vowels"
+        },
+        {
+          "id": "m.orth.zd",
+          "value": "orthography: z = /zd/"
+        },
+        {
+          "id": "m.orth.zz",
+          "value": "orthography: -zz- = /dz/, /z/"
+        },
+        {
+          "id": "m.pho",
+          "value": "phonetics"
+        },
+        {
+          "id": "m.pho.apocope",
+          "value": "phonetics: apocope"
+        },
+        {
+          "id": "m.pho.aspiration",
+          "value": "phonetics: (de)aspiration"
+        },
+        {
+          "id": "m.pho.c",
+          "value": "phonetics: consonantism"
+        },
+        {
+          "id": "m.pho.c.assib",
+          "value": "phonetics: consonantism: assibilation"
+        },
+        {
+          "id": "m.pho.c.assim",
+          "value": "phonetics: consonantism: assimilation"
+        },
+        {
+          "id": "m.pho.c.bh-gh",
+          "value": "phonetics: consonantism: *bh, *gh > f/h"
+        },
+        {
+          "id": "m.pho.c.cluster",
+          "value": "phonetics: consonantism: cluster simplification"
+        },
+        {
+          "id": "m.pho.c.d-l",
+          "value": "phonetics: consonantism: d>l"
+        },
+        {
+          "id": "m.pho.c.d-r",
+          "value": "phonetics: consonantism: d>r"
+        },
+        {
+          "id": "m.pho.c.d-z",
+          "value": "phonetics: consonantism: d>z"
+        },
+        {
+          "id": "m.pho.c.m-final",
+          "value": "phonetics: consonantism: deletion of final -m"
+        },
+        {
+          "id": "m.pho.c.s-final",
+          "value": "phonetics: consonantism: deletion of final -s"
+        },
+        {
+          "id": "m.pho.c.epenthesis",
+          "value": "phonetics: consonantism: epenthesis"
+        },
+        {
+          "id": "m.pho.c.gemination",
+          "value": "phonetics: consonantism: (de)gemination = consonant lenghtening / shortening"
+        },
+        {
+          "id": "m.pho.c.waw",
+          "value": "phonetics: consonantism: Greek ϝ > semivowel u"
+        },
+        {
+          "id": "m.pho.c.zeta",
+          "value": "phonetics: consonantism: Greek ζ > d, s, ss"
+        },
+        {
+          "id": "m.pho.c.n-g",
+          "value": "phonetics: consonantism: n > g"
+        },
+        {
+          "id": "m.pho.c.n-l",
+          "value": "phonetics: consonantism: n > l"
+        },
+        {
+          "id": "m.pho.c.n-m",
+          "value": "phonetics: consonantism: n > m before labial consonants"
+        },
+        {
+          "id": "m.pho.c.",
+          "value": "phonetics: consonantism: "
+        },
+        {
+          "id": "m.pho.c.nasalization",
+          "value": "phonetics: consonantism: (de)nasalization"
+        },
+        {
+          "id": "m.pho.c.rhotacism",
+          "value": "phonetics: consonantism: rhotacism"
+        },
+        {
+          "id": "m.pho.c.sigma-t",
+          "value": "phonetics: consonantism: σ > t"
+        },
+        {
+          "id": "m.pho.c.voicing",
+          "value": "phonetics: consonantism: (de)sonorization = (de)voicing"
+        },
+        {
+          "id": "m.pho.c.spirantization",
+          "value": "phonetics: consonantism: spirantization"
+        },
+        {
+          "id": "m.pho.c.b-u",
+          "value": "phonetics: consonantism: b > u"
+        },
+        {
+          "id": "m.pho.c.ksi-sigma",
+          "value": "phonetics: consonantism: ξ/σ"
+        },
+        {
+          "id": "m.pho.phoneme",
+          "value": "phonetics: phonemes"
+        },
+        {
+          "id": "m.pho.phoneme.c",
+          "value": "phonetics: phonemes: consonants"
+        },
+        {
+          "id": "m.pho.phoneme.c.occl",
+          "value": "phonetics: phonemes: consonants: occlusives"
+        },
+        {
+          "id": "m.pho.phoneme.c.occl.lv",
+          "value": "phonetics: phonemes: consonants: occlusives: labiovelars"
+        },
+        {
+          "id": "m.pho.phoneme.c.son",
+          "value": "phonetics: phonemes: continuous or sonorants"
+        },
+        {
+          "id": "m.pho.phoneme.sv",
+          "value": "phonetics: phonemes: semivowels = glides"
+        },
+        {
+          "id": "m.pho.phoneme.v",
+          "value": "phonetics: phonemes: vowels"
+        },
+        {
+          "id": "m.pho.syncope",
+          "value": "phonetics: syncope"
+        },
+        {
+          "id": "m.pho.v",
+          "value": "phonetics: vocalism"
+        },
+        {
+          "id": "m.pho.v.contraction",
+          "value": "phonetics: vocalism: contraction"
+        },
+        {
+          "id": "m.pho.v.diphthongiz",
+          "value": "phonetics: vocalism: diphthongization"
+        },
+        {
+          "id": "m.pho.v.hypsilon",
+          "value": "phonetics: vocalism: Greek υ > u"
+        },
+        {
+          "id": "m.pho.v.ablaut",
+          "value": "phonetics: vocalism: Indoeuropean Ablaut or apophony"
+        },
+        {
+          "id": "m.pho.v.sonus-medius",
+          "value": "phonetics: vocalism: i/u sonus medius"
+        },
+        {
+          "id": "m.pho.v.i-u-hypsilon",
+          "value": "phonetics: vocalism: i/u sounding like Greek υ"
+        },
+        {
+          "id": "m.pho.v.monophthongiz",
+          "value": "phonetics: vocalism: monophthongization"
+        },
+        {
+          "id": "m.pho.v.o-e",
+          "value": "phonetics: vocalism: o > e"
+        },
+        {
+          "id": "m.pho.v.backing",
+          "value": "phonetics: vocalism: vowel backing or retraction"
+        },
+        {
+          "id": "m.pho.v.fronting",
+          "value": "phonetics: vocalism: vowel fronting"
+        },
+        {
+          "id": "m.pho.v.len",
+          "value": "phonetics: vocalism: vowel length"
+        },
+        {
+          "id": "m.pho.v.lengthen",
+          "value": "phonetics: vocalism: vowel lengthening"
+        },
+        {
+          "id": "m.pho.v.reduction",
+          "value": "phonetics: vocalism: vowel reduction"
+        },
+        {
+          "id": "m.pho.v.shorten",
+          "value": "phonetics: vocalism: vowel shortening"
+        },
+        {
+          "id": "m.pho.v.shorten.hiatus",
+          "value": "phonetics: vocalism: vowel shortening: before another vowel"
+        },
+        {
+          "id": "m.pho.v.shorten.final-c",
+          "value": "phonetics: vocalism: vowel shortening: before a final consonant other than -s"
+        },
+        {
+          "id": "m.pros",
+          "value": "prosody"
+        },
+        {
+          "id": "m.pros.accent",
+          "value": "prosody: accent"
+        },
+        {
+          "id": "m.pros.accent.type",
+          "value": "prosody: accent: type"
+        },
+        {
+          "id": "m.pros.accent.type.a",
+          "value": "prosody: accent: type: acute"
+        },
+        {
+          "id": "m.pros.accent.type.g",
+          "value": "prosody: accent: type: grave"
+        },
+        {
+          "id": "m.pros.accent.type.c",
+          "value": "prosody: accent: type: circumflex"
+        },
+        {
+          "id": "m.pros.accent.pos",
+          "value": "prosody: accent: position"
+        },
+        {
+          "id": "m.pros.accent.pos.1",
+          "value": "prosody: accent: position: last syllable"
+        },
+        {
+          "id": "m.pros.accent.pos.2",
+          "value": "prosody: accent: position: second last syllable"
+        },
+        {
+          "id": "m.pros.accent.pos.3",
+          "value": "prosody: accent: position: third last syllable"
+        },
+        {
+          "id": "m.pros.closed",
+          "value": "prosody: closed syllable"
+        },
+        {
+          "id": "m.pros.coda",
+          "value": "prosody: coda consonant"
+        },
+        {
+          "id": "m.pros.diaeresis",
+          "value": "prosody: diaeresis"
+        },
+        {
+          "id": "m.pros.final-syl",
+          "value": "prosody: final syllable"
+        },
+        {
+          "id": "m.pros.hiatus",
+          "value": "prosody: hiatus"
+        },
+        {
+          "id": "m.pros.initial-syl",
+          "value": "prosody: initial syllable"
+        },
+        {
+          "id": "m.pros.inner-syl",
+          "value": "prosody: inner syllable"
+        },
+        {
+          "id": "m.pros.nucleus",
+          "value": "prosody: nucleus / core of the syllable"
+        },
+        {
+          "id": "m.pros.onset",
+          "value": "prosody: onset consonant"
+        },
+        {
+          "id": "m.pros.open-syl",
+          "value": "prosody: open syllable"
+        },
+        {
+          "id": "m.pros.border",
+          "value": "prosody: syllable boders/syllabification"
+        },
+        {
+          "id": "m.pros.syl-len",
+          "value": "prosody: syllable length"
+        },
+        {
+          "id": "m.pros.synaeresis",
+          "value": "prosody: synaeresis"
+        },
+        {
+          "id": "m.pros.synizesis",
+          "value": "prosody: synizesis"
+        },
+        {
+          "id": "m.sem",
+          "value": "semantics"
+        },
+        {
+          "id": "m.sem.definition",
+          "value": "semantics: definition"
+        },
+        {
+          "id": "m.sem.synonym",
+          "value": "semantics: synonym"
+        },
+        {
+          "id": "m.sem.hyperonym",
+          "value": "semantics: hyperonym"
+        },
+        {
+          "id": "m.syn",
+          "value": "syntax"
+        },
+        {
+          "id": "m.syn.adj",
+          "value": "syntax: adjective"
+        },
+        {
+          "id": "m.syn.adj.cp",
+          "value": "syntax: adjective: comparative in an absolute sense"
+        },
+        {
+          "id": "m.syn.adj.cp-sp",
+          "value": "syntax: adjective: comparative instead of superlative"
+        },
+        {
+          "id": "m.syn.adj.sp-cp",
+          "value": "syntax: adjective: superlative instead of comparative"
+        },
+        {
+          "id": "m.syn.agr",
+          "value": "syntax: agreement"
+        },
+        {
+          "id": "m.syn.agr.gram",
+          "value": "syntax: agreement: grammatical"
+        },
+        {
+          "id": "m.syn.agr.gram.nom-multi",
+          "value": "syntax: agreement: grammatical: of nominal modifiers with multiple nouns / compound noun phrases"
+        },
+        {
+          "id": "m.syn.agr.gram.vrb-compound",
+          "value": "syntax: agreement: grammatical: of the verb with a compound subject"
+        },
+        {
+          "id": "m.syn.agr.not",
+          "value": "syntax: agreement: notional/constructio ad sensum"
+        },
+        {
+          "id": "m.syn.apo-koinou",
+          "value": "syntax: ἀπὸ κοινοῦ"
+        },
+        {
+          "id": "m.syn.apposition",
+          "value": "syntax: apposition"
+        },
+        {
+          "id": "m.syn.attraction",
+          "value": "syntax: attraction"
+        },
+        {
+          "id": "m.syn.case",
+          "value": "syntax: case syntax"
+        },
+        {
+          "id": "m.syn.case.n",
+          "value": "syntax: case syntax: nominative"
+        },
+        {
+          "id": "m.syn.case.n.pro-v",
+          "value": "syntax: case syntax: nominative: instead of vocative"
+        },
+        {
+          "id": "m.syn.case.g",
+          "value": "syntax: case syntax: genetive"
+        },
+        {
+          "id": "m.syn.case.g.absolute",
+          "value": "syntax: case syntax: genetive: absolute"
+        },
+        {
+          "id": "m.syn.case.g.comparison",
+          "value": "syntax: case syntax: genetive: of comparison"
+        },
+        {
+          "id": "m.syn.case.g.charge",
+          "value": "syntax: case syntax: genetive: of charge/of crime"
+        },
+        {
+          "id": "m.syn.case.g.exepegetic",
+          "value": "syntax: case syntax: genetive: exepegetical"
+        },
+        {
+          "id": "m.syn.case.g.verb",
+          "value": "syntax: case syntax: genetive: governed by verbs"
+        },
+        {
+          "id": "m.syn.case.g.objective",
+          "value": "syntax: case syntax: genetive: objective"
+        },
+        {
+          "id": "m.syn.case.g.partitive",
+          "value": "syntax: case syntax: genetive: partitive"
+        },
+        {
+          "id": "m.syn.case.g.possessive",
+          "value": "syntax: case syntax: genetive: possessive"
+        },
+        {
+          "id": "m.syn.case.g.price",
+          "value": "syntax: case syntax: genetive: of price"
+        },
+        {
+          "id": "m.syn.case.g.quality",
+          "value": "syntax: case syntax: genetive: of quality"
+        },
+        {
+          "id": "m.syn.case.g.subjective",
+          "value": "syntax: case syntax: genetive: subjective"
+        },
+        {
+          "id": "m.syn.case.d",
+          "value": "syntax: case syntax: dative"
+        },
+        {
+          "id": "m.syn.case.d.agent",
+          "value": "syntax: case syntax: dative: of agent"
+        },
+        {
+          "id": "m.syn.case.d.direction",
+          "value": "syntax: case syntax: dative: of direction"
+        },
+        {
+          "id": "m.syn.case.d.ethical",
+          "value": "syntax: case syntax: dative: ethical"
+        },
+        {
+          "id": "m.syn.case.d.adjective",
+          "value": "syntax: case syntax: dative: governed by adjectives"
+        },
+        {
+          "id": "m.syn.case.d.verb",
+          "value": "syntax: case syntax: dative: governed by verbs"
+        },
+        {
+          "id": "m.syn.case.d.possession",
+          "value": "syntax: case syntax: dative: of possession"
+        },
+        {
+          "id": "m.syn.case.a",
+          "value": "syntax: case syntax: accusative"
+        },
+        {
+          "id": "m.syn.case.a.adverbial",
+          "value": "syntax: case syntax: accusative: adverbial"
+        },
+        {
+          "id": "m.syn.case.a.cognate",
+          "value": "syntax: case syntax: accusative: cognate"
+        },
+        {
+          "id": "m.syn.case.a.double",
+          "value": "syntax: case syntax: accusative: double"
+        },
+        {
+          "id": "m.syn.case.a.exclamation",
+          "value": "syntax: case syntax: accusative: of exclamation"
+        },
+        {
+          "id": "m.syn.case.a.extent",
+          "value": "syntax: case syntax: accusative: extent, duration"
+        },
+        {
+          "id": "m.syn.case.a.intransitive",
+          "value": "syntax: case syntax: accusative: with intransitive verbs"
+        },
+        {
+          "id": "m.syn.case.a.motion",
+          "value": "syntax: case syntax: accusative: of motion towards"
+        },
+        {
+          "id": "m.syn.case.a.object",
+          "value": "syntax: case syntax: accusative: object"
+        },
+        {
+          "id": "m.syn.case.a.relation",
+          "value": "syntax: case syntax: accusative: relation"
+        },
+        {
+          "id": "m.syn.case.v",
+          "value": "syntax: case syntax: vocative"
+        },
+        {
+          "id": "m.syn.case.v-n",
+          "value": "syntax: case syntax: vocative: instead of nominative"
+        },
+        {
+          "id": "m.syn.case.b",
+          "value": "syntax: case syntax: ablative"
+        },
+        {
+          "id": "m.syn.case.b.absolute",
+          "value": "syntax: case syntax: ablative: absolute"
+        },
+        {
+          "id": "m.syn.case.b.adverbial",
+          "value": "syntax: case syntax: ablative: adverbial"
+        },
+        {
+          "id": "m.syn.case.b.agent",
+          "value": "syntax: case syntax: ablative: of agent"
+        },
+        {
+          "id": "m.syn.case.b.cause",
+          "value": "syntax: case syntax: ablative: of cause"
+        },
+        {
+          "id": "m.syn.case.b.comparison",
+          "value": "syntax: case syntax: ablative: of comparison"
+        },
+        {
+          "id": "m.syn.case.b.degree",
+          "value": "syntax: case syntax: ablative: of degree of difference"
+        },
+        {
+          "id": "m.syn.case.b.adjective",
+          "value": "syntax: case syntax: ablative: governed by adjectives"
+        },
+        {
+          "id": "m.syn.case.b.verb",
+          "value": "syntax: case syntax: ablative: governed by verbs"
+        },
+        {
+          "id": "m.syn.case.b.manner",
+          "value": "syntax: case syntax: ablative: of manner"
+        },
+        {
+          "id": "m.syn.case.b.means",
+          "value": "syntax: case syntax: ablative: of means"
+        },
+        {
+          "id": "m.syn.case.b.quality",
+          "value": "syntax: case syntax: ablative: of quality/of description"
+        },
+        {
+          "id": "m.syn.case.b.from-place",
+          "value": "syntax: case syntax: ablative: of place from which"
+        },
+        {
+          "id": "m.syn.case.b.in-place",
+          "value": "syntax: case syntax: ablative: of place where, of time when"
+        },
+        {
+          "id": "m.syn.case.b.price",
+          "value": "syntax: case syntax: ablative: of price"
+        },
+        {
+          "id": "m.syn.case.b.respect",
+          "value": "syntax: case syntax: ablative: of respect/of specification"
+        },
+        {
+          "id": "m.syn.case.b.separation",
+          "value": "syntax: case syntax: ablative: of separation"
+        },
+        {
+          "id": "m.syn.clause",
+          "value": "syntax: clauses and sentences"
+        },
+        {
+          "id": "m.syn.clause.comparative",
+          "value": "syntax: clauses and sentences: comparative"
+        },
+        {
+          "id": "m.syn.clause.concessive",
+          "value": "syntax: clauses and sentences: concessive"
+        },
+        {
+          "id": "m.syn.clause.condition",
+          "value": "syntax: clauses and sentences: conditional"
+        },
+        {
+          "id": "m.syn.clause.condition.apodosis",
+          "value": "syntax: clauses and sentences: conditional: apodosis"
+        },
+        {
+          "id": "m.syn.clause.condition.counter",
+          "value": "syntax: clauses and sentences: conditional: counterfactual "
+        },
+        {
+          "id": "m.syn.clause.condition.potential",
+          "value": "syntax: clauses and sentences: conditional: potential"
+        },
+        {
+          "id": "m.syn.clause.condition.protasis",
+          "value": "syntax: clauses and sentences: conditional: protasis"
+        },
+        {
+          "id": "m.syn.clause.condition.real",
+          "value": "syntax: clauses and sentences: conditional: real"
+        },
+        {
+          "id": "m.syn.clause.final",
+          "value": "syntax: clauses and sentences: final"
+        },
+        {
+          "id": "m.syn.clause.indirect",
+          "value": "syntax: clauses and sentences: indirect"
+        },
+        {
+          "id": "m.syn.clause.interr",
+          "value": "syntax: clauses and sentences: interrogative"
+        },
+        {
+          "id": "m.syn.clause.relative",
+          "value": "syntax: clauses and sentences: relative"
+        },
+        {
+          "id": "m.syn.coord",
+          "value": "syntax: coordination"
+        },
+        {
+          "id": "m.syn.coord.adversative",
+          "value": "syntax: coordination: adversative"
+        },
+        {
+          "id": "m.syn.coord.asyndetic",
+          "value": "syntax: coordination: asyndetic"
+        },
+        {
+          "id": "m.syn.coord.conjunctive",
+          "value": "syntax: coordination: conjunctive"
+        },
+        {
+          "id": "m.syn.coord.disjunctive",
+          "value": "syntax: coordination: disjunctive"
+        },
+        {
+          "id": "m.syn.coord.emphatic",
+          "value": "syntax: coordination: emphatic"
+        },
+        {
+          "id": "m.syn.correlation",
+          "value": "syntax: correlation"
+        },
+        {
+          "id": "m.syn.distributive",
+          "value": "syntax: distributive apposition"
+        },
+        {
+          "id": "m.syn.ellipsis",
+          "value": "syntax: ellipsis/omission"
+        },
+        {
+          "id": "m.syn.hyperbaton",
+          "value": "syntax: hyperbaton"
+        },
+        {
+          "id": "m.syn.litotes",
+          "value": "syntax: litotes"
+        },
+        {
+          "id": "m.syn.negation",
+          "value": "syntax: negation"
+        },
+        {
+          "id": "m.syn.nominalization",
+          "value": "syntax: nominalization/substantivization"
+        },
+        {
+          "id": "m.syn.para-pro-hypo",
+          "value": "syntax: parataxis instead of hypotaxis / subordinate clauses without conjunctions"
+        },
+        {
+          "id": "m.syn.pos",
+          "value": "syntax: part of speech"
+        },
+        {
+          "id": "m.syn.pos.adj",
+          "value": "syntax: part of speech: adjective"
+        },
+        {
+          "id": "m.syn.pos.adv",
+          "value": "syntax: part of speech: adverb"
+        },
+        {
+          "id": "m.syn.pos.art",
+          "value": "syntax: part of speech: article"
+        },
+        {
+          "id": "m.syn.pos.cj",
+          "value": "syntax: part of speech: conjunction"
+        },
+        {
+          "id": "m.syn.pos.interj",
+          "value": "syntax: part of speech: interjection"
+        },
+        {
+          "id": "m.syn.pos.noun",
+          "value": "syntax: part of speech: noun"
+        },
+        {
+          "id": "m.syn.pos.prep",
+          "value": "syntax: part of speech: preposition"
+        },
+        {
+          "id": "m.syn.pos.pron",
+          "value": "syntax: part of speech: pronoun"
+        },
+        {
+          "id": "m.syn.pos.verb",
+          "value": "syntax: part of speech: verb"
+        },
+        {
+          "id": "m.syn.periphrasis",
+          "value": "syntax: periphrasis"
+        },
+        {
+          "id": "m.syn.pleonasm",
+          "value": "syntax: pleonasm"
+        },
+        {
+          "id": "m.syn.prep",
+          "value": "syntax: preposition"
+        },
+        {
+          "id": "m.syn.prep.adverbial",
+          "value": "syntax: preposition: adverbial"
+        },
+        {
+          "id": "m.syn.prep.anastrophe",
+          "value": "syntax: preposition: anastrophe"
+        },
+        {
+          "id": "m.syn.prep.g",
+          "value": "syntax: preposition: with genetive"
+        },
+        {
+          "id": "m.syn.prep.d",
+          "value": "syntax: preposition: with dative"
+        },
+        {
+          "id": "m.syn.prep.a",
+          "value": "syntax: preposition: with accusative"
+        },
+        {
+          "id": "m.syn.prep.b",
+          "value": "syntax: preposition: with ablative"
+        },
+        {
+          "id": "m.syn.proleptic",
+          "value": "syntax: proleptic construction"
+        },
+        {
+          "id": "m.syn.pron",
+          "value": "syntax: pronoun"
+        },
+        {
+          "id": "m.syn.pron.demonstr",
+          "value": "syntax: pronoun: demonstrative"
+        },
+        {
+          "id": "m.syn.pron.indefinite",
+          "value": "syntax: pronoun: indefinite"
+        },
+        {
+          "id": "m.syn.pron.reflexive",
+          "value": "syntax: pronoun: indirect reflexive"
+        },
+        {
+          "id": "m.syn.pron.personal",
+          "value": "syntax: pronoun: personal"
+        },
+        {
+          "id": "m.syn.pron.possessive",
+          "value": "syntax: pronoun: possessive"
+        },
+        {
+          "id": "m.syn.pron.adjective",
+          "value": "syntax: pronoun: pronominal adjective"
+        },
+        {
+          "id": "m.syn.pron.adverb",
+          "value": "syntax: pronoun: pronominal adverb"
+        },
+        {
+          "id": "m.syn.pron.reciprocal",
+          "value": "syntax: pronoun: reciprocal construction"
+        },
+        {
+          "id": "m.syn.pron.reflexive",
+          "value": "syntax: pronoun: reflexive"
+        },
+        {
+          "id": "m.syn.repetition",
+          "value": "syntax: repetition"
+        },
+        {
+          "id": "m.syn.tmesis",
+          "value": "syntax: tmesis"
+        },
+        {
+          "id": "m.syn.vrb",
+          "value": "syntax: verb"
+        },
+        {
+          "id": "m.syn.vrb.absolute",
+          "value": "syntax: verb: absolute use"
+        },
+        {
+          "id": "m.syn.vrb.aspect",
+          "value": "syntax: verb: aspect"
+        },
+        {
+          "id": "m.syn.vrb.aspect.aor",
+          "value": "syntax: verb: aspect: aoristic"
+        },
+        {
+          "id": "m.syn.vrb.aspect.impf",
+          "value": "syntax: verb: aspect: imperfective"
+        },
+        {
+          "id": "m.syn.vrb.aspect.pf",
+          "value": "syntax: verb: aspect: perfective"
+        },
+        {
+          "id": "m.syn.vrb.copular",
+          "value": "syntax: verb: copular"
+        },
+        {
+          "id": "m.syn.vrb.cum",
+          "value": "syntax: verb: cum narrativum"
+        },
+        {
+          "id": "m.syn.vrb.gdv",
+          "value": "syntax: verb: gerundive"
+        },
+        {
+          "id": "m.syn.vrb.gdv.predicative",
+          "value": "syntax: verb: gerundive: predicative use"
+        },
+        {
+          "id": "m.syn.vrb.fut-gnom",
+          "value": "syntax: verb: gnomic future"
+        },
+        {
+          "id": "m.syn.vrb.pf-gnom",
+          "value": "syntax: verb: gnomic perfect"
+        },
+        {
+          "id": "m.syn.vrb.pres-hist",
+          "value": "syntax: verb: historic present"
+        },
+        {
+          "id": "m.syn.vrb.impers",
+          "value": "syntax: verb: impersonal construction"
+        },
+        {
+          "id": "m.syn.vrb.inf",
+          "value": "syntax: verb: infinitive"
+        },
+        {
+          "id": "m.syn.vrb.inf.adnominal",
+          "value": "syntax: verb: infinitive: adnominal"
+        },
+        {
+          "id": "m.syn.vrb.inf.auxiliary",
+          "value": "syntax: verb: infinitive: with auxiliary verbs"
+        },
+        {
+          "id": "m.syn.vrb.inf.historic",
+          "value": "syntax: verb: infinitive: historic"
+        },
+        {
+          "id": "m.syn.vrb.inf.predicative",
+          "value": "syntax: verb: infinitive: predicative use"
+        },
+        {
+          "id": "m.syn.vrb.inf.infinitival",
+          "value": "syntax: verb: infinitive: infinitival clause"
+        },
+        {
+          "id": "m.syn.vrb.pf-ingr",
+          "value": "syntax: verb: ingressive perfect"
+        },
+        {
+          "id": "m.syn.vrb.intransitive",
+          "value": "syntax: verb: intransitive"
+        },
+        {
+          "id": "m.syn.vrb.motion",
+          "value": "syntax: verb: of motion"
+        },
+        {
+          "id": "m.syn.vrb.part",
+          "value": "syntax: verb: participle"
+        },
+        {
+          "id": "m.syn.vrb.part.attributive",
+          "value": "syntax: verb: participle: attributive use"
+        },
+        {
+          "id": "m.syn.vrb.part.verbal",
+          "value": "syntax: verb: participle: participial-verbal use"
+        },
+        {
+          "id": "m.syn.vrb.part.predicative",
+          "value": "syntax: verb: participle: predicative use"
+        },
+        {
+          "id": "m.syn.vrb.part.substantive",
+          "value": "syntax: verb: participle: substantival use"
+        },
+        {
+          "id": "m.syn.vrb.personal",
+          "value": "syntax: verb: personal construction"
+        },
+        {
+          "id": "m.syn.vrb.reflexive",
+          "value": "syntax: verb: reflexive"
+        },
+        {
+          "id": "m.syn.vrb.sub",
+          "value": "syntax: verb: subjunctive"
+        },
+        {
+          "id": "m.syn.vrb.sub.adhortative",
+          "value": "syntax: verb: subjunctive: adhortative"
+        },
+        {
+          "id": "m.syn.vrb.sub.optative",
+          "value": "syntax: verb: subjunctive: optative"
+        },
+        {
+          "id": "m.syn.vrb.sub.potential",
+          "value": "syntax: verb: subjunctive: potential"
+        },
+        {
+          "id": "m.syn.vrb.transitive",
+          "value": "syntax: verb: transitive"
+        },
+        {
+          "id": "m.textcrit",
+          "value": "textual criticism"
+        },
+        {
+          "id": "m.socio",
+          "value": "sociolinguistics"
+        },
+        {
+          "id": "m.histlang",
+          "value": "history of language"
+        },
+        {
+          "id": "m.lang",
+          "value": "language concerned"
+        },
+        {
+          "id": "m.lang.chaldean",
+          "value": "language: Chaldean"
+        },
+        {
+          "id": "m.lang.faliscan",
+          "value": "language: Faliscan"
+        },
+        {
+          "id": "m.lang.greek",
+          "value": "language: Greek"
+        },
+        {
+          "id": "m.lang.greek.aeolic",
+          "value": "language: Greek: Aeolic"
+        },
+        {
+          "id": "m.lang.greek.attic",
+          "value": "language: Greek: Attic"
+        },
+        {
+          "id": "m.lang.greek.boeotian",
+          "value": "language: Greek: Boeotian"
+        },
+        {
+          "id": "m.lang.greek.doric",
+          "value": "language: Greek: Doric"
+        },
+        {
+          "id": "m.lang.greek.ionic",
+          "value": "language: Greek: Ionic"
+        },
+        {
+          "id": "m.lang.hebrew",
+          "value": "language: Hebrew"
+        },
+        {
+          "id": "m.lang.latin",
+          "value": "language: Latin"
+        },
+        {
+          "id": "m.lang.oscan",
+          "value": "language: Oscan"
+        },
+        {
+          "id": "m.lang.umbrian",
+          "value": "language: Umbrian"
         }
       ]
     },
@@ -569,15 +4720,15 @@
         },
         {
           "id": "w8",
-          "value": "Bernensis 167, origine Autissiodorensis olim creditus (desunt Aen. 12.452-579; 772-952) [MO B.11: saec. IX�]"
+          "value": "Bernensis 167, origine Autissiodorensis olim creditus (desunt Aen. 12.452-579; 772-952) [MO B.11: saec. IX²]"
         },
         {
           "id": "w9",
-          "value": "Oxoniensis Bodl. Auct. F. 2.8, ante annum fere 850 Parisiis exaratus in coenobio S. Germani [MO B. 155, saec. IX�]"
+          "value": "Oxoniensis Bodl. Auct. F. 2.8, ante annum fere 850 Parisiis exaratus in coenobio S. Germani [MO B. 155, saec. IX¹]"
         },
         {
           "id": "w10",
-          "value": "Valentianensis 407 (389), olim S. Amandi Elnonensis sive in Pabula [MO B.231: saec IX�]"
+          "value": "Valentianensis 407 (389), olim S. Amandi Elnonensis sive in Pabula [MO B.231: saec IX²]"
         }
       ]
     },
@@ -716,15 +4867,6 @@
         "options": {
           "maxFragmentCount": 3
         }
-      },
-      {
-        "id": "seed.it.vedph.tiled-text"
-      },
-      {
-        "id": "seed.it.vedph.tiled-text-layer",
-        "options": {
-          "maxFragmentCount": 3
-        }
       }
     ],
     "fragmentSeeders": [
@@ -735,16 +4877,6 @@
             "language",
             "history",
             "geography"
-          ]
-        }
-      },
-      {
-        "id": "seed.fr.it.vedph.chronology",
-        "options": {
-          "tags": [
-            "bat",
-            "prst",
-            "cos"
           ]
         }
       },
@@ -772,14 +4904,7 @@
         }
       },
       {
-        "id": "seed.fr.it.vedph.witnesses",
-        "options": {
-          "ids": [
-            "Fest.",
-            "Diac.",
-            "Isid."
-          ]
-        }
+        "id": "seed.fr.it.vedph.tgr.ling-tags"
       }
     ]
   }
