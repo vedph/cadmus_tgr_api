@@ -33,14 +33,6 @@
           "sortKey": "keywords"
         },
         {
-          "typeId": "it.vedph.index-keywords",
-          "name": "index keywords",
-          "description": "Item's index keywords.",
-          "colorKey": "588BBF",
-          "groupKey": "general",
-          "sortKey": "keywords-x"
-        },
-        {
           "typeId": "it.vedph.note",
           "name": "note",
           "description": "A free text note.",
@@ -141,10 +133,6 @@
         {
           "id": "it.vedph.keywords",
           "value": "keywords"
-        },
-        {
-          "id": "it.vedph.index-keywords",
-          "value": "index keywords"
         },
         {
           "id": "it.vedph.note",
@@ -577,6 +565,10 @@
           "value": "syllaba: accentus/tenor: gravis/βαρεῖα"
         },
         {
+          "id": "a.syl.accentus.loc",
+          "value": "syllaba: accentus/tenor: loca"
+        },
+        {
           "id": "a.syl.accentus.loc.3",
           "value": "syllaba: accentus/tenor: loca: antepaenultimum"
         },
@@ -605,8 +597,8 @@
           "value": "syllaba: coniuncta"
         },
         {
-          "id": "a.syl",
-          "value": "syllaba: "
+          "id": "a.syl.const",
+          "value": "syllaba: constat ex"
         },
         {
           "id": "a.syl.const.diph",
@@ -681,12 +673,12 @@
           "value": "syllaba: transmutatio"
         },
         {
-          "id": "a.por.adv",
-          "value": "de partibus or.: adverbium"
-        },
-        {
           "id": "a.por",
           "value": "de partibus orationis"
+        },
+        {
+          "id": "a.por.adv",
+          "value": "de partibus or.: adverbium"
         },
         {
           "id": "a.por.app",
@@ -1489,6 +1481,10 @@
           "value": "de verbo: coniugationes VI"
         },
         {
+          "id": "a.vrb.fig",
+          "value": "de verbo: figurae"
+        },
+        {
           "id": "a.vrb.fig.comp",
           "value": "de verbo: figurae: composita"
         },
@@ -2015,10 +2011,6 @@
         {
           "id": "a.prp.ordo.pot.causalis",
           "value": "de praepositione: potestas: causalis"
-        },
-        {
-          "id": "a.prp.ordo.pot.",
-          "value": "de praepositione: potestas: "
         },
         {
           "id": "a.prp.ordo.pot.contrarietas",
@@ -3386,11 +3378,11 @@
           "value": "morphology: inflectional type: verbal: present stems: ĕ"
         },
         {
-          "id": "m.morph.infl.vrb.pres.e1.",
+          "id": "m.morph.infl.vrb.pres.e1.sce",
           "value": "morphology: inflectional type: verbal: present stems: ĕ: -scĕ-"
         },
         {
-          "id": "m.morph.infl.vrb.pres.e1.",
+          "id": "m.morph.infl.vrb.pres.e1.asse",
           "value": "morphology: inflectional type: verbal: present stems: ĕ: -assĕ-, essĕ-, -issĕ-"
         },
         {
@@ -3744,10 +3736,6 @@
         {
           "id": "m.pho.c.n-m",
           "value": "phonetics: consonantism: n > m before labial consonants"
-        },
-        {
-          "id": "m.pho.c.",
-          "value": "phonetics: consonantism: "
         },
         {
           "id": "m.pho.c.nasalization",
@@ -4815,22 +4803,6 @@
         }
       },
       {
-        "id": "seed.it.vedph.index-keywords",
-        "options": {
-          "indexIds": [
-            "persons",
-            "places"
-          ],
-          "languages": [
-            "eng",
-            "deu",
-            "ita",
-            "fra",
-            "spa"
-          ]
-        }
-      },
-      {
         "id": "seed.it.vedph.bibliography",
         "options": {
           "authors": [
@@ -4884,16 +4856,6 @@
         "id": "seed.fr.it.vedph.apparatus"
       },
       {
-        "id": "seed.fr.it.vedph.orthography",
-        "options": {
-          "tags": [
-            "ph.c.occl.",
-            "ph.c.liq.",
-            "ph.c.nas."
-          ]
-        }
-      },
-      {
         "id": "seed.fr.it.vedph.quotations",
         "options": {
           "authors": [
@@ -4904,7 +4866,23 @@
         }
       },
       {
-        "id": "seed.fr.it.vedph.tgr.ling-tags"
+        "id": "seed.fr.it.vedph.tgr.ling-tags",
+        "options": {
+          "entries": [
+            {
+              "id": "a.syl.accentus.a",
+              "value": "syllaba: accentus/tenor: acutus/ὀξεῖα"
+            },
+            {
+              "id": "a.syl.accentus.c",
+              "value": "syllaba: accentus/tenor: circumflexus/περισπωμένη"
+            },
+            {
+              "id": "a.syl.accentus.g",
+              "value": "syllaba: accentus/tenor: gravis/βαρεῖα"
+            }
+          ]
+        }
       }
     ]
   }
