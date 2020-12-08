@@ -18,13 +18,13 @@ xcopy %src%cadmus.api.models\1.0.3\*.nupkg .\local-packages\ /y
 xcopy %src%cadmus.api.services\1.0.8\*.nupkg .\local-packages\ /y
 xcopy %src%cadmus.api.controllers\1.0.5\*.nupkg .\local-packages\ /y
 
-xcopy %src%cadmus.tgr.services\1.0.1\*.nupkg .\local-packages\ /y
+xcopy %src%cadmus.tgr.services\1.0.2\*.nupkg .\local-packages\ /y
 xcopy %src%cadmus.tgr.parts\1.0.1\*.nupkg .\local-packages\ /y
 xcopy %src%cadmus.seed.tgr.parts\1.0.1\*.nupkg .\local-packages\ /y
 
 xcopy %src%cadmus.core\2.3.1\*.nupkg .\local-packages\ /y
 xcopy %src%cadmus.index\1.1.2\*.nupkg .\local-packages\ /y
-xcopy %src%cadmus.index.sql\1.1.3\*.nupkg .\local-packages\ /y
+xcopy %src%cadmus.index.sql\1.1.4\*.nupkg .\local-packages\ /y
 xcopy %src%cadmus.mongo\2.3.4\*.nupkg .\local-packages\ /y
 
 xcopy %src%cadmus.parts\2.3.1\*.nupkg .\local-packages\ /y
