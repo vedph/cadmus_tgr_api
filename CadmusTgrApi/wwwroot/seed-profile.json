@@ -697,7 +697,7 @@
     {
       "id": "transcription-tags@en",
       "targetId": "apparatus-tags@en"
-    }
+    },
     {
       "id": "interpolation-languages@en",
       "targetId": "transcription-languages@en"
@@ -13580,6 +13580,344 @@
         {
           "id": "m.lang.umbrian",
           "value": "language: Umbrian"
+        }
+      ]
+    },
+    {
+      "id": "apparatus-witnesses.arus@en",
+      "entries": [
+        {
+          "id": "a",
+          "value": "A"
+        },
+        {
+          "id": "d",
+          "value": "D"
+        },
+        {
+          "id": "g",
+          "value": "G"
+        },
+        {
+          "id": "n1",
+          "value": "N1"
+        },
+        {
+          "id": "n2",
+          "value": "N2"
+        },
+        {
+          "id": "ox1",
+          "value": "Ox1"
+        },
+        {
+          "id": "ox2",
+          "value": "Ox2"
+        },
+        {
+          "id": "ox3",
+          "value": "Ox3"
+        },
+        {
+          "id": "p",
+          "value": "P"
+        },
+        {
+          "id": "u",
+          "value": "U"
+        },
+        {
+          "id": "v1",
+          "value": "V1"
+        },
+        {
+          "id": "v2",
+          "value": "V2"
+        },
+        {
+          "id": "v3",
+          "value": "V3"
+        },
+        {
+          "id": "v4",
+          "value": "V4"
+        }
+      ]
+    },
+    {
+      "id": "apparatus-witnesses.nom-dub@en",
+      "entries": [
+        {
+          "id": "l",
+          "value": "L"
+        },
+        {
+          "id": "m",
+          "value": "M"
+        },
+        {
+          "id": "w",
+          "value": "W"
+        },
+        {
+          "id": "alpha",
+          "value": "α: consensus codd. MW"
+        },
+        {
+          "id": "omega",
+          "value": "ω: consensus αL"
+        }
+      ]
+    },
+    {
+      "id": "apparatus-witnesses.ps-aug-reg@en",
+      "entries": [
+        {
+          "id": "b",
+          "value": "B"
+        },
+        {
+          "id": "e",
+          "value": "E"
+        },
+        {
+          "id": "f",
+          "value": "F"
+        },
+        {
+          "id": "k",
+          "value": "K"
+        },
+        {
+          "id": "m",
+          "value": "M"
+        },
+        {
+          "id": "o",
+          "value": "O"
+        },
+        {
+          "id": "p",
+          "value": "P"
+        },
+        {
+          "id": "v",
+          "value": "V"
+        },
+        {
+          "id": "a",
+          "value": "A"
+        },
+        {
+          "id": "g",
+          "value": "G"
+        },
+        {
+          "id": "h",
+          "value": "H"
+        },
+        {
+          "id": "r",
+          "value": "R"
+        },
+        {
+          "id": "u",
+          "value": "U"
+        },
+        {
+          "id": "omega",
+          "value": "ω: consensus codd. Oα"
+        },
+        {
+          "id": "alpha",
+          "value": "α: consensus codd. βF"
+        },
+        {
+          "id": "beta",
+          "value": "β: consensus codd. EV"
+        },
+        {
+          "id": "epsilon",
+          "value": "ε: consensus codd. BP"
+        },
+        {
+          "id": "stigma",
+          "value": "ς: consensus edd. UKAGRH"
+        }
+      ]
+    },
+    {
+      "id": "apparatus-witnesses.ps-palaem-reg@en",
+      "entries": [
+        {
+          "id": "a",
+          "value": "A"
+        },
+        {
+          "id": "b",
+          "value": "B"
+        },
+        {
+          "id": "m",
+          "value": "M"
+        },
+        {
+          "id": "n",
+          "value": "N"
+        },
+        {
+          "id": "o",
+          "value": "O"
+        },
+        {
+          "id": "r",
+          "value": "R"
+        },
+        {
+          "id": "s",
+          "value": "S"
+        },
+        {
+          "id": "v",
+          "value": "V"
+        },
+        {
+          "id": "w",
+          "value": "W"
+        },
+        {
+          "id": "x",
+          "value": "X"
+        },
+        {
+          "id": "omega",
+          "value": "ω: consensus codd. Oα"
+        },
+        {
+          "id": "alpha",
+          "value": "α: consensus codd. Aμ"
+        },
+        {
+          "id": "my",
+          "value": "μ: consensus codd. Mπ"
+        },
+        {
+          "id": "pi",
+          "value": "π: consensus codd. νξ"
+        },
+        {
+          "id": "ny",
+          "value": "ν: consensus codd. BN(R)"
+        },
+        {
+          "id": "ksi",
+          "value": "ξ: consensus codd. VW(X)"
+        }
+      ]
+    },
+    {
+      "id": "apparatus-witnesses.scaur-orth@en",
+      "entries": [
+        {
+          "id": "p",
+          "value": "P"
+        },
+        {
+          "id": "p2",
+          "value": "P2: manus aequalis, fortasse scribae ipsius, coccino atramento usa"
+        },
+        {
+          "id": "p3",
+          "value": "P3: manus aequalis, pullo atramento usa"
+        },
+        {
+          "id": "p4",
+          "value": "P4: manus recentior, saec. XVI ut videtur, purpureo atramento usa"
+        },
+        {
+          "id": "p5",
+          "value": "P5: manus recentior, Angeli Mai ut puto, nigro atramento usa"
+        },
+        {
+          "id": "omega",
+          "value": "ω"
+        },
+        {
+          "id": "v",
+          "value": "V"
+        },
+        {
+          "id": "b",
+          "value": "B"
+        },
+        {
+          "id": "psi",
+          "value": "ψ"
+        },
+        {
+          "id": "fs",
+          "value": "Fs"
+        },
+        {
+          "id": "m",
+          "value": "M"
+        },
+        {
+          "id": "fn",
+          "value": "Fn"
+        },
+        {
+          "id": "s",
+          "value": "S"
+        },
+        {
+          "id": "f",
+          "value": "F"
+        },
+        {
+          "id": "l",
+          "value": "L"
+        }
+      ]
+    },
+    {
+      "id": "apparatus-witnesses.vel-orth@en",
+      "entries": [
+        {
+          "id": "m",
+          "value": "M"
+        },
+        {
+          "id": "m1",
+          "value": "M1: scriba codicis M se ipse ut videtur corrigens"
+        },
+        {
+          "id": "m2",
+          "value": "M2: manus altera codicis M"
+        },
+        {
+          "id": "m3",
+          "value": "M3: manus Ant. Seripandi (f. 1r)"
+        },
+        {
+          "id": "n",
+          "value": "N"
+        },
+        {
+          "id": "o",
+          "value": "O"
+        },
+        {
+          "id": "p",
+          "value": "P"
+        },
+        {
+          "id": "p2",
+          "value": "P2: manus altera codicis P (A. Manutius Iunior?)"
+        },
+        {
+          "id": "rom1587",
+          "value": "Rom. 1587"
         }
       ]
     }
