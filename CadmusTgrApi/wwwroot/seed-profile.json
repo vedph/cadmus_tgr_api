@@ -2469,6 +2469,10 @@
           "value": "de constructione: casuum/ad casus c.: genetivo"
         },
         {
+          "id": "a.cst.casum.g.-",
+          "value": "de constructione: casuum/ad casus c.: genetivo"
+        },
+        {
           "id": "a.cst.casum.g.consequentia",
           "value": "de constructione: casuum/ad casus c.: genetivo: consequentiae alicuius rerum"
         },
@@ -2485,6 +2489,10 @@
           "value": "de constructione: casuum/ad casus c.: dativo"
         },
         {
+          "id": "a.cst.casum.d.-",
+          "value": "de constructione: casuum/ad casus c.: dativo"
+        },
+        {
           "id": "a.cst.casum.d.commodi",
           "value": "de constructione: casuum/ad casus c.: dativo: commodi vel incommodi/ad gratiam vel utilitatem alicuius vel contra aliquid"
         },
@@ -2497,6 +2505,10 @@
           "value": "de constructione: casuum/ad casus c.: accusativo"
         },
         {
+          "id": "a.cst.casum.a.-",
+          "value": "de constructione: casuum/ad casus c.: accusativo"
+        },
+        {
           "id": "a.cst.casum.a.pars",
           "value": "de constructione: casuum/ad casus c.: accusativo: quando quod parti accidit, hoc toti redditur"
         },
@@ -2506,6 +2518,10 @@
         },
         {
           "id": "a.cst.casum.b",
+          "value": "de constructione: casuum/ad casus c.: ablativo"
+        },
+        {
+          "id": "a.cst.casum.b.-",
           "value": "de constructione: casuum/ad casus c.: ablativo"
         },
         {
@@ -3146,6 +3162,10 @@
           "value": "morphology: inflectional type: nominal: ā"
         },
         {
+          "id": "m.morph.infl.nom.a2.-",
+          "value": "morphology: inflectional type: nominal: ā"
+        },
+        {
           "id": "m.morph.infl.nom.a2.ea",
           "value": "morphology: inflectional type: nominal: ā: -ea-"
         },
@@ -3170,6 +3190,10 @@
           "value": "morphology: inflectional type: nominal: ĭ"
         },
         {
+          "id": "m.morph.infl.nom.i1.-",
+          "value": "morphology: inflectional type: nominal: ĭ"
+        },
+        {
           "id": "m.morph.infl.nom.i1.ensi",
           "value": "morphology: inflectional type: nominal: ĭ: -ensi-"
         },
@@ -3191,6 +3215,10 @@
         },
         {
           "id": "m.morph.infl.nom.o1",
+          "value": "morphology: inflectional type: nominal: ŏ"
+        },
+        {
+          "id": "m.morph.infl.nom.o1.-",
           "value": "morphology: inflectional type: nominal: ŏ"
         },
         {
@@ -3246,6 +3274,10 @@
           "value": "morphology: inflectional type: nominal: ŭ"
         },
         {
+          "id": "m.morph.infl.nom.u1.-",
+          "value": "morphology: inflectional type: nominal: ŭ"
+        },
+        {
           "id": "m.morph.infl.nom.u1.tu-su",
           "value": "morphology: inflectional type: nominal: ŭ: -tu-, -su-"
         },
@@ -3274,6 +3306,10 @@
           "value": "morphology: inflectional type: nominal: k"
         },
         {
+          "id": "m.morph.infl.nom.k.-",
+          "value": "morphology: inflectional type: nominal: k"
+        },        
+        {
           "id": "m.morph.infl.nom.k.ak",
           "value": "morphology: inflectional type: nominal: k: -āk-"
         },
@@ -3291,6 +3327,10 @@
         },
         {
           "id": "m.morph.infl.nom.t",
+          "value": "morphology: inflectional type: nominal: t"
+        },
+        {
+          "id": "m.morph.infl.nom.t.-",
           "value": "morphology: inflectional type: nominal: t"
         },
         {
@@ -3314,6 +3354,10 @@
           "value": "morphology: inflectional type: nominal: n"
         },
         {
+          "id": "m.morph.infl.nom.n.-",
+          "value": "morphology: inflectional type: nominal: n"
+        },          
+        {
           "id": "m.morph.infl.nom.n.in",
           "value": "morphology: inflectional type: nominal: n: -ĭn- (-dĭn-, -gĭn-)"
         },
@@ -3333,6 +3377,10 @@
           "id": "m.morph.infl.nom.r",
           "value": "morphology: inflectional type: nominal: r"
         },
+        {
+          "id": "m.morph.infl.nom.r.-",
+          "value": "morphology: inflectional type: nominal: r"
+        },         
         {
           "id": "m.morph.infl.nom.r.ior",
           "value": "morphology: inflectional type: nominal: r: -iōr- (-eriōr-, -teriōr-)"
@@ -3362,6 +3410,10 @@
           "value": "morphology: inflectional type: verbal: present stems: ā"
         },
         {
+          "id": "m.morph.infl.vrb.pres.a2.-",
+          "value": "morphology: inflectional type: verbal: present stems: ā"
+        },          
+        {
           "id": "m.morph.infl.vrb.pres.a2.ica",
           "value": "morphology: inflectional type: verbal: present stems: ā: -icā-"
         },
@@ -3377,6 +3429,10 @@
           "id": "m.morph.infl.vrb.pres.e1",
           "value": "morphology: inflectional type: verbal: present stems: ĕ"
         },
+        {
+          "id": "m.morph.infl.vrb.pres.e1.-",
+          "value": "morphology: inflectional type: verbal: present stems: ĕ"
+        },        
         {
           "id": "m.morph.infl.vrb.pres.e1.sce",
           "value": "morphology: inflectional type: verbal: present stems: ĕ: -scĕ-"
@@ -3395,6 +3451,10 @@
         },
         {
           "id": "m.morph.infl.vrb.pres.i2",
+          "value": "morphology: inflectional type: verbal: present stems: ī"
+        },
+        {
+          "id": "m.morph.infl.vrb.pres.i2.-",
           "value": "morphology: inflectional type: verbal: present stems: ī"
         },
         {
@@ -4769,7 +4829,7 @@
   "seed": {
     "options": {
       "seed": 1,
-      "users": [ "zeus" ],
+      "users": ["zeus"],
       "partRoles": [],
       "fragmentRoles": []
     },
@@ -4793,13 +4853,7 @@
       {
         "id": "seed.it.vedph.keywords",
         "options": {
-          "languages": [
-            "eng",
-            "deu",
-            "ita",
-            "fra",
-            "spa"
-          ]
+          "languages": ["eng", "deu", "ita", "fra", "spa"]
         }
       },
       {
@@ -4812,23 +4866,13 @@
             "Sampson,James",
             "Voss,Francis"
           ],
-          "journals": [
-            "AJPh",
-            "CJ",
-            "CPh",
-            "CQ",
-            "IF"
-          ]
+          "journals": ["AJPh", "CJ", "CPh", "CQ", "IF"]
         }
       },
       {
         "id": "seed.it.vedph.note",
         "options": {
-          "tags": [
-            "language",
-            "history",
-            "geography"
-          ]
+          "tags": ["language", "history", "geography"]
         }
       },
       {
@@ -4845,11 +4889,7 @@
       {
         "id": "seed.fr.it.vedph.comment",
         "options": {
-          "tags": [
-            "language",
-            "history",
-            "geography"
-          ]
+          "tags": ["language", "history", "geography"]
         }
       },
       {
@@ -4858,11 +4898,7 @@
       {
         "id": "seed.fr.it.vedph.quotations",
         "options": {
-          "authors": [
-            "Fest.",
-            "Diac.",
-            "Isid."
-          ]
+          "authors": ["Fest.", "Diac.", "Isid."]
         }
       },
       {
