@@ -340,6 +340,10 @@
       "id": "apparatus-tags@en",
       "entries": [
         {
+          "id": "-",
+          "value": "---"
+        },
+        {
           "id": "margin",
           "value": "margin"
         },
@@ -376,7 +380,7 @@
       ]
     },
     {
-      "id": "ms-exec-manner@en",
+      "id": "ms-exec-manners@en",
       "entries": [
         {
           "id": "ink",
@@ -389,7 +393,7 @@
       ]
     },
     {
-      "id": "ms-ruling@en",
+      "id": "ms-rulings@en",
       "entries": [
         {
           "id": "direct",
@@ -419,6 +423,19 @@
         {
           "id": "superior",
           "value": "scriptio superior"
+        }
+      ]
+    },
+    {
+      "id": "ms-languages@en",
+      "entries": [
+        {
+          "id": "grc",
+          "value": "Ancient Greek"
+        },
+        {
+          "id": "lat",
+          "value": "Latin"
         }
       ]
     },
@@ -678,6 +695,18 @@
       ]
     },
     {
+      "id": "transcription-tags@en",
+      "targetId": "apparatus-tags@en"
+    }
+    {
+      "id": "interpolation-languages@en",
+      "targetId": "transcription-languages@en"
+    },
+    {
+      "id": "interpolation-tags@en",
+      "targetId": "apparatus-tags@en"
+    },
+    {
       "id": "quotation-tags@en",
       "entries": [
         {
@@ -704,7 +733,7 @@
       ]
     },
     {
-      "id": "quotation-works@en",
+      "id": "author-works@en",
       "entries": [
         {
           "id": "l",
