@@ -261,10 +261,6 @@
           "value": "Ancient Greek"
         },
         {
-          "id": "gre",
-          "value": "Modern Greek"
-        },
-        {
           "id": "ita",
           "value": "Italian"
         },
@@ -274,7 +270,7 @@
         },
         {
           "id": "spa",
-          "value": "Spanish"
+          "value": "Spanish (Castilian)"
         }
       ]
     },
@@ -350,6 +346,347 @@
         {
           "id": "inter",
           "value": "interlinear"
+        }
+      ]
+    },
+    {
+      "id": "ms-materials@en",
+      "entries": [
+        {
+          "id": "parchment",
+          "value": "parchment"
+        },
+        {
+          "id": "paper",
+          "value": "paper"
+        }
+      ]
+    },
+    {
+      "id": "ms-exec-manner@en",
+      "entries": [
+        {
+          "id": "ink",
+          "value": "ink"
+        },
+        {
+          "id": "lead-pt",
+          "value": "lead point"
+        }
+      ]
+    },
+    {
+      "id": "ms-ruling@en",
+      "entries": [
+        {
+          "id": "direct",
+          "value": "direct"
+        },
+        {
+          "id": "transmitted",
+          "value": "transmitted"
+        }
+      ]
+    },
+    {
+      "id": "ms-script-roles@en",
+      "entries": [
+        {
+          "id": "main",
+          "value": "main hand"
+        },
+        {
+          "id": "secondary",
+          "value": "secondary hand"
+        },
+        {
+          "id": "inferior",
+          "value": "scriptio inferior"
+        },
+        {
+          "id": "superior",
+          "value": "scriptio superior"
+        }
+      ]
+    },
+    {
+      "id": "ms-script-types@en",
+      "entries": [
+        {
+          "id": "cap",
+          "value": "Capitalis"
+        },
+        {
+          "id": "o-rom-cur",
+          "value": "Older Roman cursive (majuscule)"
+        },
+        {
+          "id": "l-rom-cur",
+          "value": "Later Roman cursive (minuscule)"
+        },
+        {
+          "id": "unc",
+          "value": "Uncial"
+        },
+        {
+          "id": "h-unc",
+          "value": "Half-uncial"
+        },
+        {
+          "id": "h-unc.-",
+          "value": "Half-uncial"
+        },
+        {
+          "id": "h-unc.o",
+          "value": "Older (eastern) half-uncial"
+        },
+        {
+          "id": "h-unc.l",
+          "value": "Later half-uncial"
+        },
+        {
+          "id": "isl",
+          "value": "Insular"
+        },
+        {
+          "id": "isl.ir",
+          "value": "Insular: Irish"
+        },
+        {
+          "id": "isl.ir.h-unc",
+          "value": "Insular: Irish half-uncial"
+        },
+        {
+          "id": "isl.ir.min",
+          "value": "Insular: Irish minuscule"
+        },
+        {
+          "id": "isl.ir.cur",
+          "value": "Insular: Irish cursive"
+        },
+        {
+          "id": "isl.a-s",
+          "value": "Insular: Anglo-Saxon"
+        },
+        {
+          "id": "isl.a-s.h-unc",
+          "value": "Insular: Anglo-Saxon half-uncial"
+        },
+        {
+          "id": "isl.a-s.min",
+          "value": "Insular: Anglo-Saxon minuscule"
+        },
+        {
+          "id": "isl.a-s.cur",
+          "value": "Insular: Anglo-Saxon cursive"
+        },
+        {
+          "id": "isl.cel",
+          "value": "Insular: other Celtic"
+        },
+        {
+          "id": "vis",
+          "value": "Visigothic"
+        },
+        {
+          "id": "vis.min",
+          "value": "Visigothic minuscule"
+        },
+        {
+          "id": "vis.cur",
+          "value": "Visigothic cursive"
+        },
+        {
+          "id": "sin",
+          "value": "Sinai"
+        },
+        {
+          "id": "sin.min",
+          "value": "Sinai minuscule"
+        },
+        {
+          "id": "n-ita",
+          "value": "north-Italian"
+        },
+        {
+          "id": "n-ita.cur",
+          "value": "north-Italian cursive"
+        },
+        {
+          "id": "n-ita.min",
+          "value": "north-Italian minuscule"
+        },
+        {
+          "id": "mer",
+          "value": "Merovingian"
+        },
+        {
+          "id": "mer.cur",
+          "value": "Merovingian cursive"
+        },
+        {
+          "id": "mer.lux",
+          "value": "Merovingian: Luxeuil type"
+        },
+        {
+          "id": "mer.ab",
+          "value": "Merovingian: ab-type"
+        },
+        {
+          "id": "mer.az",
+          "value": "Merovingian: az-type"
+        },
+        {
+          "id": "mer.b",
+          "value": "Merovingian: b-type"
+        },
+        {
+          "id": "mer.mordr",
+          "value": "Merovingian: Mordramnus minuscule"
+        },
+        {
+          "id": "car",
+          "value": "Caroline minuscule"
+        },
+        {
+          "id": "car.fra",
+          "value": "Caroline minuscule: French"
+        },
+        {
+          "id": "car.deu",
+          "value": "Caroline minuscule: German"
+        },
+        {
+          "id": "car.n-ita",
+          "value": "Caroline minuscule: north-Italian"
+        },
+        {
+          "id": "car.rom",
+          "value": "Caroline minuscule: Roman"
+        },
+        {
+          "id": "ben",
+          "value": "Beneventan script"
+        },
+        {
+          "id": "ben.-",
+          "value": "Beneventan script"
+        },
+        {
+          "id": "ben.mc",
+          "value": "Beneventan script: Monte Cassino"
+        },
+        {
+          "id": "ben.ba",
+          "value": "Beneventan script: Bari"
+        },
+        {
+          "id": "goth",
+          "value": "Gothic textura (textualis)"
+        },
+        {
+          "id": "bast",
+          "value": "Bastarda"
+        },
+        {
+          "id": "hum",
+          "value": "Humanistic"
+        },
+        {
+          "id": "hum.cur",
+          "value": "Humanistic cursive"
+        },
+        {
+          "id": "hum.min",
+          "value": "Humanistic minuscule"
+        }
+      ]
+    },
+    {
+      "id": "ms-ornament-types@en",
+      "entries": [
+        { "id": "cycle", "value": "cycle of illustrations" },
+        { "id": "dec", "value": "decoration" },
+        { "id": "dec.fig", "value": "figurative decoration" },
+        { "id": "dec.geom", "value": "geometric decoration" },
+        { "id": "dec.hist", "value": "historiated decoration" },
+        { "id": "display-script", "value": "display script" },
+        { "id": "drolerie", "value": "drôlerie" },
+        { "id": "figure", "value": "figure" },
+        { "id": "illustr", "value": "illustration" },
+        { "id": "init", "value": "initial" },
+        { "id": "init.ch", "value": "champ initial" },
+        { "id": "init.flor-fol", "value": "floriate / foliate initial" },
+        { "id": "init.fig", "value": "figured initial" },
+        { "id": "init.hist", "value": "historiated initial" },
+        { "id": "init.pen-flour", "value": "pen-flourished initial" },
+        { "id": "init.pl", "value": "plain initial / Lombard" },
+        { "id": "lett", "value": "letter" },
+        { "id": "lett.facet", "value": "facetted letter" },
+        { "id": "lett.highl", "value": "highlighted / colour-stroked letter" },
+        { "id": "lett.interl", "value": "interlocked letter" },
+        { "id": "lett.voi", "value": "voided letter" },
+        { "id": "lettrine", "value": "lettrine" },
+        { "id": "miniature", "value": "miniature" },
+        { "id": "panel", "value": "panel" },
+        { "id": "portrait", "value": "portrait" },
+        { "id": "rubric", "value": "rubric / heading" }
+      ]
+    },
+    {
+      "id": "transcription-roles@en",
+      "entries": [
+        {
+          "id": "paleo",
+          "value": "paleographic tr."
+        },
+        {
+          "id": "gloss",
+          "value": "gloss"
+        },
+        {
+          "id": "paratext",
+          "value": "paratext"
+        }
+      ]
+    },
+    {
+      "id": "transcription-languages@en",
+      "entries": [
+        { "id": "bre", "value": "Breton" },
+        { "id": "frk", "value": "Frankish" },
+        { "id": "fro", "value": "French, Old" },
+        { "id": "ghc", "value": "Gaelic, Hiberno-Scottish" },
+        { "id": "goh", "value": "German, Old High" },
+        { "id": "got", "value": "Gothic" },
+        { "id": "grc", "value": "Greek, Ancient" },
+        { "id": "lng", "value": "Langobardic" },
+        { "id": "lat", "value": "Latin" }
+      ]
+    },
+    {
+      "id": "quotation-tags@en",
+      "entries": [
+        {
+          "id": "-",
+          "value": "---"
+        },
+        {
+          "id": "cf",
+          "value": "cf."
+        }
+      ]
+    },
+    {
+      "id": "quotation-authorities@en",
+      "entries": [
+        {
+          "id": "gram",
+          "value": "grammatical"
+        },
+        {
+          "id": "ling",
+          "value": "linguistic"
         }
       ]
     },
@@ -3308,7 +3645,7 @@
         {
           "id": "m.morph.infl.nom.k.-",
           "value": "morphology: inflectional type: nominal: k"
-        },        
+        },
         {
           "id": "m.morph.infl.nom.k.ak",
           "value": "morphology: inflectional type: nominal: k: -āk-"
@@ -3356,7 +3693,7 @@
         {
           "id": "m.morph.infl.nom.n.-",
           "value": "morphology: inflectional type: nominal: n"
-        },          
+        },
         {
           "id": "m.morph.infl.nom.n.in",
           "value": "morphology: inflectional type: nominal: n: -ĭn- (-dĭn-, -gĭn-)"
@@ -3380,7 +3717,7 @@
         {
           "id": "m.morph.infl.nom.r.-",
           "value": "morphology: inflectional type: nominal: r"
-        },         
+        },
         {
           "id": "m.morph.infl.nom.r.ior",
           "value": "morphology: inflectional type: nominal: r: -iōr- (-eriōr-, -teriōr-)"
@@ -3412,7 +3749,7 @@
         {
           "id": "m.morph.infl.vrb.pres.a2.-",
           "value": "morphology: inflectional type: verbal: present stems: ā"
-        },          
+        },
         {
           "id": "m.morph.infl.vrb.pres.a2.ica",
           "value": "morphology: inflectional type: verbal: present stems: ā: -icā-"
@@ -3432,7 +3769,7 @@
         {
           "id": "m.morph.infl.vrb.pres.e1.-",
           "value": "morphology: inflectional type: verbal: present stems: ĕ"
-        },        
+        },
         {
           "id": "m.morph.infl.vrb.pres.e1.sce",
           "value": "morphology: inflectional type: verbal: present stems: ĕ: -scĕ-"
@@ -4732,96 +5069,6 @@
         {
           "id": "m.lang.umbrian",
           "value": "language: Umbrian"
-        }
-      ]
-    },
-    {
-      "id": "apparatus-witnesses.verg-eclo@en",
-      "entries": [
-        {
-          "id": "w1",
-          "value": "Bernensis 172 cum Parisino lat. 7929, olim Floriacensis, saec. IX. [MO B. 12, saec. IX m.]"
-        },
-        {
-          "id": "w2",
-          "value": "correctores vel variae lectiones fere eiusdem aetatis"
-        },
-        {
-          "id": "w3",
-          "value": "Bernensis 165, olim Turonensis [MO B. 10, saec. IX 1/4]"
-        },
-        {
-          "id": "w4",
-          "value": "correctores vel variae lectiones fere eiusdem aetatis"
-        },
-        {
-          "id": "w5",
-          "value": "Bernensis 184 [MO B.13: saec. IX-X]"
-        },
-        {
-          "id": "w6",
-          "value": "correctores vel variae lectiones fere eiusdem aetatis"
-        },
-        {
-          "id": "w7",
-          "value": "Bernensis 255 + 239, in Gallia septentrionali oriundus [MO B. 14, saec. IX 2/3]"
-        },
-        {
-          "id": "w8",
-          "value": "Bernensis 167, origine Autissiodorensis olim creditus (desunt Aen. 12.452-579; 772-952) [MO B.11: saec. IX²]"
-        },
-        {
-          "id": "w9",
-          "value": "Oxoniensis Bodl. Auct. F. 2.8, ante annum fere 850 Parisiis exaratus in coenobio S. Germani [MO B. 155, saec. IX¹]"
-        },
-        {
-          "id": "w10",
-          "value": "Valentianensis 407 (389), olim S. Amandi Elnonensis sive in Pabula [MO B.231: saec IX²]"
-        }
-      ]
-    },
-    {
-      "id": "apparatus-authors.verg-eclo@en",
-      "entries": [
-        {
-          "id": "author1",
-          "value": "Aldhelmus (saec. VII), Opera , ed. R. Ehwald, Berolini 1913-1919."
-        },
-        {
-          "id": "author2",
-          "value": "Anthologia latina (codex Salmasianus saec. VIII), ed. A. Riese, Lipsiae 1894-1906"
-        },
-        {
-          "id": "author3",
-          "value": "Ars anonyma bernensis = GLK VIII (1870), pp. 62-142."
-        },
-        {
-          "id": "author4",
-          "value": "Arusianus Messius (saec. IV ex.), Opus grammaticum sc. Exempla elocutionum ex Vergilio Sallustio Terentio Cicerone digesta per litteras alphabeti = GLK VII (1880), pp. 449-514."
-        },
-        {
-          "id": "author5",
-          "value": "Beda Presbyterus (VII saec.), Liber de arte metrica et de orthographia = GLK VII (1880), pp. 217-294."
-        },
-        {
-          "id": "author6",
-          "value": "Brevis expositio Vergilii georgicorum, ed. H. Hagen, Lipsiae 1902, pp. 193-320."
-        },
-        {
-          "id": "author7",
-          "value": "Flavius Sosipater Charisius (saec. IV ex.), Artis grammaticae libri V = GLK I (1857), pp. 1-296."
-        },
-        {
-          "id": "author8",
-          "value": "Cledonius (saec. V), Ars grammatica = GLK V (1868), pp. 9-79."
-        },
-        {
-          "id": "author9",
-          "value": "Commentum einsidlense in Donati artem (minorem et maiorem) = GLK VIII (1870), pp. 202-274."
-        },
-        {
-          "id": "author10",
-          "value": "Marci Annaei Lucani commenta Bernensia, ed. H. Usener, Lipsiae 1869."
         }
       ]
     }
