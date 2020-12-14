@@ -29,7 +29,7 @@ using Cadmus.Api.Services.Messaging;
 using Cadmus.Api.Services;
 using System.Linq;
 using Microsoft.AspNetCore.HttpOverrides;
-using CadmusTgrApi.Services;
+using Cadmus.Tgr.Services;
 
 namespace CadmusTgrApi
 {
@@ -235,10 +235,10 @@ namespace CadmusTgrApi
             // configuration
             services.AddSingleton(_ => Configuration);
             // repository
-            services.AddSingleton<IRepositoryProvider, AppRepositoryProvider>();
+            services.AddSingleton<IRepositoryProvider, TgrRepositoryProvider>();
             // part seeder factory provider
             services.AddSingleton<IPartSeederFactoryProvider,
-                AppPartSeederFactoryProvider>();
+                TgrPartSeederFactoryProvider>();
             // item browser factory provider
             services.AddSingleton<IItemBrowserFactoryProvider>(_ =>
                 new StandardItemBrowserFactoryProvider(

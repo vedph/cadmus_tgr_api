@@ -1,91 +1,173 @@
 ﻿{
   "facets": [
-    {
-      "id": "default",
-      "label": "default",
-      "description": "The default facet",
-      "colorKey": "86ACEB",
-      "partDefinitions": [
-        {
-          "typeId": "it.vedph.categories",
-          "name": "categories",
-          "description": "Item's categories.",
-          "required": true,
-          "colorKey": "98F8F8",
-          "groupKey": "general",
-          "sortKey": "categories"
-        },
-        {
-          "typeId": "it.vedph.historical-date",
-          "name": "date",
-          "description": "Historical date.",
-          "required": false,
-          "colorKey": "F898F8",
-          "groupKey": "general",
-          "sortKey": "date"
-        },
-        {
-          "typeId": "it.vedph.keywords",
-          "name": "keywords",
-          "description": "Item's keywords.",
-          "colorKey": "99CCFF",
-          "groupKey": "general",
-          "sortKey": "keywords"
-        },
-        {
-          "typeId": "it.vedph.note",
-          "name": "note",
-          "description": "A free text note.",
-          "colorKey": "B0A0F8",
-          "groupKey": "general",
-          "sortKey": "note"
-        },
-        {
-          "typeId": "it.vedph.bibliography",
-          "name": "bibliography",
-          "description": "Bibliography.",
-          "colorKey": "20B2AA",
-          "groupKey": "general",
-          "sortKey": "bibliography"
-        },
-        {
-          "typeId": "it.vedph.token-text",
-          "roleId": "base-text",
-          "name": "text",
-          "description": "Item's token-based text.",
-          "colorKey": "31AB54",
-          "groupKey": "text",
-          "sortKey": "text"
-        },
-        {
-          "typeId": "it.vedph.token-text-layer",
-          "roleId": "fr.it.vedph.comment",
-          "name": "comments",
-          "description": "Comments on text.",
-          "colorKey": "F8D040",
-          "groupKey": "text",
-          "sortKey": "text-comments"
-        },
-        {
-          "typeId": "it.vedph.token-text-layer",
-          "roleId": "fr.it.vedph.apparatus",
-          "name": "apparatus",
-          "description": "Critical apparatus.",
-          "colorKey": "D4E0A4",
-          "groupKey": "text",
-          "sortKey": "text-apparatus"
-        },
-        {
-          "typeId": "it.vedph.token-text-layer",
-          "roleId": "fr.it.vedph.tgr.ling-tags",
-          "name": "ling-tags",
-          "description": "Linguistic tags.",
-          "colorKey": "62AEEE",
-          "groupKey": "text",
-          "sortKey": "text-tags"
-        }
-      ]
-    }
+		{
+			"id": "text",
+			"label": "text",
+			"description": "The texts facet",
+			"colorKey": "AA3939",
+			"partDefinitions": [
+				{
+					"typeId": "it.vedph.categories",
+					"name": "categories",
+					"description": "Item's categories.",
+					"required": true,
+					"colorKey": "98F8F8",
+					"groupKey": "general",
+					"sortKey": "categories"
+				},
+				{
+					"typeId": "it.vedph.historical-date",
+					"name": "date",
+					"description": "Historical date.",
+					"colorKey": "F898F8",
+					"groupKey": "general",
+					"sortKey": "date"
+				},
+				{
+					"typeId": "it.vedph.keywords",
+					"name": "keywords",
+					"description": "Item's keywords.",
+					"colorKey": "99CCFF",
+					"groupKey": "general",
+					"sortKey": "keywords"
+				},
+				{
+					"typeId": "it.vedph.note",
+					"name": "note",
+					"description": "A free text note.",
+					"colorKey": "B0A0F8",
+					"groupKey": "general",
+					"sortKey": "note"
+				},
+				{
+					"typeId": "it.vedph.bibliography",
+					"name": "bibliography",
+					"description": "Bibliography.",
+					"colorKey": "20B2AA",
+					"groupKey": "general",
+					"sortKey": "bibliography"
+				},
+				{
+					"typeId": "it.vedph.token-text",
+					"roleId": "base-text",
+					"name": "text",
+					"description": "Item's token-based text.",
+					"colorKey": "31AB54",
+					"groupKey": "text",
+					"sortKey": "text"
+				},
+				{
+					"typeId": "it.vedph.token-text-layer",
+					"roleId": "fr.it.vedph.comment",
+					"name": "comments",
+					"description": "Comments on text.",
+					"colorKey": "F8D040",
+					"groupKey": "text",
+					"sortKey": "text-comments"
+				},
+				{
+					"typeId": "it.vedph.token-text-layer",
+					"roleId": "fr.it.vedph.apparatus",
+					"name": "apparatus",
+					"description": "Critical apparatus.",
+					"colorKey": "D4E0A4",
+					"groupKey": "text",
+					"sortKey": "text-apparatus"
+				},
+				{
+					"typeId": "it.vedph.token-text-layer",
+					"roleId": "fr.it.vedph.tgr.ling-tags",
+					"name": "ling-tags",
+					"description": "Linguistic tags.",
+					"colorKey": "62AEEE",
+					"groupKey": "text",
+					"sortKey": "text-tags"
+				}
+			]
+		},
+		{
+			"id": "manuscript",
+			"label": "manuscript",
+			"description": "The manuscripts facet",
+			"colorKey": "AA6C39",
+			"partDefinitions": [
+				{
+					"typeId": "it.vedph.categories",
+					"name": "categories",
+					"description": "Item's categories.",
+					"colorKey": "98F8F8",
+					"groupKey": "general",
+					"sortKey": "categories"
+				},
+				{
+					"typeId": "it.vedph.historical-date",
+					"name": "date",
+					"description": "Historical date.",
+					"required": true,
+					"colorKey": "F898F8",
+					"groupKey": "general",
+					"sortKey": "date"
+				},
+				{
+					"typeId": "it.vedph.keywords",
+					"name": "keywords",
+					"description": "Item's keywords.",
+					"colorKey": "99CCFF",
+					"groupKey": "general",
+					"sortKey": "keywords"
+				},
+				{
+					"typeId": "it.vedph.note",
+					"name": "note",
+					"description": "A free text note.",
+					"colorKey": "B0A0F8",
+					"groupKey": "general",
+					"sortKey": "note"
+				},
+				{
+					"typeId": "it.vedph.bibliography",
+					"name": "bibliography",
+					"description": "Bibliography.",
+					"colorKey": "20B2AA",
+					"groupKey": "general",
+					"sortKey": "bibliography"
+				},
+				{
+					"typeId": "it.vedph.itinera.ms-signatures",
+					"name": "ms signatures",
+					"description": "Manuscript's signatures.",
+					"colorKey": "D7D5DB",
+					"groupKey": "manuscript",
+					"sortKey": "ms-signatures",
+					"required": true
+				},
+				{
+					"typeId": "it.vedph.itinera.ms-place",
+					"name": "ms place",
+					"description": "Manuscript's place of origin.",
+					"colorKey": "41943B",
+					"groupKey": "manuscript",
+					"sortKey": "ms-place",
+					"required": true
+				},
+				{
+					"typeId": "it.vedph.tgr.ms-contents",
+					"name": "ms contents",
+					"description": "Manuscript's contents.",
+					"colorKey": "508B5E",
+					"groupKey": "manuscript",
+					"sortKey": "ms-contents"
+				},
+				{
+					"typeId": "it.vedph.tgr.ms-units",
+					"name": "ms units",
+					"description": "Manuscript's units.",
+					"colorKey": "C880C4",
+					"groupKey": "manuscript",
+					"sortKey": "ms-units"
+				}
+			]
+		}
   ],
   "flags": [
     {
@@ -112,48 +194,64 @@
   "thesauri": [
     {
       "id": "model-types@en",
-      "entries": [
-        {
-          "id": "it.vedph.categories",
-          "value": "categories"
-        },
-        {
-          "id": "it.vedph.historical-date",
-          "value": "date"
-        },
-        {
-          "id": "it.vedph.keywords",
-          "value": "keywords"
-        },
-        {
-          "id": "it.vedph.note",
-          "value": "note"
-        },
-        {
-          "id": "it.vedph.bibliography",
-          "value": "bibliography"
-        },
-        {
-          "id": "it.vedph.token-text",
-          "value": "text"
-        },
-        {
-          "id": "it.vedph.token-text-layer",
-          "value": "text layer"
-        },
-        {
-          "id": "fr.it.vedph.apparatus",
-          "value": "apparatus fr."
-        },
-        {
-          "id": "fr.it.vedph.comment",
-          "value": "comment fr."
-        },
-        {
-          "id": "fr.it.vedph.tgr.ling-tags",
-          "value": "ling.tags fr."
-        }
-      ]
+			"entries": [
+				{
+					"id": "it.vedph.categories",
+					"value": "categories"
+				},
+				{
+					"id": "it.vedph.historical-date",
+					"value": "date"
+				},
+				{
+					"id": "it.vedph.keywords",
+					"value": "keywords"
+				},
+				{
+					"id": "it.vedph.note",
+					"value": "note"
+				},
+				{
+					"id": "it.vedph.bibliography",
+					"value": "bibliography"
+				},
+				{
+					"id": "it.vedph.token-text",
+					"value": "text"
+				},
+				{
+					"id": "it.vedph.token-text-layer",
+					"value": "text layer"
+				},
+				{
+					"id": "it.vedph.itinera.ms-signatures",
+					"value": "ms signatures"
+				},
+				{
+					"id": "it.vedph.itinera.ms-place",
+					"value": "ms place"
+				},
+				{
+					"id": "it.vedph.tgr.ms-contents",
+					"value": "ms contents"
+				},
+				{
+					"id": "it.vedph.tgr.ms-units",
+					"value": "ms units"
+				},
+				{
+					"id": "fr.it.vedph.apparatus",
+					"value": "apparatus fr."
+				},
+				{
+					"id": "fr.it.vedph.comment",
+					"value": "comment fr."
+				},
+				{
+					"id": "fr.it.vedph.tgr.ling-tags",
+					"value": "ling.tags fr."
+				}
+			]
     },
     {
       "id": "categories@en",
@@ -13896,58 +13994,70 @@
       "partRoles": [],
       "fragmentRoles": []
     },
-    "partSeeders": [
-      {
-        "id": "seed.it.vedph.categories",
-        "options": {
-          "maxCategoriesPerItem": 3,
-          "categories": [
-            "language.phonology",
-            "language.morphology",
-            "language.syntax",
-            "literature",
-            "geography"
-          ]
-        }
-      },
-      {
-        "id": "seed.it.vedph.historical-date"
-      },
-      {
-        "id": "seed.it.vedph.keywords",
-        "options": {
-          "languages": ["eng", "deu", "ita", "fra", "spa"]
-        }
-      },
-      {
-        "id": "seed.it.vedph.bibliography",
-        "options": {
-          "authors": [
-            "Doe,Jane",
-            "Doherty,Charles",
-            "Orwell,William",
-            "Sampson,James",
-            "Voss,Francis"
-          ],
-          "journals": ["AJPh", "CJ", "CPh", "CQ", "IF"]
-        }
-      },
-      {
-        "id": "seed.it.vedph.note",
-        "options": {
-          "tags": ["language", "history", "geography"]
-        }
-      },
-      {
-        "id": "seed.it.vedph.token-text"
-      },
-      {
-        "id": "seed.it.vedph.token-text-layer",
-        "options": {
-          "maxFragmentCount": 3
-        }
-      }
-    ],
+		"partSeeders": [
+			{
+				"id": "seed.it.vedph.categories",
+				"options": {
+					"maxCategoriesPerItem": 3,
+					"categories": [
+						"language.phonology",
+						"language.morphology",
+						"language.syntax",
+						"literature",
+						"geography"
+					]
+				}
+			},
+			{
+				"id": "seed.it.vedph.historical-date"
+			},
+			{
+				"id": "seed.it.vedph.keywords",
+				"options": {
+					"languages": [ "eng", "deu", "ita", "fra", "spa" ]
+				}
+			},
+			{
+				"id": "seed.it.vedph.bibliography",
+				"options": {
+					"authors": [
+						"Doe,Jane",
+						"Doherty,Charles",
+						"Orwell,William",
+						"Sampson,James",
+						"Voss,Francis"
+					],
+					"journals": [ "AJPh", "CJ", "CPh", "CQ", "IF" ]
+				}
+			},
+			{
+				"id": "seed.it.vedph.note",
+				"options": {
+					"tags": [ "language", "history", "geography" ]
+				}
+			},
+			{
+				"id": "seed.it.vedph.token-text"
+			},
+			{
+				"id": "seed.it.vedph.token-text-layer",
+				"options": {
+					"maxFragmentCount": 3
+				}
+			},
+			{
+				"id": "seed.it.vedph.itinera.ms-signatures"
+			},
+			{
+				"id": "seed.it.vedph.itinera.ms-place"
+			},
+			{
+				"id": "seed.it.vedph.tgr.ms-contents"
+			},
+			{
+				"id": "seed.it.vedph.tgr.ms-units"
+			}
+		],
     "fragmentSeeders": [
       {
         "id": "seed.fr.it.vedph.comment",
