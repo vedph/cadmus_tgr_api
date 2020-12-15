@@ -4,7 +4,7 @@
 			"id": "text",
 			"label": "text",
 			"description": "The texts facet",
-			"colorKey": "AA3939",
+			"colorKey": "2D882D",
 			"partDefinitions": [
 				{
 					"typeId": "it.vedph.categories",
