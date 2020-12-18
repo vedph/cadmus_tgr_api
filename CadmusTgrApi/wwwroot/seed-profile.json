@@ -272,6 +272,22 @@
           "value": "ms units"
         },
         {
+          "id": "it.vedph.tgr.ms-scripts",
+          "value": "ms scripts"
+        },
+        {
+          "id": "it.vedph.tgr.ms-formal-features",
+          "value": "ms features"
+        },
+        {
+          "id": "it.vedph.tgr.ms-ornaments",
+          "value": "ms ornaments"
+        },
+        {
+          "id": "it.vedph.tgr.ms-history",
+          "value": "ms history"
+        },
+        {
           "id": "fr.it.vedph.apparatus",
           "value": "apparatus fr."
         },
