@@ -165,6 +165,38 @@
           "colorKey": "C880C4",
           "groupKey": "manuscript",
           "sortKey": "ms-units"
+        },
+        {
+          "typeId": "it.vedph.tgr.ms-scripts",
+          "name": "ms scripts",
+          "description": "Manuscript's scripts.",
+          "colorKey": "F5C2B1",
+          "groupKey": "manuscript",
+          "sortKey": "ms-scripts"
+        },
+        {
+          "typeId": "it.vedph.tgr.ms-formal-features",
+          "name": "ms features",
+          "description": "Manuscript's formal features.",
+          "colorKey": "72EAF7",
+          "groupKey": "manuscript",
+          "sortKey": "ms-features"
+        },
+        {
+          "typeId": "it.vedph.tgr.ms-ornaments",
+          "name": "ms ornaments",
+          "description": "Manuscript's ornamentations.",
+          "colorKey": "4D5EF7",
+          "groupKey": "manuscript",
+          "sortKey": "ms-ornaments"
+        },
+        {
+          "typeId": "it.vedph.tgr.ms-history",
+          "name": "ms history",
+          "description": "Manuscript's history.",
+          "colorKey": "C82222",
+          "groupKey": "manuscript",
+          "sortKey": "ms-history"
         }
       ]
     }
@@ -14174,6 +14206,18 @@
       },
       {
         "id": "seed.it.vedph.tgr.ms-units"
+      },
+      {
+        "id": "seed.it.vedph.tgr.ms-scripts"
+      },
+      {
+        "id": "seed.it.vedph.tgr.ms-formal-features"
+      },
+      {
+        "id": "seed.it.vedph.tgr.ms-ornaments"
+      },
+      {
+        "id": "seed.it.vedph.tgr.ms-history"
       }
     ],
     "fragmentSeeders": [
