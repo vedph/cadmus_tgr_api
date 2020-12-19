@@ -1000,7 +1000,7 @@
         },
         {
           "id": "l.acc.praetext",
-          "value": "acc. praetext."
+          "value": "Acc. praetext."
         },
         {
           "id": "l.acc.trag",
@@ -12145,19 +12145,19 @@
           "value": "morphology: case: dative"
         },
         {
-          "id": "m.morph.a",
+          "id": "m.morph.case.a",
           "value": "morphology: case: accusative"
         },
         {
-          "id": "m.morph.v",
+          "id": "m.morph.case.v",
           "value": "morphology: case: vocative"
         },
         {
-          "id": "m.morph.b",
+          "id": "m.morph.case.b",
           "value": "morphology: case: ablative"
         },
         {
-          "id": "m.morph.l",
+          "id": "m.morph.case.l",
           "value": "morphology: case: locative"
         },
         {
