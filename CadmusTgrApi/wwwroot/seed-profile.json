@@ -10,7 +10,7 @@
           "typeId": "it.vedph.categories",
           "name": "categories",
           "description": "Item's categories.",
-          "required": true,
+          "isRequired": true,
           "colorKey": "98F8F8",
           "groupKey": "general",
           "sortKey": "categories"
@@ -103,7 +103,7 @@
           "typeId": "it.vedph.historical-date",
           "name": "date",
           "description": "Historical date.",
-          "required": true,
+          "isRequired": true,
           "colorKey": "F898F8",
           "groupKey": "general",
           "sortKey": "date"
@@ -139,7 +139,7 @@
           "colorKey": "D7D5DB",
           "groupKey": "manuscript",
           "sortKey": "ms-signatures",
-          "required": true
+          "isRequired": true
         },
         {
           "typeId": "it.vedph.itinera.ms-place",
@@ -148,7 +148,7 @@
           "colorKey": "41943B",
           "groupKey": "manuscript",
           "sortKey": "ms-place",
-          "required": true
+          "isRequired": true
         },
         {
           "typeId": "it.vedph.tgr.ms-contents",
