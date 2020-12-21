@@ -1028,7 +1028,7 @@
         },
         {
           "id": "l.adnot-lucan.-",
-          "value": "Adnot. Lucan. -"
+          "value": "Adnot. Lucan."
         },
         {
           "id": "l.adnot-lucan.argum",
@@ -1192,7 +1192,7 @@
         },
         {
           "id": "l.anton1.or-frg",
-          "value": "Anton1. or. frg."
+          "value": "Anton. or. frg."
         },
         {
           "id": "l.ps-anton",
@@ -1588,7 +1588,7 @@
         },
         {
           "id": "l.aug.gen-litt",
-          "value": "aug. gen. ad litt."
+          "value": "Aug. gen. ad litt."
         },
         {
           "id": "l.aug.gen-litt-imp",
@@ -2256,7 +2256,7 @@
         },
         {
           "id": "l.cic.brut",
-          "value": "Cic. Brut"
+          "value": "Cic. Brut."
         },
         {
           "id": "l.cic.ad-brut",
@@ -2367,7 +2367,7 @@
           "value": "Cic. Lael."
         },
         {
-          "id": "l.Cic.leg",
+          "id": "l.cic.leg",
           "value": "Cic. leg."
         },
         {
@@ -2995,7 +2995,7 @@
           "value": "Cypr. Gall. iud."
         },
         {
-          "id": "l.ps-cyr.",
+          "id": "l.ps-cyr",
           "value": "Ps. Cyr."
         },
         {
@@ -3115,7 +3115,7 @@
           "value": "Don. Ter."
         },
         {
-          "id": "l.don.ter.ad.",
+          "id": "l.don.ter.ad",
           "value": "Don. Ter. Ad."
         },
         {
@@ -3176,7 +3176,7 @@
         },
         {
           "id": "l.drac.mens",
-          "value": "drac. mens."
+          "value": "Drac. mens."
         },
         {
           "id": "l.drac.orest",
@@ -4243,7 +4243,7 @@
           "value": "Iord. Rom."
         },
         {
-          "id": "l.isid.",
+          "id": "l.isid",
           "value": "Isid."
         },
         {
@@ -4315,7 +4315,7 @@
           "value": "Iunil."
         },
         {
-          "id": "l.ius-tur",
+          "id": "l.ius-iur",
           "value": "Ius Iur."
         },
         {
@@ -4535,7 +4535,7 @@
           "value": "Liv. Andr. carm. frg."
         },
         {
-          "id": "l.LivAndr.com",
+          "id": "l.liv-andr.com",
           "value": "Liv. Andr. com."
         },
         {
@@ -5423,7 +5423,7 @@
           "value": "Paul. Pell. euch."
         },
         {
-          "id": "l.paul-pelll.euch.praef",
+          "id": "l.paul-pell.euch.praef",
           "value": "Paul. Pell. euch. praef."
         },
         {
@@ -5515,7 +5515,7 @@
           "value": "Philarg. Verg. ecl. praef."
         },
         {
-          "id": "l.ps-philox.",
+          "id": "l.ps-philox",
           "value": "Ps. Philox."
         },
         {
@@ -6128,11 +6128,11 @@
         },
         {
           "id": "l.prud.apoth.praef",
-          "value": "Prud."
+          "value": "Prud. apoth. praef."
         },
         {
-          "id": "l.prud.apoth.praef.",
-          "value": "Prud.cath"
+          "id": "l.prud.cath",
+          "value": "Prud. cath."
         },
         {
           "id": "l.prud.cath.",
@@ -6404,7 +6404,7 @@
         },
         {
           "id": "l.sall.or",
-          "value": "Sall.or."
+          "value": "Sall. or."
         },
         {
           "id": "l.sall.or.cottae",
@@ -6440,7 +6440,7 @@
         },
         {
           "id": "l.santra.frg",
-          "value": "Santra frg"
+          "value": "Santra frg."
         },
         {
           "id": "l.santra.trag",
@@ -6587,7 +6587,7 @@
           "value": "Schol. Hor. gloss. Γ epod."
         },
         {
-          "id": "l.Schol.Hor.gloss.sat",
+          "id": "l.schol.hor.gloss.sat",
           "value": "Schol. Hor. gloss. Γ sat."
         },
         {
@@ -6924,7 +6924,7 @@
         },
         {
           "id": "l.serg.ars",
-          "value": "Serg. ars."
+          "value": "Serg. ars"
         },
         {
           "id": "l.serg.litt",
@@ -7056,7 +7056,7 @@
         },
         {
           "id": "l.stat.ach",
-          "value": "Stat.Ach"
+          "value": "Stat. Ach"
         },
         {
           "id": "l.stat.germ",
@@ -7751,7 +7751,7 @@
           "value": "Ven. Fort. Mart."
         },
         {
-          "id": "l.ven-fort.Mart.-",
+          "id": "l.ven-fort.mart.-",
           "value": "Ven. Fort. Mart."
         },
         {
@@ -8623,7 +8623,7 @@
           "value": "Aesch. Supp."
         },
         {
-          "id": "g.aesch.th.",
+          "id": "g.aesch.th",
           "value": "Aesch. Th."
         },
         {
@@ -8775,7 +8775,7 @@
           "value": "Aristoph. Plut."
         },
         {
-          "id": "g.ar.ran.",
+          "id": "g.ar.ran",
           "value": "Aristoph. Ran."
         },
         {
@@ -8819,7 +8819,7 @@
           "value": "Cratin. Iun. frg."
         },
         {
-          "id": "g.dem.",
+          "id": "g.dem",
           "value": "Demosth."
         },
         {
@@ -8863,7 +8863,7 @@
           "value": "Etym. M."
         },
         {
-          "id": "g.etym.sym.",
+          "id": "g.etym.sym",
           "value": "Etym. Sym."
         },
         {
@@ -9035,7 +9035,7 @@
           "value": "Isocr. Ad Dem."
         },
         {
-          "id": "g.isocr",
+          "id": "g.isocr.aegin",
           "value": "Isocr. Aegin."
         },
         {
@@ -9320,7 +9320,7 @@
         },
         {
           "id": "g.soph.ai",
-          "value": "Soph.Ai"
+          "value": "Soph. Ai"
         },
         {
           "id": "g.soph.ant",
@@ -10808,23 +10808,23 @@
           "value": "de participio: casus: nominativus"
         },
         {
-          "id": "a.prt.casus.",
+          "id": "a.prt.casus.g",
           "value": "de participio: casus: genitivus"
         },
         {
-          "id": "a.prt.casus.",
+          "id": "a.prt.casus.d",
           "value": "de participio: casus: dativus"
         },
         {
-          "id": "a.prt.casus.",
+          "id": "a.prt.casus.a",
           "value": "de participio: casus: accusativus"
         },
         {
-          "id": "a.prt.casus.",
+          "id": "a.prt.casus.v",
           "value": "de participio: casus: vocativus"
         },
         {
-          "id": "a.prt.casus.",
+          "id": "a.prt.casus.b",
           "value": "de participio: casus: ablativus"
         },
         {
@@ -12657,7 +12657,7 @@
           "value": "morphology: tense: periphrastic c.: passive"
         },
         {
-          "id": "m.morph.tense.peri.",
+          "id": "m.morph.tense.peri.psvpf",
           "value": "morphology: tense: periphrastic c.: passive forms of the perfectum"
         },
         {
