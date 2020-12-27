@@ -76,6 +76,33 @@
         },
         {
           "typeId": "it.vedph.token-text-layer",
+          "roleId": "fr.it.vedph.tgr.var-quotations",
+          "name": "quotations",
+          "description": "Quotations.",
+          "colorKey": "AE62EE",
+          "groupKey": "text",
+          "sortKey": "text-quotations"
+        },
+        {
+          "typeId": "it.vedph.token-text-layer",
+          "roleId": "fr.it.vedph.tgr.interp:interp",
+          "name": "interpolations",
+          "description": "Interpolations.",
+          "colorKey": "EE62AE",
+          "groupKey": "text",
+          "sortKey": "text-interpolations"
+        },
+        {
+          "typeId": "it.vedph.token-text-layer",
+          "roleId": "fr.it.vedph.tgr.interp:transcr",
+          "name": "transcriptions",
+          "description": "Transcriptions.",
+          "colorKey": "AD2F74",
+          "groupKey": "text",
+          "sortKey": "text-transcriptions"
+        },
+        {
+          "typeId": "it.vedph.token-text-layer",
           "roleId": "fr.it.vedph.tgr.ling-tags",
           "name": "ling-tags",
           "description": "Linguistic tags.",
@@ -294,6 +321,14 @@
         {
           "id": "fr.it.vedph.comment",
           "value": "comment fr."
+        },
+        {
+          "id": "fr.it.vedph.tgr.var-quotations",
+          "value": "quotations fr."
+        },
+        {
+          "id": "fr.it.vedph.tgr.interp",
+          "value": "interpolations fr."
         },
         {
           "id": "fr.it.vedph.tgr.ling-tags",
@@ -888,8 +923,12 @@
       ]
     },
     {
-      "id": "transcription-roles@en",
+      "id": "interpolation-roles@en",
       "entries": [
+        {
+          "id": "-",
+          "value": "---"
+        },
         {
           "id": "paleo",
           "value": "paleographic transcription"
@@ -905,7 +944,7 @@
       ]
     },
     {
-      "id": "transcription-languages@en",
+      "id": "interpolation-languages@en",
       "entries": [
         {
           "id": "bre",
@@ -944,14 +983,6 @@
           "value": "Latin"
         }
       ]
-    },
-    {
-      "id": "transcription-tags@en",
-      "targetId": "apparatus-tags@en"
-    },
-    {
-      "id": "interpolation-languages@en",
-      "targetId": "transcription-languages@en"
     },
     {
       "id": "interpolation-tags@en",
