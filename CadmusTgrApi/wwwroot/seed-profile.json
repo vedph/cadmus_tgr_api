@@ -54,7 +54,8 @@
           "description": "Item's token-based text.",
           "colorKey": "31AB54",
           "groupKey": "text",
-          "sortKey": "text"
+          "sortKey": "text",
+          "isRequired": true
         },
         {
           "typeId": "it.vedph.token-text-layer",
@@ -520,10 +521,6 @@
     {
       "id": "apparatus-tags@en",
       "entries": [
-        {
-          "id": "-",
-          "value": "---"
-        },
         {
           "id": "margin",
           "value": "margin"
@@ -14271,7 +14268,7 @@
       {
         "id": "seed.fr.it.vedph.comment",
         "options": {
-          "tags": ["language", "history", "geography"]
+          "tags": [ "language", "history", "geography" ]
         }
       },
       {
@@ -14295,6 +14292,12 @@
             }
           ]
         }
+      },
+      {
+        "id": "seed.fr.it.vedph.tgr.var-quotations"
+      },
+      {
+        "id": "seed.fr.it.vedph.tgr.interp"
       }
     ]
   }
