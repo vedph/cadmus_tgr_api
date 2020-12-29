@@ -86,7 +86,7 @@
         },
         {
           "typeId": "it.vedph.token-text-layer",
-          "roleId": "fr.it.vedph.tgr.interp:interp",
+          "roleId": "fr.it.vedph.tgr.interpolations:interp",
           "name": "interpolations",
           "description": "Interpolations.",
           "colorKey": "EE62AE",
@@ -95,7 +95,7 @@
         },
         {
           "typeId": "it.vedph.token-text-layer",
-          "roleId": "fr.it.vedph.tgr.interp:transcr",
+          "roleId": "fr.it.vedph.tgr.interpolations:transcr",
           "name": "transcriptions",
           "description": "Transcriptions.",
           "colorKey": "AD2F74",
@@ -328,7 +328,7 @@
           "value": "quotations fr."
         },
         {
-          "id": "fr.it.vedph.tgr.interp",
+          "id": "fr.it.vedph.tgr.interpolations",
           "value": "interpolations fr."
         },
         {
