@@ -332,14 +332,6 @@
           "value": "interpolations fr."
         },
         {
-          "id": "fr.it.vedph.tgr.interpolations:interp",
-          "value": "interpolations fr."
-        },
-        {
-          "id": "fr.it.vedph.tgr.interpolations:transcr",
-          "value": "transcriptions fr."
-        },
-        {
           "id": "fr.it.vedph.tgr.ling-tags",
           "value": "ling.tags fr."
         }
