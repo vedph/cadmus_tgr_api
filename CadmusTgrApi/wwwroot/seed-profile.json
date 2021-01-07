@@ -522,6 +522,10 @@
       "id": "apparatus-tags@en",
       "entries": [
         {
+          "id": "-",
+          "value": "---"
+        },
+        {
           "id": "margin",
           "value": "margin"
         },
@@ -9984,56 +9988,96 @@
           "value": "de pedibus/metris: modi: παραγωγός/derivativus"
         },
         {
-          "id": "a.mtr.numeri",
-          "value": "de pedibus/metris: numeri oratorum"
-        },
-        {
-          "id": "a.mtr.num",
+          "id": "a.mtr.num-mp",
           "value": "de pedibus/metris: numerus metrorum/pedum"
         },
         {
-          "id": "a.mtr.num.2",
-          "value": "de pedibus/metris: numerus metrorum/pedum: disyllabum"
+          "id": "a.mtr.num-mp.1",
+          "value": "de pedibus/metris: numerus metrorum/pedum: monometrum"
         },
         {
-          "id": "a.mtr.num.3",
-          "value": "de pedibus/metris: numerus metrorum/pedum: trisyllabum"
+          "id": "a.mtr.num-mp.2",
+          "value": "de pedibus/metris: numerus metrorum/pedum: dimetrum"
         },
         {
-          "id": "a.mtr.num.4",
-          "value": "de pedibus/metris: numerus metrorum/pedum: tetrasyllabum"
+          "id": "a.mtr.num-mp.3",
+          "value": "de pedibus/metris: numerus metrorum/pedum: trimetrum"
         },
         {
-          "id": "a.mtr.num.5",
+          "id": "a.mtr.num-mp.4",
+          "value": "de pedibus/metris: numerus metrorum/pedum: tetrametrum"
+        },
+        {
+          "id": "a.mtr.num-mp.5",
+          "value": "de pedibus/metris: numerus metrorum/pedum: pentametrum"
+        },
+        {
+          "id": "a.mtr.num-mp.6",
+          "value": "de pedibus/metris: numerus metrorum/pedum: hexametrum"
+        },
+        {
+          "id": "a.mtr.num-mp.7",
+          "value": "de pedibus/metris: numerus metrorum/pedum: heptametrum"
+        },
+        {
+          "id": "a.mtr.num-mp.6l",
+          "value": "de pedibus/metris: numerus metrorum/pedum: senarium"
+        },
+        {
+          "id": "a.mtr.num-mp.7l",
+          "value": "de pedibus/metris: numerus metrorum/pedum: septenarium"
+        },
+        {
+          "id": "a.mtr.num-mp.8l",
+          "value": "de pedibus/metris: numerus metrorum/pedum: octonarium"
+        },
+        {
+          "id": "a.mtr.num-s",
+          "value": "de pedibus/metris: numerus syllabarum"
+        },
+        {
+          "id": "a.mtr.num-s.2",
+          "value": "de pedibus/metris: numerus syllabarum: disyllabum"
+        },
+        {
+          "id": "a.mtr.num-s.3",
+          "value": "de pedibus/metris: numerus syllabarum: trisyllabum"
+        },
+        {
+          "id": "a.mtr.num-s.4",
+          "value": "de pedibus/metris: numerus syllabarum: tetrasyllabum"
+        },
+        {
+          "id": "a.mtr.num-s.5",
           "value": "de pedibus/metris: numerus metrorum/pedum: pentasyllabum"
         },
         {
-          "id": "a.mtr.num.6",
-          "value": "de pedibus/metris: numerus metrorum/pedum: hexasyllabum"
+          "id": "a.mtr.num-s.6",
+          "value": "de pedibus/metris: numerus syllabarum: hexasyllabum"
         },
         {
-          "id": "a.mtr.num.7",
-          "value": "de pedibus/metris: numerus metrorum/pedum: heptasyllabum"
+          "id": "a.mtr.num-s.7",
+          "value": "de pedibus/metris: numerus syllabarum: heptasyllabum"
         },
         {
-          "id": "a.mtr.num.8",
-          "value": "de pedibus/metris: numerus metrorum/pedum: octosyllabum"
+          "id": "a.mtr.num-s.8",
+          "value": "de pedibus/metris: numerus syllabarum: octosyllabum"
         },
         {
-          "id": "a.mtr.num.9",
-          "value": "de pedibus/metris: numerus metrorum/pedum: enneasyllabum"
+          "id": "a.mtr.num-s.9",
+          "value": "de pedibus/metris: numerus syllabarum: enneasyllabum"
         },
         {
-          "id": "a.mtr.num.10",
-          "value": "de pedibus/metris: numerus metrorum/pedum: decasyllabum"
+          "id": "a.mtr.num-s.10",
+          "value": "de pedibus/metris: numerus syllabarum: decasyllabum"
         },
         {
-          "id": "a.mtr.num.11",
-          "value": "de pedibus/metris: numerus metrorum/pedum: hendecasyllabum"
+          "id": "a.mtr.num-s.11",
+          "value": "de pedibus/metris: numerus syllabarum: hendecasyllabum"
         },
         {
           "id": "a.mtr.pes",
-          "value": "de pedibus/metris"
+          "value": "de pedibus/metris: pedes"
         },
         {
           "id": "a.mtr.pes.compositus",
@@ -10148,8 +10192,16 @@
           "value": "de pedibus/metris: qualitas: derivativa"
         },
         {
+          "id": "a.mtr.sch-fig",
+          "value": "de pedibus/metris: schema/figura"
+        },
+        {
           "id": "a.mtr.solutio",
           "value": "de pedibus/metris: solutio"
+        },
+        {
+          "id": "a.mtr.species",
+          "value": "de pedibus/metris: species"
         },
         {
           "id": "a.mtr.indifferens",
@@ -13839,6 +13891,19 @@
         {
           "id": "m.lang.umbrian",
           "value": "language: Umbrian"
+        }
+      ]
+    },
+    {
+      "id": "ling-tags-aux@en",
+      "entries": [
+        {
+          "id": "a.mtr.sch-fig--note",
+          "value": "note"
+        },
+        {
+          "id": "a.mtr.species--note",
+          "value": "note"
         }
       ]
     },
