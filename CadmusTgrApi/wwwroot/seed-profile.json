@@ -86,10 +86,19 @@
         },
         {
           "typeId": "it.vedph.token-text-layer",
+          "roleId": "fr.it.vedph.tgr.interpolations:gloss",
+          "name": "glosses",
+          "description": "Glosses.",
+          "colorKey": "4E6E58",
+          "groupKey": "text",
+          "sortKey": "text-glosses"
+        },
+        {
+          "typeId": "it.vedph.token-text-layer",
           "roleId": "fr.it.vedph.tgr.interpolations:interp",
           "name": "interpolations",
           "description": "Interpolations.",
-          "colorKey": "EE62AE",
+          "colorKey": "4C8577",
           "groupKey": "text",
           "sortKey": "text-interpolations"
         },
@@ -98,9 +107,18 @@
           "roleId": "fr.it.vedph.tgr.interpolations:transcr",
           "name": "transcriptions",
           "description": "Transcriptions.",
-          "colorKey": "AD2F74",
+          "colorKey": "A6ECE0",
           "groupKey": "text",
           "sortKey": "text-transcriptions"
+        },
+        {
+          "typeId": "it.vedph.token-text-layer",
+          "roleId": "fr.it.vedph.tgr.interpolations:para",
+          "name": "paratext",
+          "description": "Paratext.",
+          "colorKey": "7ADFBB",
+          "groupKey": "text",
+          "sortKey": "text-paratext"
         },
         {
           "typeId": "it.vedph.token-text-layer",
