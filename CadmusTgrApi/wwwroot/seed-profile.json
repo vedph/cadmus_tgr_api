@@ -58,6 +58,14 @@
           "isRequired": true
         },
         {
+          "typeId": "it.vedph.tgr.available-witnesses",
+          "name": "witnesses",
+          "description": "Available witnesses.",
+          "colorKey": "E8E0A9",
+          "groupKey": "text",
+          "sortKey": "witnesses"
+        },
+        {
           "typeId": "it.vedph.token-text-layer",
           "roleId": "fr.it.vedph.comment",
           "name": "comments",
@@ -296,6 +304,10 @@
         {
           "id": "it.vedph.token-text",
           "value": "text"
+        },
+        {
+          "id": "it.vedph.tgr.available-witnesses",
+          "value": "witnesses"
         },
         {
           "id": "it.vedph.token-text-layer",
@@ -14315,6 +14327,9 @@
       },
       {
         "id": "seed.it.vedph.token-text"
+      },
+      {
+        "id": "seed.it.vedph.tgr.available-witnesses"
       },
       {
         "id": "seed.it.vedph.token-text-layer",
