@@ -954,11 +954,24 @@
       ]
     },
     {
-      "id": "interpolation-roles@en",
+      "id": "ms-signature-tags@en",
       "entries": [
         {
           "id": "-",
           "value": "---"
+        },
+        {
+          "id": "former",
+          "value": "former"
+        }
+      ]
+    },
+    {
+      "id": "interpolation-roles@en",
+      "entries": [
+        {
+          "id": "interp",
+          "value": "humanistic interpolation"
         },
         {
           "id": "paleo",
