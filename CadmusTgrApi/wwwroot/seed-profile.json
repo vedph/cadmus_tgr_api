@@ -640,16 +640,7 @@
     },
     {
       "id": "ms-languages@en",
-      "entries": [
-        {
-          "id": "grc",
-          "value": "Greek"
-        },
-        {
-          "id": "lat",
-          "value": "Latin"
-        }
-      ]
+      "targetId": "interpolation-languages@en"
     },
     {
       "id": "ms-script-types@en",
