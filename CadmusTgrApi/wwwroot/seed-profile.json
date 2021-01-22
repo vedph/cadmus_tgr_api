@@ -196,12 +196,12 @@
           "isRequired": true
         },
         {
-          "typeId": "it.vedph.itinera.ms-place",
-          "name": "ms place",
-          "description": "Manuscript's place of origin.",
+          "typeId": "it.vedph.tgr.ms-places",
+          "name": "ms places",
+          "description": "Manuscript's place(s) of origin.",
           "colorKey": "41943B",
           "groupKey": "manuscript",
-          "sortKey": "ms-place",
+          "sortKey": "ms-places",
           "isRequired": true
         },
         {
@@ -318,8 +318,8 @@
           "value": "ms signatures"
         },
         {
-          "id": "it.vedph.itinera.ms-place",
-          "value": "ms place"
+          "id": "it.vedph.tgr.ms-places",
+          "value": "ms places"
         },
         {
           "id": "it.vedph.tgr.ms-contents",
@@ -14945,7 +14945,7 @@
         "id": "seed.it.vedph.itinera.ms-signatures"
       },
       {
-        "id": "seed.it.vedph.itinera.ms-place"
+        "id": "seed.it.vedph.tgr.ms-places"
       },
       {
         "id": "seed.it.vedph.tgr.ms-contents"
