@@ -13891,11 +13891,19 @@
           "value": "syntax: case syntax: nominative"
         },
         {
+          "id": "m.syn.case.n.-",
+          "value": "syntax: case syntax: nominative"
+        },
+        {
           "id": "m.syn.case.n.pro-v",
           "value": "syntax: case syntax: nominative: instead of vocative"
         },
         {
           "id": "m.syn.case.g",
+          "value": "syntax: case syntax: genetive"
+        },
+        {
+          "id": "m.syn.case.g.-",
           "value": "syntax: case syntax: genetive"
         },
         {
@@ -13947,6 +13955,10 @@
           "value": "syntax: case syntax: dative"
         },
         {
+          "id": "m.syn.case.d.-",
+          "value": "syntax: case syntax: dative"
+        },
+        {
           "id": "m.syn.case.d.agent",
           "value": "syntax: case syntax: dative: of agent"
         },
@@ -13972,6 +13984,10 @@
         },
         {
           "id": "m.syn.case.a",
+          "value": "syntax: case syntax: accusative"
+        },
+        {
+          "id": "m.syn.case.a.-",
           "value": "syntax: case syntax: accusative"
         },
         {
@@ -14015,11 +14031,19 @@
           "value": "syntax: case syntax: vocative"
         },
         {
+          "id": "m.syn.case.v.-",
+          "value": "syntax: case syntax: vocative"
+        },
+        {
           "id": "m.syn.case.v-n",
           "value": "syntax: case syntax: vocative: instead of nominative"
         },
         {
           "id": "m.syn.case.b",
+          "value": "syntax: case syntax: ablative"
+        },
+        {
+          "id": "m.syn.case.b.-",
           "value": "syntax: case syntax: ablative"
         },
         {
