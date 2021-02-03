@@ -549,6 +549,23 @@
       ]
     },
     {
+      "id": "physical-size-tags@en",
+      "entries": [
+        {
+          "id": "-",
+          "value": "---"
+        },
+        {
+          "id": "pag",
+          "value": "page"
+        },
+        {
+          "id": "col",
+          "value": "column"
+        }
+      ]
+    },
+    {
       "id": "apparatus-tags@en",
       "entries": [
         {
@@ -10095,7 +10112,767 @@
         {
           "id": "g.z.zonar",
           "value": "Zonar."
-        }
+        },
+        {
+          "id": "u",
+          "value": "unedited works"
+        },
+        {
+          "id": "u.a",
+          "value": "A"
+        },
+        {
+          "id": "u.a.acc",
+          "value": "De accentibus"
+        },
+        {
+          "id": "u.a.acces",
+          "value": "Accessus"
+        },
+        {
+          "id": "u.a.acces.don",
+          "value": "Accessus in Donatum"
+        },
+        {
+          "id": "u.a.acces.don.-",
+          "value": "Accessus in Donatum"
+        },
+        {
+          "id": "u.a.acces.don.mai",
+          "value": "Accessus in Donati artem maiorem"
+        },
+        {
+          "id": "u.a.acces.don.min",
+          "value": "Accessus in Donati artem minorem"
+        },
+        {
+          "id": "u.a.acces.gram",
+          "value": "Accessus in grammaticam"
+        },
+        {
+          "id": "u.a.acces.prisc",
+          "value": "Accessus in Priscianum"
+        },
+        {
+          "id": "u.a.adn",
+          "value": "Adnotationes"
+        },
+        {
+          "id": "u.a.adn.final",
+          "value": "Adnotatio de finalibus"
+        },
+        {
+          "id": "u.a.adn.gram",
+          "value": "Adnotatio grammatica"
+        },
+        {
+          "id": "u.a.adn.gram2",
+          "value": "Adnotationes grammaticae"
+        },
+        {
+          "id": "u.a.adn.metr",
+          "value": "Adnotationes metricae"
+        },
+        {
+          "id": "u.a.adn.prisc",
+          "value": "Adnotationes in Priscianum"
+        },
+        {
+          "id": "u.a.adn.sign",
+          "value": "Adnotatio de signis"
+        },
+        {
+          "id": "u.a.adv-fin",
+          "value": "Adverbia temporis finita"
+        },
+        {
+          "id": "u.a.agn-gen",
+          "value": "De agnitione generum"
+        },
+        {
+          "id": "u.a.agn-decl",
+          "value": "De agnitione primae et secundae declinationis"
+        },
+        {
+          "id": "u.a.alph-de",
+          "value": "De alphabeto"
+        },
+        {
+          "id": "u.a.alph-de.-",
+          "value": "De alphabeto"
+        },
+        {
+          "id": "u.a.alph-de.gr",
+          "value": "De alphabeto Graece"
+        },
+        {
+          "id": "u.a.alph",
+          "value": "Alphabetum"
+        },
+        {
+          "id": "u.a.alph.g",
+          "value": "Alphabetum Graecum"
+        },
+        {
+          "id": "u.a.alph.h",
+          "value": "Alphabetum Hebraicum"
+        },
+        {
+          "id": "u.a.alph.l",
+          "value": "Alphabetum Latinum"
+        },
+        {
+          "id": "u.a.anima-pars",
+          "value": "Anima quae pars"
+        },
+        {
+          "id": "u.a.ars",
+          "value": "Ars"
+        },
+        {
+          "id": "u.a.ars.aug",
+          "value": "Ars Augiensis"
+        },
+        {
+          "id": "u.a.ars.brug",
+          "value": "Ars Brugensis"
+        },
+        {
+          "id": "u.a.ars.gram",
+          "value": "Ars grammatica"
+        },
+        {
+          "id": "u.a.ars.gram.gr",
+          "value": "Ars grammatica Graece"
+        },
+        {
+          "id": "u.a.ars.gram-inter",
+          "value": "Ars grammatica per interrogationes et responsiones"
+        },
+        {
+          "id": "u.a.ars.metr",
+          "value": "De arte metrica"
+        },
+        {
+          "id": "u.a.ars.nanc",
+          "value": "Ars Nanceiana"
+        },
+        {
+          "id": "u.a.ars.tolet",
+          "value": "Ars Toletana"
+        },
+        {
+          "id": "u.b",
+          "value": "B"
+        },
+        {
+          "id": "u.b.barb",
+          "value": "De barbarismo"
+        },
+        {
+          "id": "u.b.brev-paul",
+          "value": "Breviarium Pauli abbatis"
+        },
+        {
+          "id": "u.c",
+          "value": "C"
+        },
+        {
+          "id": "u.c.carm-gram",
+          "value": "Carmen grammaticum"
+        },
+        {
+          "id": "u.c.column-pars",
+          "value": "Columna quae pars"
+        },
+        {
+          "id": "u.c.comm",
+          "value": "Commentarius / Commentum"
+        },
+        {
+          "id": "u.c.comm.beda",
+          "value": "Commentum in Bedam"
+        },
+        {
+          "id": "u.c.comm.beda.metr",
+          "value": "Commentum in Bedae artem metricam"
+        },
+        {
+          "id": "u.c.comm.don",
+          "value": "Commentarius / Commentum in Donatum"
+        },
+        {
+          "id": "u.c.comm.don.mai",
+          "value": "Commentum in Donati artem maiorem"
+        },
+        {
+          "id": "u.c.comm.don.min",
+          "value": "Commentum in Donati artem minorem"
+        },
+        {
+          "id": "u.c.comm.don.min-a",
+          "value": "Commentum in Donati artem minorem A"
+        },
+        {
+          "id": "u.c.comm.don.min-b",
+          "value": "Commentum in Donati artem minorem B"
+        },
+        {
+          "id": "u.c.comm.don.a",
+          "value": "Commentarius in Donati grammaticam A"
+        },
+        {
+          "id": "u.c.comm.don.b",
+          "value": "Commentarius in Donati grammaticam B"
+        },
+        {
+          "id": "u.c.comm.phoc",
+          "value": "Commentum in Phocam"
+        },
+        {
+          "id": "u.c.comm.prisc",
+          "value": "Commentum in Priscianum"
+        },
+        {
+          "id": "u.c.comm.serv",
+          "value": "Commentum in Servium"
+        },
+        {
+          "id": "u.c.comm.serv.centim",
+          "value": "Commentum in Servii centimetrum"
+        },
+        {
+          "id": "u.c.com-syll",
+          "value": "De communibus syllabis"
+        },
+        {
+          "id": "u.c.coniug",
+          "value": "Coniugationes verborum"
+        },
+        {
+          "id": "u.d",
+          "value": "D"
+        },
+        {
+          "id": "u.d.decl-nom",
+          "value": "Declinationes nominum"
+        },
+        {
+          "id": "u.d.decl-nom.-",
+          "value": "Declinationes nominum"
+        },
+        {
+          "id": "u.d.decl-nom.coniug",
+          "value": "Declinationes nominum et coniugationes verborum"
+        },
+        {
+          "id": "u.d.decl-nom.gen",
+          "value": "De declinationibus et generibus nominum"
+        },
+        {
+          "id": "u.d.decl-nom.graec",
+          "value": "Declinationes nominum cum Graeca interpretatione"
+        },
+        {
+          "id": "u.d.decl-pron",
+          "value": "Declinationes pronominum"
+        },
+        {
+          "id": "u.d.decl-pron.-",
+          "value": "Declinationes pronominum"
+        },
+        {
+          "id": "u.d.decl-pron.de",
+          "value": "De declinatione pronominis"
+        },
+        {
+          "id": "u.d.defin-gram",
+          "value": "Definitiones artis grammaticae"
+        },
+        {
+          "id": "u.d.dial-schol",
+          "value": "Dialogus scholasticus"
+        },
+        {
+          "id": "u.e",
+          "value": "E"
+        },
+        {
+          "id": "u.e.ecl-gram",
+          "value": "Eglogae de libris grammaticorum"
+        },
+        {
+          "id": "u.e.epit-prisc",
+          "value": "Epitome Prisciani"
+        },
+        {
+          "id": "u.e.exc",
+          "value": "Excerpta"
+        },
+        {
+          "id": "u.e.exc.consent",
+          "value": "Excerpta ex arte Consentii"
+        },
+        {
+          "id": "u.e.exc.gram",
+          "value": "Excerpta grammatica"
+        },
+        {
+          "id": "u.e.exc.gram.-",
+          "value": "Excerpta grammatica"
+        },
+        {
+          "id": "u.e.exc.gram.a",
+          "value": "Excerpta grammatica A"
+        },
+        {
+          "id": "u.e.exc.gram.b",
+          "value": "Excerpta grammatica B"
+        },
+        {
+          "id": "u.e.exc.gram.c",
+          "value": "Excerpta grammatica C"
+        },
+        {
+          "id": "u.e.exc.gram.d",
+          "value": "Excerpta grammatica D"
+        },
+        {
+          "id": "u.e.exc.gram.e",
+          "value": "Excerpta grammatica E"
+        },
+        {
+          "id": "u.e.exc.gram.vit",
+          "value": "Excerpta grammatica de vitiis et virtutibus orationis"
+        },
+        {
+          "id": "u.e.exc.metr",
+          "value": "Excerpta metrica"
+        },
+        {
+          "id": "u.e.exc.orth",
+          "value": "Excerpta de orthographia"
+        },
+        {
+          "id": "u.e.exc.prisc",
+          "value": "Excerpta ex Prisciani operibus"
+        },
+        {
+          "id": "u.e.excerp-prisc",
+          "value": "Excerptiones de Prisciano"
+        },
+        {
+          "id": "u.e.expos",
+          "value": "Expositio"
+        },
+        {
+          "id": "u.e.expos.don",
+          "value": "Expositio in artem grammaticam Donati"
+        },
+        {
+          "id": "u.e.expos.not",
+          "value": "Expositio notarum"
+        },
+        {
+          "id": "u.f",
+          "value": "F"
+        },
+        {
+          "id": "u.f.fig",
+          "value": "De figuris vel Schemata logu"
+        },
+        {
+          "id": "u.f.fig-ped",
+          "value": "De figuris pedum"
+        },
+        {
+          "id": "u.f.final",
+          "value": "De finalibus"
+        },
+        {
+          "id": "u.f.form-vb",
+          "value": "De formis verborum"
+        },
+        {
+          "id": "u.f.frg-gram",
+          "value": "Fragmentum grammaticale"
+        },
+        {
+          "id": "u.g",
+          "value": "G"
+        },
+        {
+          "id": "u.g.gen-dist",
+          "value": "De generum distinctione"
+        },
+        {
+          "id": "u.g.gen-vb",
+          "value": "De generibus verborum"
+        },
+        {
+          "id": "u.g.glos",
+          "value": "Glossae"
+        },
+        {
+          "id": "u.g.glos.albin",
+          "value": "Glossa de arte Albini"
+        },
+        {
+          "id": "u.g.glos.eutych",
+          "value": "Glossae in Eutychen"
+        },
+        {
+          "id": "u.g.glos.metr",
+          "value": "Glossae de arte metrica"
+        },
+        {
+          "id": "u.g.glos.prisc",
+          "value": "Glossae in Priscianum"
+        },
+        {
+          "id": "u.g.glos.prisc.ex",
+          "value": "Glossae ex Prisciano"
+        },
+        {
+          "id": "u.g.glos.prisc.in",
+          "value": "Glossae in Priscianum"
+        },
+        {
+          "id": "u.g.glos.prisc.ars",
+          "value": "Glossae in Prisciani artem"
+        },
+        {
+          "id": "u.g.glos.serg",
+          "value": "Glosiolae super Sergium"
+        },
+        {
+          "id": "u.g.grammat",
+          "value": "Grammaticalia"
+        },
+        {
+          "id": "u.i",
+          "value": "I"
+        },
+        {
+          "id": "u.i.ind-syll-gr",
+          "value": "Index Graecarum syllabarum"
+        },
+        {
+          "id": "u.i.ind-vb",
+          "value": "Index verborum"
+        },
+        {
+          "id": "u.i.inter",
+          "value": "Interrogationes"
+        },
+        {
+          "id": "u.i.inter.-",
+          "value": "Interrogationes"
+        },
+        {
+          "id": "u.i.inter.litt",
+          "value": "Interrogatio de litteris"
+        },
+        {
+          "id": "u.i.inter.resp",
+          "value": "Interrogationes et responsiones"
+        },
+        {
+          "id": "u.i.ioh-scot",
+          "value": "Iohannes Scotus"
+        },
+        {
+          "id": "u.i.ioh-scot.prisc",
+          "value": "Iohannis Scoti In Priscianum"
+        },
+        {
+          "id": "u.i.iustit-quid",
+          "value": "Iustitia quid est"
+        },
+        {
+          "id": "u.i.iust-pars",
+          "value": "Iustus quae pars"
+        },
+        {
+          "id": "u.l",
+          "value": "L"
+        },
+        {
+          "id": "u.l.lib-acc",
+          "value": "Libellus de accentibus"
+        },
+        {
+          "id": "u.l.lib-comp",
+          "value": "Liber compendiositatis et introductorium opus puerilitatis"
+        },
+        {
+          "id": "u.l.litt",
+          "value": "De littera"
+        },
+        {
+          "id": "u.l.litt.-",
+          "value": "De littera"
+        },
+        {
+          "id": "u.l.litt.pl",
+          "value": "De litteris"
+        },
+        {
+          "id": "u.m",
+          "value": "M"
+        },
+        {
+          "id": "u.m.magnus-vox",
+          "value": "Magnus quae vox"
+        },
+        {
+          "id": "u.m.mens",
+          "value": "De mensura"
+        },
+        {
+          "id": "u.m.metr",
+          "value": "De metris"
+        },
+        {
+          "id": "u.m.metr.-",
+          "value": "De metris"
+        },
+        {
+          "id": "u.m.metr.hor",
+          "value": "De metris Horatianis"
+        },
+        {
+          "id": "u.m.metr.gen",
+          "value": "De metrorum generibus"
+        },
+        {
+          "id": "u.m.musa-pars",
+          "value": "Musa quae pars"
+        },
+        {
+          "id": "u.n",
+          "value": "N"
+        },
+        {
+          "id": "u.n.nom-de",
+          "value": "De nominibus"
+        },
+        {
+          "id": "u.n.nom-de.-",
+          "value": "De nominibus"
+        },
+        {
+          "id": "u.n.nom-de.diff",
+          "value": "De nominibus difficilioribus"
+        },
+        {
+          "id": "u.n.nom-de.mob",
+          "value": "De nominibus mobilibus"
+        },
+        {
+          "id": "u.n.nom-her",
+          "value": "De nominibus et figuris versus heroici"
+        },
+        {
+          "id": "u.n.nom-ped",
+          "value": "Nomina pedum"
+        },
+        {
+          "id": "u.n.nom-1decl",
+          "value": "Nomina primae declinationis"
+        },
+        {
+          "id": "u.n.notae-iur",
+          "value": "Notae iuris"
+        },
+        {
+          "id": "u.o",
+          "value": "O"
+        },
+        {
+          "id": "u.o.oct-part",
+          "value": "De octo partibus"
+        },
+        {
+          "id": "u.o.ord-cogn",
+          "value": "Ordo ad cognoscendi nomen"
+        },
+        {
+          "id": "u.o.orth-de",
+          "value": "De orthographia"
+        },
+        {
+          "id": "u.p",
+          "value": "P"
+        },
+        {
+          "id": "u.p.ps-palaem-qual",
+          "value": "Ps. Palaemonis De qualitate verborum"
+        },
+        {
+          "id": "u.p.part-orat",
+          "value": "De partibus orationis"
+        },
+        {
+          "id": "u.p.part-orat-prisc",
+          "value": "Partes orationis octo iuxta Priscianum"
+        },
+        {
+          "id": "u.p.pond-num",
+          "value": "De ponderibus et numeris"
+        },
+        {
+          "id": "u.p.perf",
+          "value": "De praeterito perfecto"
+        },
+        {
+          "id": "u.p.profeta-pars",
+          "value": "Profeta quae pars"
+        },
+        {
+          "id": "u.p.pron-de",
+          "value": "De pronomine"
+        },
+        {
+          "id": "u.p.pros-de",
+          "value": "De prosodia"
+        },
+        {
+          "id": "u.q",
+          "value": "Q"
+        },
+        {
+          "id": "u.q.quae-pars",
+          "value": "Quae pars orationis"
+        },
+        {
+          "id": "u.q.quant-syll",
+          "value": "De quantitate syllabarum"
+        },
+        {
+          "id": "u.q.quid-arbor",
+          "value": "Quid est arbor"
+        },
+        {
+          "id": "u.r",
+          "value": "R"
+        },
+        {
+          "id": "u.r.reg-gen-vb",
+          "value": "Regulae de generibus verborum"
+        },
+        {
+          "id": "u.r.retr-ped",
+          "value": "Retractatio reciprocae responsionis de pedum regulis"
+        },
+        {
+          "id": "u.s",
+          "value": "S"
+        },
+        {
+          "id": "u.s.sent-disf",
+          "value": "Sententiae disficiles"
+        },
+        {
+          "id": "u.s.sept-por",
+          "value": "Septem ποριοχαί"
+        },
+        {
+          "id": "u.s.sergil",
+          "value": "Sergi(li)i Ars"
+        },
+        {
+          "id": "u.s.soloec",
+          "value": "De soloecismo"
+        },
+        {
+          "id": "u.s.spec-loc",
+          "value": "De speciebus locutionis"
+        },
+        {
+          "id": "u.s.steph",
+          "value": "Stephanus"
+        },
+        {
+          "id": "u.s.steph.orth",
+          "value": "Stephanus De orthographia"
+        },
+        {
+          "id": "u.s.sup-vb",
+          "value": "De supinis verbis"
+        },
+        {
+          "id": "u.t",
+          "value": "T"
+        },
+        {
+          "id": "u.t.term-nom",
+          "value": "Terminationes nominum"
+        },
+        {
+          "id": "u.t.terra-pars",
+          "value": "Terra quae pars"
+        },
+        {
+          "id": "u.t.theob-pl",
+          "value": "Theobaldus Placentinus"
+        },
+        {
+          "id": "u.t.theob-pl.reg-syll",
+          "value": "Theobaldi Placentini Regulae de longis et brevibus syllabis"
+        },
+        {
+          "id": "u.t.trop",
+          "value": "De tropis"
+        },
+        {
+          "id": "u.u",
+          "value": "U"
+        },
+        {
+          "id": "u.u.ult-syll",
+          "value": "De ultimis syllabis"
+        },
+        {
+          "id": "u.u.urs-ben",
+          "value": "Ursus Beneventanus"
+        },
+        {
+          "id": "u.u.urs-ben.trop",
+          "value": "Ursi Beneventani De tropis"
+        },
+        {
+          "id": "u.v",
+          "value": "V"
+        },
+        {
+          "id": "u.v.vb",
+          "value": "De verbo"
+        },
+        {
+          "id": "u.v.vb-constr",
+          "value": "De verborum constructione"
+        },
+        {
+          "id": "u.v.vb-def",
+          "value": "De verbis defectivis"
+        },
+        {
+          "id": "u.v.vb-gen",
+          "value": "De verborum generibus"
+        },
+        {
+          "id": "u.v.vb-impers",
+          "value": "De verbis impersonalibus"
+        },
+        {
+          "id": "u.v.vox",
+          "value": "De voce"
+        },
+        {
+          "id": "u.v.vox-litt",
+          "value": "De voce et littera"
+        }        
       ]
     },
     {
@@ -14035,7 +14812,7 @@
           "value": "syntax: case syntax: vocative"
         },
         {
-          "id": "m.syn.case.v-n",
+          "id": "m.syn.case.v.n",
           "value": "syntax: case syntax: vocative: instead of nominative"
         },
         {
