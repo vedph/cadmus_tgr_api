@@ -12,11 +12,12 @@
 
   <ItemGroup>
     <PackageReference Include="AspNetCore.Identity.Mongo" Version="8.0.0" />
-    <PackageReference Include="Cadmus.Api.Controllers" Version="1.0.17" />
-    <PackageReference Include="Cadmus.Api.Models" Version="1.0.10" />
-    <PackageReference Include="Cadmus.Api.Services" Version="1.0.19" />
+    <PackageReference Include="Cadmus.Api.Controllers" Version="1.0.18" />
+    <PackageReference Include="Cadmus.Api.Models" Version="1.0.11" />
+    <PackageReference Include="Cadmus.Api.Services" Version="1.0.20" />
     <PackageReference Include="Cadmus.Seed.Itinera.Parts" Version="1.1.4" />
     <PackageReference Include="Cadmus.Tgr.Services" Version="1.0.21" />
+    <PackageReference Include="MessagingApi.SendGrid" Version="1.0.4" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.3" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="5.0.3" />
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="5.0.0" />
@@ -29,7 +30,7 @@
     <PackageReference Include="Serilog.Sinks.Console" Version="3.1.1" />
     <PackageReference Include="Serilog.Sinks.File" Version="4.1.0" />
     <PackageReference Include="Serilog.Sinks.MongoDB" Version="4.0.0" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.0.7" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.1.0" />
   </ItemGroup>
 
 </Project>
