@@ -187,7 +187,7 @@
           "sortKey": "bibliography"
         },
         {
-          "typeId": "it.vedph.itinera.ms-signatures",
+          "typeId": "it.vedph.tgr.ms-signatures",
           "name": "ms signatures",
           "description": "Manuscript's signatures.",
           "colorKey": "D7D5DB",
@@ -314,7 +314,7 @@
           "value": "text layer"
         },
         {
-          "id": "it.vedph.itinera.ms-signatures",
+          "id": "it.vedph.tgr.ms-signatures",
           "value": "ms signatures"
         },
         {
@@ -15743,7 +15743,7 @@
         }
       },
       {
-        "id": "seed.it.vedph.itinera.ms-signatures"
+        "id": "seed.it.vedph.tgr.ms-signatures"
       },
       {
         "id": "seed.it.vedph.tgr.ms-places"
