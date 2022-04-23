@@ -136,6 +136,15 @@
           "colorKey": "62AEEE",
           "groupKey": "text",
           "sortKey": "text-tags"
+        },
+        {
+          "typeId": "it.vedph.token-text-layer",
+          "roleId": "fr.it.vedph.witnesses",
+          "name": "witnesses",
+          "description": "Generic witnesses.",
+          "colorKey": "EEAE62",
+          "groupKey": "text",
+          "sortKey": "witnesses"
         }
       ]
     },
@@ -364,6 +373,10 @@
         {
           "id": "fr.it.vedph.tgr.ling-tags",
           "value": "ling.tags fr."
+        },
+        {
+          "id": "fr.it.vedph.witnesses",
+          "value": "witnesses fr."
         }
       ]
     },
