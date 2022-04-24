@@ -139,12 +139,12 @@
         },
         {
           "typeId": "it.vedph.token-text-layer",
-          "roleId": "fr.it.vedph.witnesses",
+          "roleId": "fr.it.vedph.tgr.available-witnesses",
           "name": "witnesses",
-          "description": "Generic witnesses.",
-          "colorKey": "EEAE62",
+          "description": "Available witnesses layer.",
+          "colorKey": "FFF194",
           "groupKey": "text",
-          "sortKey": "witnesses"
+          "sortKey": "witnesses-layer"
         }
       ]
     },
@@ -375,7 +375,7 @@
           "value": "ling.tags fr."
         },
         {
-          "id": "fr.it.vedph.witnesses",
+          "id": "fr.it.vedph.tgr.available-witnesses",
           "value": "witnesses fr."
         }
       ]
@@ -15814,6 +15814,9 @@
       },
       {
         "id": "seed.fr.it.vedph.tgr.interpolations"
+      },
+      {
+        "id": "seed.fr.it.vedph.tgr.available-witnesses"
       }
     ]
   }
