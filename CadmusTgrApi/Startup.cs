@@ -6,7 +6,6 @@ using MessagingApi;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -125,7 +124,7 @@ namespace CadmusTgrApi
                 IConfigurationSection jwtSection = Configuration.GetSection("Jwt");
                     string key = jwtSection["SecureKey"];
                     if (string.IsNullOrEmpty(key))
-                        throw new ApplicationException("Required JWT SecureKey not found");
+                        throw new InvalidOperationException("Required JWT SecureKey not found");
 
                     options.SaveToken = true;
                     options.RequireHttpsMetadata = false;
@@ -144,7 +143,7 @@ namespace CadmusTgrApi
 #endif
         }
 
-        private void ConfigureSwaggerServices(IServiceCollection services)
+        private static void ConfigureSwaggerServices(IServiceCollection services)
         {
             services.AddSwaggerGen(c =>
             {
@@ -213,7 +212,6 @@ namespace CadmusTgrApi
                     options.JsonSerializerOptions.PropertyNamingPolicy =
                         JsonNamingPolicy.CamelCase;
                 });
-                //.SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
 
             // authentication
             ConfigureAuthServices(services);
@@ -227,7 +225,7 @@ namespace CadmusTgrApi
                 ApplicationUserRepository>();
 
             // messaging
-            // TODO: you can use another mailer service here. In this case,
+            // You can use another mailer service here. In this case,
             // also change the types in ConfigureOptionsServices.
             services.AddTransient<IMailerService, SendGridMailerService>();
             services.AddTransient<IMessageBuilderService,
@@ -306,7 +304,6 @@ namespace CadmusTgrApi
             app.UseSwagger();
             app.UseSwaggerUI(options =>
             {
-                //options.SwaggerEndpoint("/swagger/v1/swagger.json", "V1 Docs");
                 string url = Configuration.GetValue<string>("Swagger:Endpoint");
                 if (string.IsNullOrEmpty(url)) url = "v1/swagger.json";
                 options.SwaggerEndpoint(url, "V1 Docs");
