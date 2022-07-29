@@ -3,7 +3,7 @@
 Quick Docker image build:
 
 ```bash
-docker build . -t vedph2020/cadmus_tgr_api:2.1.0 -t vedph2020/cadmus_tgr_api:latest
+docker build . -t vedph2020/cadmus_tgr_api:2.1.1 -t vedph2020/cadmus_tgr_api:latest
 ```
 
 (replace with the current version).
@@ -12,6 +12,9 @@ This is a Cadmus API layer customized for the TGR project. Most of its code is d
 
 ## History
 
+### 2.1.1
+
+- 2022-07-29: updated core package (added `Note` to VarQuotation`/`QuotationVariant`).
 - 2022-07-22: updated packages.
 - 2022-07-03: updated packages.
 - 2022-06-10: updated packages.
