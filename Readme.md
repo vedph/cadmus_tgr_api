@@ -12,6 +12,11 @@ This is a Cadmus API layer customized for the TGR project. Most of its code is d
 
 ## History
 
+- 2022-10-05:
+  - updated packages.
+  - set HTTPS to optional in `Startup.cs` (new environment variables).
+  - added factory to preview.
+
 ### 2.2.0
 
 - 2022-08-18: enabled preview.

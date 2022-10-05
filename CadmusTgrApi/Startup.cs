@@ -32,6 +32,7 @@ using Cadmus.Tgr.Services;
 using MessagingApi.SendGrid;
 using Cadmus.Core.Storage;
 using Cadmus.Export.Preview;
+using System.Globalization;
 
 namespace CadmusTgrApi
 {
@@ -202,8 +203,8 @@ namespace CadmusTgrApi
             if (!Configuration.GetSection("Preview").GetSection("IsEnabled")
                 .Get<bool>())
             {
-                return new CadmusPreviewer(repository,
-                    factoryProvider.GetFactory("{}"));
+                return new CadmusPreviewer(factoryProvider.GetFactory("{}"),
+                    repository);
             }
 
             // get profile source
@@ -215,8 +216,8 @@ namespace CadmusTgrApi
             {
                 Console.WriteLine($"Preview profile expected at {path} not found");
                 logger.Error($"Preview profile expected at {path} not found");
-                return new CadmusPreviewer(repository,
-                    factoryProvider.GetFactory("{}"));
+                return new CadmusPreviewer(factoryProvider.GetFactory("{}"),
+                    repository);
             }
 
             // load profile
@@ -229,8 +230,11 @@ namespace CadmusTgrApi
                 profile = reader.ReadToEnd();
             }
             CadmusPreviewFactory factory = factoryProvider.GetFactory(profile);
+            factory.ConnectionString = string.Format(CultureInfo.InvariantCulture,
+                Configuration.GetConnectionString("Default"),
+                Configuration.GetValue<string>("DatabaseNames:Data"));
 
-            return new CadmusPreviewer(repository, factory);
+            return new CadmusPreviewer(factory, repository);
         }
 
         /// <summary>
@@ -335,8 +339,25 @@ namespace CadmusTgrApi
             {
                 app.UseDeveloperExceptionPage();
             }
+            else
+            {
+                // https://docs.microsoft.com/en-us/aspnet/core/security/enforcing-ssl?view=aspnetcore-5.0&tabs=visual-studio
+                app.UseExceptionHandler("/Error");
+                if (Configuration.GetValue<bool>("Server:UseHSTS"))
+                {
+                    Console.WriteLine("HSTS: yes");
+                    app.UseHsts();
+                }
+                else Console.WriteLine("HSTS: no");
+            }
 
-            app.UseHttpsRedirection();
+            if (Configuration.GetValue<bool>("Server:UseHttpsRedirection"))
+            {
+                Console.WriteLine("HttpsRedirection: yes");
+                app.UseHttpsRedirection();
+            }
+            else Console.WriteLine("HttpsRedirection: no");
+
             app.UseRouting();
             // CORS
             app.UseCors("CorsPolicy");
