@@ -13,7 +13,7 @@ This is a Cadmus API layer customized for the TGR project. Most of its code is d
 ## History
 
 - 2022-10-10:
-  - updated packages.
+  - updated packages and changed `Startup.cs` injection for `IRepositoryProvider`.
   - more previews.
 - 2022-10-05:
   - updated packages.

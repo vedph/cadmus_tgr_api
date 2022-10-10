@@ -283,7 +283,12 @@ namespace CadmusTgrApi
             // configuration
             services.AddSingleton(_ => Configuration);
             // repository
-            services.AddSingleton<IRepositoryProvider, TgrRepositoryProvider>();
+            string dataCS = string.Format(
+              Configuration.GetConnectionString("Default"),
+              Configuration.GetValue<string>("DatabaseNames:Data"));
+            services.AddSingleton<IRepositoryProvider>(
+              _ => new TgrRepositoryProvider { ConnectionString = dataCS });
+
             // part seeder factory provider
             services.AddSingleton<IPartSeederFactoryProvider,
                 TgrPartSeederFactoryProvider>();
@@ -296,8 +301,7 @@ namespace CadmusTgrApi
                 Configuration.GetConnectionString("Index"),
                 Configuration.GetValue<string>("DatabaseNames:Data"));
             services.AddSingleton<IItemIndexFactoryProvider>(_ =>
-                new StandardItemIndexFactoryProvider(
-                    indexCS));
+                new StandardItemIndexFactoryProvider(indexCS));
 
             // previewer
             services.AddSingleton(p => GetPreviewer(p));
@@ -314,7 +318,6 @@ namespace CadmusTgrApi
                 .MinimumLevel.Override("Microsoft", LogEventLevel.Warning)
                 .Enrich.WithExceptionDetails()
                 .WriteTo.Console()
-                /*.WriteTo.MSSqlServer(Configuration["Serilog:ConnectionString"],*/
                 .WriteTo.MongoDBCapped(Configuration["Serilog:ConnectionString"],
                     cappedMaxSizeMb: !string.IsNullOrEmpty(maxSize) &&
                         int.TryParse(maxSize, out int n) && n > 0 ? n : 10)
