@@ -27,7 +27,7 @@ namespace CadmusTgrApi
             var enumerator = dct.GetEnumerator();
             while (enumerator.MoveNext())
             {
-                keys.Add(((DictionaryEntry)enumerator.Current).Key.ToString());
+                keys.Add(((DictionaryEntry)enumerator.Current).Key.ToString()!);
             }
 
             foreach (string key in keys.OrderBy(s => s))

@@ -32,7 +32,6 @@ using Cadmus.Tgr.Services;
 using MessagingApi.SendGrid;
 using Cadmus.Core.Storage;
 using Cadmus.Export.Preview;
-using System.Globalization;
 
 namespace CadmusTgrApi
 {
@@ -195,7 +194,7 @@ namespace CadmusTgrApi
         {
             // get dependencies
             ICadmusRepository repository =
-                    provider.GetService<IRepositoryProvider>().CreateRepository();
+                    provider.GetService<IRepositoryProvider>()!.CreateRepository();
             ICadmusPreviewFactoryProvider factoryProvider =
                 new StandardCadmusPreviewFactoryProvider();
 
@@ -208,21 +207,21 @@ namespace CadmusTgrApi
             }
 
             // get profile source
-            ILogger logger = provider.GetService<ILogger>();
-            IHostEnvironment env = provider.GetService<IHostEnvironment>();
+            ILogger? logger = provider.GetService<ILogger>();
+            IHostEnvironment env = provider.GetService<IHostEnvironment>()!;
             string path = Path.Combine(env.ContentRootPath,
                 "wwwroot", "preview-profile.json");
             if (!File.Exists(path))
             {
                 Console.WriteLine($"Preview profile expected at {path} not found");
-                logger.Error($"Preview profile expected at {path} not found");
+                logger?.Error($"Preview profile expected at {path} not found");
                 return new CadmusPreviewer(factoryProvider.GetFactory("{}"),
                     repository);
             }
 
             // load profile
             Console.WriteLine($"Loading preview profile from {path}...");
-            logger.Information($"Loading preview profile from {path}...");
+            logger?.Information($"Loading preview profile from {path}...");
             string profile;
             using (StreamReader reader = new(new FileStream(
                 path, FileMode.Open, FileAccess.Read, FileShare.Read), Encoding.UTF8))
@@ -230,9 +229,6 @@ namespace CadmusTgrApi
                 profile = reader.ReadToEnd();
             }
             CadmusPreviewFactory factory = factoryProvider.GetFactory(profile);
-            factory.ConnectionString = string.Format(CultureInfo.InvariantCulture,
-                Configuration.GetConnectionString("Default"),
-                Configuration.GetValue<string>("DatabaseNames:Data"));
 
             return new CadmusPreviewer(factory, repository);
         }
