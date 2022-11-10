@@ -74,16 +74,16 @@ namespace CadmusTgrApi
                     // add in-memory config to override Serilog connection string
                     // as there is no way of configuring it outside appsettings
                     // https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-5.0#in-memory-provider-and-binding-to-a-poco-class
-                    .ConfigureAppConfiguration((context, config) =>
+                    .ConfigureAppConfiguration((_, config) =>
                     {
                         IConfiguration cfg = AppConfigReader.Read();
-                        string csTemplate = cfg.GetValue<string>("Serilog:ConnectionString");
-                        string dbName = cfg.GetValue<string>("DatabaseNames:Data");
+                        string csTemplate = cfg.GetValue<string>("Serilog:ConnectionString")!;
+                        string dbName = cfg.GetValue<string>("DatabaseNames:Data")!;
                         string cs = string.Format(csTemplate, dbName);
                         Debug.WriteLine($"Serilog:ConnectionString override = {cs}");
                         Console.WriteLine($"Serilog:ConnectionString override = {cs}");
 
-                        Dictionary<string, string> dct = new()
+                        Dictionary<string, string?> dct = new()
                         {
                             { "Serilog:ConnectionString", cs }
                         };
