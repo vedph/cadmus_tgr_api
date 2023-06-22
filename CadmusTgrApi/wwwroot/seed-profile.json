@@ -280,10 +280,15 @@
   ],
   "index": {
     "writer": {
-      "id": "item-index-writer.mysql"
+      "id": "item-index-writer.ef-pg"
     },
     "reader": {
-      "id": "item-index-reader.mysql"
+      "id": "item-index-reader.ef-pg"
+    }
+  },
+  "graph": {
+    "repository": {
+      "id": "graph-repository.ef-pg"
     }
   },
   "thesauri": [
@@ -10885,7 +10890,7 @@
         {
           "id": "u.v.vox-litt",
           "value": "De voce et littera"
-        }        
+        }
       ]
     },
     {
@@ -15697,7 +15702,7 @@
   "seed": {
     "options": {
       "seed": 1,
-      "users": ["zeus"],
+      "users": [ "zeus" ],
       "partRoles": [],
       "fragmentRoles": []
     },
