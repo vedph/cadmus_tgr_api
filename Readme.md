@@ -3,7 +3,7 @@
 Quick Docker image build:
 
 ```bash
-docker build . -t vedph2020/cadmus_tgr_api:3.0.1 -t vedph2020/cadmus_tgr_api:latest
+docker build . -t vedph2020/cadmus_tgr_api:5.0.1 -t vedph2020/cadmus_tgr_api:latest
 ```
 
 (replace with the current version).
@@ -11,6 +11,8 @@ docker build . -t vedph2020/cadmus_tgr_api:3.0.1 -t vedph2020/cadmus_tgr_api:lat
 This is a Cadmus API layer customized for the TGR project. Most of its code is derived from shared Cadmus libraries. See the [documentation](https://github.com/vedph/cadmus_doc/blob/master/api/creating.md) for more.
 
 ## History
+
+### 5.0.1
 
 - 2023-07-17: added `doc-reference-types` thesaurus.
 - 2023-07-16: updated packages.
