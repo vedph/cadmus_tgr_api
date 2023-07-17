@@ -459,6 +459,51 @@
       ]
     },
     {
+      "id": "doc-reference-types@en",
+      "entries": [
+        {
+          "id": "book",
+          "value": "book"
+        },
+        {
+          "id": "journal-art",
+          "value": "journal article"
+        },
+        {
+          "id": "book-art",
+          "value": "book article"
+        },
+        {
+          "id": "procs-art",
+          "value": "proceedings article"
+        },
+        {
+          "id": "review",
+          "value": "review"
+        },
+        {
+          "id": "ebook",
+          "value": "e-book"
+        },
+        {
+          "id": "web",
+          "value": "web site"
+        },
+        {
+          "id": "magazine",
+          "value": "magazine"
+        },
+        {
+          "id": "newspaper",
+          "value": "newspaper"
+        },
+        {
+          "id": "tweet",
+          "value": "tweet"
+        }
+      ]
+    },
+    {
       "id": "languages@en",
       "entries": [
         {

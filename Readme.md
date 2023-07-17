@@ -12,6 +12,7 @@ This is a Cadmus API layer customized for the TGR project. Most of its code is d
 
 ## History
 
+- 2023-07-17: added `doc-reference-types` thesaurus.
 - 2023-07-16: updated packages.
 - 2023-06-22: [moved to PostgreSQL](https://myrmex.github.io/overview/cadmus/dev/history/b-rdbms).
 
