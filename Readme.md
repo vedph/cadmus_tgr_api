@@ -3,7 +3,7 @@
 Quick Docker image build:
 
 ```bash
-docker build . -t vedph2020/cadmus_tgr_api:5.0.1 -t vedph2020/cadmus_tgr_api:latest
+docker build . -t vedph2020/cadmus-tgr-api:5.0.1 -t vedph2020/cadmus-tgr-api:latest
 ```
 
 (replace with the current version).
