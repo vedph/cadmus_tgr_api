@@ -9,17 +9,17 @@
     <Description>Cadmus API for the TGR project.</Description>
     <Copyright>by Daniele Fusi</Copyright>
     <NeutralLanguage>en-US</NeutralLanguage>
-    <Version>5.0.1</Version>
-    <FileVersion>5.0.1</FileVersion>
-    <AssemblyVersion>5.0.1</AssemblyVersion>
+    <Version>5.0.2</Version>
+    <FileVersion>5.0.2</FileVersion>
+    <AssemblyVersion>5.0.2</AssemblyVersion>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="AspNetCore.Identity.Mongo" Version="8.3.3" />
-    <PackageReference Include="Cadmus.Api.Controllers" Version="8.0.6" />
+    <PackageReference Include="Cadmus.Api.Controllers" Version="8.0.7" />
     <PackageReference Include="Cadmus.Api.Models" Version="8.0.6" />
     <PackageReference Include="Cadmus.Api.Services" Version="8.0.6" />
-    <PackageReference Include="Cadmus.Graph.Extras" Version="2.3.4" />
+    <PackageReference Include="Cadmus.Graph.Extras" Version="2.3.5" />
     <PackageReference Include="Cadmus.Index.Ef.PgSql" Version="6.1.13" />
     <PackageReference Include="Cadmus.Refs.Bricks" Version="4.0.1" />
     <PackageReference Include="Cadmus.Tgr.Services" Version="6.0.1" />
