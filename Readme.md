@@ -12,6 +12,10 @@ This is a Cadmus API layer customized for the TGR project. Most of its code is d
 
 ## History
 
+- 2023-08-09:
+  - updated packages (`MsLocation` added `p`).
+  - added metadata part to the profile.
+
 ### 5.0.2
 
 - 2023-07-20: refactored [logging](https://myrmex.github.io/overview/cadmus/dev/history/b-logging).

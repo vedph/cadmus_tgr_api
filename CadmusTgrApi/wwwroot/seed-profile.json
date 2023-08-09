@@ -7,6 +7,14 @@
       "colorKey": "2D882D",
       "partDefinitions": [
         {
+          "typeId": "it.vedph.metadata",
+          "name": "metadata",
+          "description": "Item's metadata.",
+          "colorKey": "F8C0C0",
+          "groupKey": "general",
+          "sortKey": "metadata"
+        },
+        {
           "typeId": "it.vedph.categories",
           "name": "categories",
           "description": "Item's categories.",
@@ -154,6 +162,14 @@
       "description": "The manuscripts facet",
       "colorKey": "AA6C39",
       "partDefinitions": [
+        {
+          "typeId": "it.vedph.metadata",
+          "name": "metadata",
+          "description": "Item's metadata.",
+          "colorKey": "F8C0C0",
+          "groupKey": "general",
+          "sortKey": "metadata"
+        },
         {
           "typeId": "it.vedph.categories",
           "name": "categories",
@@ -15752,6 +15768,9 @@
       "fragmentRoles": []
     },
     "partSeeders": [
+      {
+        "id": "seed.it.vedph.metadata"
+      },
       {
         "id": "seed.it.vedph.categories",
         "options": {
