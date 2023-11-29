@@ -12,6 +12,8 @@ This is a Cadmus API layer customized for the TGR project. Most of its code is d
 
 ## History
 
+- 2023-11-29: expose port 8080 in Dockerfile. This seems the default port for the API in 8.0.
+
 ### 6.0.2
 
 - 2023-11-29: enabled file logging.
