@@ -31,7 +31,6 @@ using MessagingApi.SendGrid;
 using Cadmus.Core.Storage;
 using Cadmus.Export.Preview;
 using Cadmus.Graph;
-using Cadmus.Index.Sql;
 using Cadmus.Graph.Extras;
 using Cadmus.Graph.Ef.PgSql;
 using Cadmus.Graph.Ef;
@@ -124,9 +123,9 @@ public sealed class Startup
             })
             .AddJwtBearer(options =>
             {
-            // NOTE: remember to set the values in configuration:
-            // Jwt:SecureKey, Jwt:Audience, Jwt:Issuer
-            IConfigurationSection jwtSection = Configuration.GetSection("Jwt");
+                // NOTE: remember to set the values in configuration:
+                // Jwt:SecureKey, Jwt:Audience, Jwt:Issuer
+                IConfigurationSection jwtSection = Configuration.GetSection("Jwt");
                 string? key = jwtSection["SecureKey"];
                 if (string.IsNullOrEmpty(key))
                     throw new InvalidOperationException("Required JWT SecureKey not found");
@@ -164,8 +163,7 @@ public sealed class Startup
             // (remember to check the build XML comments in the prj props)
             string xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
             string xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
-            if (File.Exists(xmlPath))
-                c.IncludeXmlComments(xmlPath);
+            if (File.Exists(xmlPath)) c.IncludeXmlComments(xmlPath);
 
             // JWT
             // https://stackoverflow.com/questions/58179180/jwt-authentication-and-swagger-with-net-core-3-0
@@ -190,7 +188,7 @@ public sealed class Startup
             Array.Empty<string>()
         }
         });
-        });
+      });
     }
 
     private CadmusPreviewer GetPreviewer(IServiceProvider provider)
@@ -217,14 +215,14 @@ public sealed class Startup
         if (!File.Exists(path))
         {
             Console.WriteLine($"Preview profile expected at {path} not found");
-            logger?.Error($"Preview profile expected at {path} not found");
+            logger?.Error("Preview profile expected at {Path} not found", path);
             return new CadmusPreviewer(factoryProvider.GetFactory("{}"),
                 repository);
         }
 
         // load profile
         Console.WriteLine($"Loading preview profile from {path}...");
-        logger?.Information($"Loading preview profile from {path}...");
+        logger?.Information("Loading preview profile from {Path}...", path);
         string profile;
         using (StreamReader reader = new(new FileStream(
             path, FileMode.Open, FileAccess.Read, FileShare.Read), Encoding.UTF8))

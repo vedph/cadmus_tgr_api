@@ -3,7 +3,7 @@
 Quick Docker image build:
 
 ```bash
-docker build . -t vedph2020/cadmus-tgr-api:6.0.2 -t vedph2020/cadmus-tgr-api:latest
+docker build . -t vedph2020/cadmus-tgr-api:7.0.0 -t vedph2020/cadmus-tgr-api:latest
 ```
 
 (replace with the current version).
@@ -12,6 +12,12 @@ This is a Cadmus API layer customized for the TGR project. Most of its code is d
 
 ## History
 
+### 7.0.0
+
+- 2024-05-21:
+  - updated packages.
+  - [refactored logging](https://myrmex.github.io/overview/cadmus/dev/history/b-logging-cfg/).
+  - added proxy controller.
 - 2023-11-29: expose port 8080 in Dockerfile. This seems the default port for the API in 8.0.
 
 ### 6.0.2
