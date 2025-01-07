@@ -12,6 +12,8 @@ This is a Cadmus API layer customized for the TGR project. Most of its code is d
 
 ## History
 
+- 2025-01-07: updated packages.
+
 ### 8.0.0
 
 - 2024-11-29: ⚠️ Upgraded to .NET 9.
