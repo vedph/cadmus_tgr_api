@@ -2,10 +2,10 @@
 
 🐋 Quick Docker image build (you need to have a `buildx` container):
 
-```bash
+```sh
 docker buildx create --use
 
-docker buildx build . --platform linux/amd64,linux/arm64 -t vedph2020/cadmus-tgr-api:7.0.0 -t vedph2020/cadmus-tgr-api:latest --push
+docker buildx build . --platform linux/amd64,linux/arm64,windows/amd64,windows/arm64 -t vedph2020/cadmus-tgr-api:8.0.1 -t vedph2020/cadmus-tgr-api:latest --push
 ```
 
 (replace with the current version).
@@ -14,6 +14,9 @@ This is a Cadmus API layer customized for the TGR project. Most of its code is d
 
 ## History
 
+### 8.0.1
+
+- 2025-02-12: updated packages.
 - 2025-01-07: updated packages.
 
 ### 8.0.0
