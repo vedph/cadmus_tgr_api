@@ -14,6 +14,10 @@ This is a Cadmus API layer customized for the TGR project. Most of its code is d
 
 ## History
 
+### 8.0.2
+
+- 2025-02-13: updated packages.
+
 ### 8.0.1
 
 - 2025-02-12: updated packages.
