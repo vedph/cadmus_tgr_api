@@ -5,7 +5,7 @@
 ```sh
 docker buildx create --use
 
-docker buildx build . --platform linux/amd64,linux/arm64,windows/amd64,windows/arm64 -t vedph2020/cadmus-tgr-api:8.0.1 -t vedph2020/cadmus-tgr-api:latest --push
+docker buildx build . --platform linux/amd64,linux/arm64,windows/amd64,windows/arm64 -t vedph2020/cadmus-tgr-api:8.0.2 -t vedph2020/cadmus-tgr-api:latest --push
 ```
 
 (replace with the current version).
