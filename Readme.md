@@ -5,10 +5,20 @@
 ```sh
 docker buildx create --use
 
-docker buildx build . --platform linux/amd64,linux/arm64,windows/amd64,windows/arm64 -t vedph2020/cadmus-tgr-api:8.0.2 -t vedph2020/cadmus-tgr-api:latest --push
+docker buildx build . --platform linux/amd64,linux/arm64,windows/amd64,windows/arm64 -t vedph2020/cadmus-tgr-api:8.0.3 -t vedph2020/cadmus-tgr-api:latest --push
 ```
 
-(replace with the current version).
+(replace with the current version). In a MacOS you might need to explicitly specify the target platform, by adding this line to each service in the Docker compose script:
+
+```yml
+# to run on MacOS with ARM CPU
+platform: linux/arm64
+
+# to run on MacOS with Intel CPU or Rosetta
+platform: linux/amd64
+```
+
+>Usually MacOS defaults to `linux/amd64` for compatibility reasons. If you have an ARM CPU, you can use `linux/arm64` instead. If you have an Intel CPU, you can use `linux/amd64` or `linux/arm64` with Rosetta.
 
 This is a Cadmus API layer customized for the TGR project. Most of its code is derived from shared Cadmus libraries. See the [documentation](https://github.com/vedph/cadmus_doc/blob/master/api/creating.md) for more.
 
