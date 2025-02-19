@@ -5,7 +5,7 @@
 ```sh
 docker buildx create --use
 
-docker buildx build . --platform linux/amd64,linux/arm64,windows/amd64,windows/arm64 -t vedph2020/cadmus-tgr-api:8.0.3 -t vedph2020/cadmus-tgr-api:latest --push
+docker buildx build . --platform linux/amd64,linux/arm64,windows/amd64,windows/arm64 -t vedph2020/cadmus-tgr-api:8.0.4 -t vedph2020/cadmus-tgr-api:latest --push
 ```
 
 (replace with the current version). In a MacOS you might need to explicitly specify the target platform, by adding this line to each service in the Docker compose script:
@@ -23,6 +23,10 @@ platform: linux/amd64
 This is a Cadmus API layer customized for the TGR project. Most of its code is derived from shared Cadmus libraries. See the [documentation](https://github.com/vedph/cadmus_doc/blob/master/api/creating.md) for more.
 
 ## History
+
+### 8.0.4
+
+- 2025-02-19: added `.AddApplicationPart(typeof(ThesaurusImportController).Assembly)`.
 
 ### 8.0.3
 
