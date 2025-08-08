@@ -24,6 +24,12 @@ This is a Cadmus API layer customized for the TGR project. Most of its code is d
 
 ## History
 
+### 8.0.7
+
+- 2025-08-08:
+  - updated packages.
+  - added Cadmus export controller.
+
 ### 8.0.6
 
 - 2025-04-29: updated packages (added `Subrange` to `VarQuotation`).
